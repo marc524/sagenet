@@ -6,6 +6,7 @@ import { CubeTextureLoader, SphereBufferGeometr } from "three"
 import ARoom from './ARoom'
 import Model from './Wash'
 import Pump from './Npump'
+import Store from './Ncstore2'
 import './App.css';
 
 extend({ OrbitControls });
@@ -62,6 +63,7 @@ function App() {
       <Suspense fallback={null}>
       <Model castShadow/>
       <Pump castShadow/>
+      <Store />
       </Suspense>
       
      
