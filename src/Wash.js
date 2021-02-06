@@ -15,7 +15,7 @@ export default function Model(props) {
   materials.signs.transparent = true;
   materials.signs.alphaMap = useTexture(icon);
   nodes.Cube009.material.metalness = 0.4;
-  console.log(materials.signs);
+ 
   return (
     <group ref={group} {...props} dispose={null}>
       <mesh castShadow receiveShadow

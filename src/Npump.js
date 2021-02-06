@@ -24,7 +24,7 @@ export default function Pump(props) {
   materials['Material #1431659626.001'].roughness = 0.3;
   materials['Material #1431659626.001'].normalScale = new THREE.Vector2(4,4);
   
-  console.log(materials['Material #1431659626.001']);
+  
   return (
     <group  ref={group} {...props} dispose={null}>
       <group position={[-1.14, 0.02, 1.77]} scale={[0.01, 0.01, 0.01]}>

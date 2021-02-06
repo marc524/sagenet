@@ -18,7 +18,7 @@ export default function Store(props) {
 
 
   
-  console.log(materials['Glass.004']);
+ 
   return (
     <group ref={group} {...props} dispose={null}>
       <group position={[-1.6, 0.02, -10.4]} scale={[0.01, 0.01, 0.01]}>
