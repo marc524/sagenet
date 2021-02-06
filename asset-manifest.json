@@ -1,23 +1,25 @@
 {
   "files": {
     "main.css": "/sagenet/static/css/main.04c25c49.chunk.css",
-    "main.js": "/sagenet/static/js/main.402daa81.chunk.js",
-    "main.js.map": "/sagenet/static/js/main.402daa81.chunk.js.map",
+    "main.js": "/sagenet/static/js/main.040124a0.chunk.js",
+    "main.js.map": "/sagenet/static/js/main.040124a0.chunk.js.map",
     "runtime-main.js": "/sagenet/static/js/runtime-main.602b5895.js",
     "runtime-main.js.map": "/sagenet/static/js/runtime-main.602b5895.js.map",
-    "static/js/2.959697ab.chunk.js": "/sagenet/static/js/2.959697ab.chunk.js",
-    "static/js/2.959697ab.chunk.js.map": "/sagenet/static/js/2.959697ab.chunk.js.map",
+    "static/js/2.c7b77341.chunk.js": "/sagenet/static/js/2.c7b77341.chunk.js",
+    "static/js/2.c7b77341.chunk.js.map": "/sagenet/static/js/2.c7b77341.chunk.js.map",
     "index.html": "/sagenet/index.html",
     "static/css/main.04c25c49.chunk.css.map": "/sagenet/static/css/main.04c25c49.chunk.css.map",
-    "static/js/2.959697ab.chunk.js.LICENSE.txt": "/sagenet/static/js/2.959697ab.chunk.js.LICENSE.txt",
+    "static/js/2.c7b77341.chunk.js.LICENSE.txt": "/sagenet/static/js/2.c7b77341.chunk.js.LICENSE.txt",
+    "static/media/icons.0e1ff2e3.png": "/sagenet/static/media/icons.0e1ff2e3.png",
     "static/media/ncstore2.d8ab5681.glb": "/sagenet/static/media/ncstore2.d8ab5681.glb",
     "static/media/npump.5abc8a13.glb": "/sagenet/static/media/npump.5abc8a13.glb",
+    "static/media/tiles_normal.692f3d02.jpg": "/sagenet/static/media/tiles_normal.692f3d02.jpg",
     "static/media/wash.2722fb68.glb": "/sagenet/static/media/wash.2722fb68.glb"
   },
   "entrypoints": [
     "static/js/runtime-main.602b5895.js",
-    "static/js/2.959697ab.chunk.js",
+    "static/js/2.c7b77341.chunk.js",
     "static/css/main.04c25c49.chunk.css",
-    "static/js/main.402daa81.chunk.js"
+    "static/js/main.040124a0.chunk.js"
   ]
 }
