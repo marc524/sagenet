@@ -2,7 +2,7 @@ import ReactDOM from 'react-dom'
 import React, { useRef, Suspense } from 'react'
 import { Canvas, extend, useThree, useFrame } from "react-three-fiber"
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
-import { CubeTextureLoader, SphereBufferGeometry } from "three"
+import { CubeTextureLoader, SphereBufferGeometr } from "three"
 import ARoom from './ARoom'
 import Model from './Wash'
 import Pump from './Npump'
@@ -45,12 +45,13 @@ function SkyBox(){
 
 function App() {
   return (
-    <Canvas  gl={{ antialias: true}} shadowMap className="canvas">
+    <Canvas  gl={{ antialias: true}} shadowMap={true} className="canvas">
       <fog attach="fog" args={["white", 0, 60]} />
       <CameraControls position={[0, 0, 0]}/>
-      <directionalLight castShadow shadow-mapSize-height={512}
-  shadow-mapSize-width={512}  position={[-5, 10 ,20]} />
-      <mesh receiveShadow rotation={[-3.14/2, 0, 0]} position={[0, 0, 0]} scale={[100,100,1]} >
+      <directionalLight castShadow shadowMap={true} shadowBias={-0.0001} shadow-mapSize-height={1024}
+  shadow-mapSize-width={1024} intensity={1}  position={[0, 7 ,20]}  />
+  <hemisphereLight color={"lightblue"} groundColor={"grey"} intensity={0.6} />
+      <mesh castShadow receiveShadow rotation={[-3.14/2, 0, 0]} position={[0, 0, 0]} scale={[100,100,1]} >
         <planeBufferGeometry/>
         <meshStandardMaterial color="grey" />
       </mesh>
@@ -63,7 +64,7 @@ function App() {
       <Pump castShadow/>
       </Suspense>
       
-      <SkyBox/>
+     
     </Canvas>
   );
 }

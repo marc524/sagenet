@@ -25,21 +25,21 @@ export default function Pump(props) {
       <mesh castShadow receiveShadow
         material={materials['Material #1431659661.002']}
         geometry={nodes['2'].geometry}
-        position={[-8.67, 3.71, 4.89]}
+        position={[-10.72, 3.9, 4.89]}
         rotation={[Math.PI / 2, 0, 0]}
         scale={[0.01, 0.01, 0.01]}
       />
       <mesh  castShadow receiveShadow
         material={materials['Material #1431659661.002']}
         geometry={nodes['4'].geometry}
-        position={[-8.67, 4.06, -0.64]}
+        position={[-10.72, 4.3, -0.64]}
         rotation={[Math.PI / 2, 0, 0]}
         scale={[0.01, 0.01, 0.01]}
       />
       <group position={[-6.44, 4.7, -1.53]} rotation={[0, -1.57, 0]} scale={[0.01, 0.01, 0.01]}>
-        <mesh material={materials['Material #1431659657.001']} geometry={nodes.Mesh179.geometry} />
-        <mesh material={materials['Material #1431659628.001']} geometry={nodes.Mesh179_1.geometry} />
-        <mesh material={materials['Material #1431659645.001']} geometry={nodes.Mesh179_2.geometry} />
+        <mesh castShadow receiveShadow material={materials['Material #1431659657.001']} geometry={nodes.Mesh179.geometry} />
+        <mesh castShadow receiveShadow material={materials['Material #1431659628.001']} geometry={nodes.Mesh179_1.geometry} />
+        <mesh castShadow receiveShadow material={materials['Material #1431659645.001']} geometry={nodes.Mesh179_2.geometry} />
       </group>
       <mesh  castShadow receiveShadow
         material={materials['Material #1431659644.001']}
@@ -75,14 +75,14 @@ export default function Pump(props) {
         scale={[0.11, 0.01, 0.22]}
       />
       <group position={[3.98, 0.1, 4.53]} scale={[0.01, 0.01, 0.01]}>
-        <mesh material={materials['Gas Pumps.001']} geometry={nodes.Mesh174.geometry} />
-        <mesh material={materials['Gas Pump Screen.001']} geometry={nodes.Mesh174_1.geometry} />
-        <mesh material={materials['Pump metel trim.001']} geometry={nodes.Mesh174_2.geometry} />
+        <mesh castShadow receiveShadow material={materials['Gas Pumps.001']} geometry={nodes.Mesh174.geometry} />
+        <mesh castShadow receiveShadow material={materials['Gas Pump Screen.001']} geometry={nodes.Mesh174_1.geometry} />
+        <mesh castShadow receiveShadow material={materials['Pump metel trim.001']} geometry={nodes.Mesh174_2.geometry} />
       </group>
       <group position={[3.98, 0.1, -1]} scale={[0.01, 0.01, 0.01]}>
-        <mesh material={materials['Gas Pumps.001']} geometry={nodes.Mesh147.geometry} />
-        <mesh material={materials['Gas Pump Screen.001']} geometry={nodes.Mesh147_1.geometry} />
-        <mesh material={materials['Pump metel trim.001']} geometry={nodes.Mesh147_2.geometry} />
+        <mesh castShadow receiveShadow material={materials['Gas Pumps.001']} geometry={nodes.Mesh147.geometry} />
+        <mesh castShadow receiveShadow material={materials['Gas Pump Screen.001']} geometry={nodes.Mesh147_1.geometry} />
+        <mesh castShadow receiveShadow material={materials['Pump metel trim.001']} geometry={nodes.Mesh147_2.geometry} />
       </group>
       <mesh  castShadow receiveShadow
         material={materials['Material #1431659659.001']}
@@ -92,65 +92,65 @@ export default function Pump(props) {
         scale={[0.01, 0.01, 0.01]}
       />
       <group position={[-6.97, 4.69, -2.76]} scale={[0.01, 0.01, 0.01]}>
-        <mesh material={materials['Material #1431659086.001']} geometry={nodes.Mesh145.geometry} />
-        <mesh material={materials['01 - Defaultsaed.001']} geometry={nodes.Mesh145_1.geometry} />
-        <mesh material={materials['steklo.001']} geometry={nodes.Mesh145_2.geometry} />
-        <mesh material={materials['Material #1431659087.001']} geometry={nodes.Mesh145_3.geometry} />
-        <mesh material={materials['Material #1431659088.001']} geometry={nodes.Mesh145_4.geometry} />
+        <mesh castShadow receiveShadow material={materials['Material #1431659086.001']} geometry={nodes.Mesh145.geometry} />
+        <mesh castShadow receiveShadow material={materials['01 - Defaultsaed.001']} geometry={nodes.Mesh145_1.geometry} />
+        <mesh castShadow receiveShadow material={materials['steklo.001']} geometry={nodes.Mesh145_2.geometry} />
+        <mesh castShadow receiveShadow material={materials['Material #1431659087.001']} geometry={nodes.Mesh145_3.geometry} />
+        <mesh castShadow receiveShadow material={materials['Material #1431659088.001']} geometry={nodes.Mesh145_4.geometry} />
       </group>
       <group position={[-1.14, 4.69, -2.76]} scale={[0.01, 0.01, 0.01]}>
-        <mesh material={materials['Material #1431659086.001']} geometry={nodes.Mesh144.geometry} />
-        <mesh material={materials['01 - Defaultsaed.001']} geometry={nodes.Mesh144_1.geometry} />
-        <mesh material={materials['steklo.001']} geometry={nodes.Mesh144_2.geometry} />
-        <mesh material={materials['Material #1431659087.001']} geometry={nodes.Mesh144_3.geometry} />
-        <mesh material={materials['Material #1431659088.001']} geometry={nodes.Mesh144_4.geometry} />
+        <mesh castShadow receiveShadow material={materials['Material #1431659086.001']} geometry={nodes.Mesh144.geometry} />
+        <mesh castShadow receiveShadow material={materials['01 - Defaultsaed.001']} geometry={nodes.Mesh144_1.geometry} />
+        <mesh castShadow receiveShadow material={materials['steklo.001']} geometry={nodes.Mesh144_2.geometry} />
+        <mesh castShadow receiveShadow material={materials['Material #1431659087.001']} geometry={nodes.Mesh144_3.geometry} />
+        <mesh castShadow receiveShadow material={materials['Material #1431659088.001']} geometry={nodes.Mesh144_4.geometry} />
       </group>
       <group position={[4.7, 4.69, -2.76]} scale={[0.01, 0.01, 0.01]}>
-        <mesh material={materials['Material #1431659086.001']} geometry={nodes.Mesh143.geometry} />
-        <mesh material={materials['01 - Defaultsaed.001']} geometry={nodes.Mesh143_1.geometry} />
-        <mesh material={materials['steklo.001']} geometry={nodes.Mesh143_2.geometry} />
-        <mesh material={materials['Material #1431659087.001']} geometry={nodes.Mesh143_3.geometry} />
-        <mesh material={materials['Material #1431659088.001']} geometry={nodes.Mesh143_4.geometry} />
+        <mesh castShadow receiveShadow material={materials['Material #1431659086.001']} geometry={nodes.Mesh143.geometry} />
+        <mesh castShadow receiveShadow material={materials['01 - Defaultsaed.001']} geometry={nodes.Mesh143_1.geometry} />
+        <mesh castShadow receiveShadow material={materials['steklo.001']} geometry={nodes.Mesh143_2.geometry} />
+        <mesh castShadow receiveShadow material={materials['Material #1431659087.001']} geometry={nodes.Mesh143_3.geometry} />
+        <mesh castShadow receiveShadow material={materials['Material #1431659088.001']} geometry={nodes.Mesh143_4.geometry} />
       </group>
       <group position={[-6.97, 4.69, 1.77]} scale={[0.01, 0.01, 0.01]}>
-        <mesh material={materials['Material #1431659086.001']} geometry={nodes.Mesh132.geometry} />
-        <mesh material={materials['01 - Defaultsaed.001']} geometry={nodes.Mesh132_1.geometry} />
-        <mesh material={materials['steklo.001']} geometry={nodes.Mesh132_2.geometry} />
-        <mesh material={materials['Material #1431659087.001']} geometry={nodes.Mesh132_3.geometry} />
-        <mesh material={materials['Material #1431659088.001']} geometry={nodes.Mesh132_4.geometry} />
+        <mesh castShadow receiveShadow material={materials['Material #1431659086.001']} geometry={nodes.Mesh132.geometry} />
+        <mesh castShadow receiveShadow material={materials['01 - Defaultsaed.001']} geometry={nodes.Mesh132_1.geometry} />
+        <mesh castShadow receiveShadow material={materials['steklo.001']} geometry={nodes.Mesh132_2.geometry} />
+        <mesh castShadow receiveShadow material={materials['Material #1431659087.001']} geometry={nodes.Mesh132_3.geometry} />
+        <mesh castShadow receiveShadow material={materials['Material #1431659088.001']} geometry={nodes.Mesh132_4.geometry} />
       </group>
       <group position={[-1.14, 4.69, 1.77]} scale={[0.01, 0.01, 0.01]}>
-        <mesh material={materials['Material #1431659086.001']} geometry={nodes.Mesh131.geometry} />
-        <mesh material={materials['01 - Defaultsaed.001']} geometry={nodes.Mesh131_1.geometry} />
-        <mesh material={materials['steklo.001']} geometry={nodes.Mesh131_2.geometry} />
-        <mesh material={materials['Material #1431659087.001']} geometry={nodes.Mesh131_3.geometry} />
+        <mesh castShadow receiveShadow material={materials['Material #1431659086.001']} geometry={nodes.Mesh131.geometry} />
+        <mesh castShadow receiveShadow material={materials['01 - Defaultsaed.001']} geometry={nodes.Mesh131_1.geometry} />
+        <mesh castShadow receiveShadow material={materials['steklo.001']} geometry={nodes.Mesh131_2.geometry} />
+        <mesh castShadow receiveShadow material={materials['Material #1431659087.001']} geometry={nodes.Mesh131_3.geometry} />
       </group>
       <group position={[4.7, 4.69, 1.77]} scale={[0.01, 0.01, 0.01]}>
-        <mesh material={materials['Material #1431659086.001']} geometry={nodes.Mesh130.geometry} />
-        <mesh material={materials['01 - Defaultsaed.001']} geometry={nodes.Mesh130_1.geometry} />
-        <mesh material={materials['steklo.001']} geometry={nodes.Mesh130_2.geometry} />
-        <mesh material={materials['Material #1431659087.001']} geometry={nodes.Mesh130_3.geometry} />
-        <mesh material={materials['Material #1431659088.001']} geometry={nodes.Mesh130_4.geometry} />
+        <mesh castShadow receiveShadow material={materials['Material #1431659086.001']} geometry={nodes.Mesh130.geometry} />
+        <mesh castShadow receiveShadow material={materials['01 - Defaultsaed.001']} geometry={nodes.Mesh130_1.geometry} />
+        <mesh castShadow receiveShadow material={materials['steklo.001']} geometry={nodes.Mesh130_2.geometry} />
+        <mesh castShadow receiveShadow material={materials['Material #1431659087.001']} geometry={nodes.Mesh130_3.geometry} />
+        <mesh castShadow receiveShadow material={materials['Material #1431659088.001']} geometry={nodes.Mesh130_4.geometry} />
       </group>
       <group position={[-6.97, 4.69, 6.29]} scale={[0.01, 0.01, 0.01]}>
-        <mesh material={materials['Material #1431659086.001']} geometry={nodes.Mesh129.geometry} />
-        <mesh material={materials['01 - Defaultsaed.001']} geometry={nodes.Mesh129_1.geometry} />
-        <mesh material={materials['steklo.001']} geometry={nodes.Mesh129_2.geometry} />
-        <mesh material={materials['Material #1431659087.001']} geometry={nodes.Mesh129_3.geometry} />
+        <mesh castShadow receiveShadow material={materials['Material #1431659086.001']} geometry={nodes.Mesh129.geometry} />
+        <mesh castShadow receiveShadow material={materials['01 - Defaultsaed.001']} geometry={nodes.Mesh129_1.geometry} />
+        <mesh castShadow receiveShadow material={materials['steklo.001']} geometry={nodes.Mesh129_2.geometry} />
+        <mesh castShadow receiveShadow material={materials['Material #1431659087.001']} geometry={nodes.Mesh129_3.geometry} />
       </group>
       <group position={[-1.14, 4.69, 6.29]} scale={[0.01, 0.01, 0.01]}>
-        <mesh material={materials['Material #1431659086.001']} geometry={nodes.Mesh128.geometry} />
-        <mesh material={materials['01 - Defaultsaed.001']} geometry={nodes.Mesh128_1.geometry} />
-        <mesh material={materials['steklo.001']} geometry={nodes.Mesh128_2.geometry} />
-        <mesh material={materials['Material #1431659087.001']} geometry={nodes.Mesh128_3.geometry} />
-        <mesh material={materials['Material #1431659088.001']} geometry={nodes.Mesh128_4.geometry} />
+        <mesh castShadow receiveShadow material={materials['Material #1431659086.001']} geometry={nodes.Mesh128.geometry} />
+        <mesh castShadow receiveShadow material={materials['01 - Defaultsaed.001']} geometry={nodes.Mesh128_1.geometry} />
+        <mesh castShadow receiveShadow material={materials['steklo.001']} geometry={nodes.Mesh128_2.geometry} />
+        <mesh castShadow receiveShadow material={materials['Material #1431659087.001']} geometry={nodes.Mesh128_3.geometry} />
+        <mesh castShadow receiveShadow material={materials['Material #1431659088.001']} geometry={nodes.Mesh128_4.geometry} />
       </group>
       <group position={[4.7, 4.69, 6.29]} scale={[0.01, 0.01, 0.01]}>
-        <mesh material={materials['Material #1431659086.001']} geometry={nodes.Mesh127.geometry} />
-        <mesh material={materials['01 - Defaultsaed.001']} geometry={nodes.Mesh127_1.geometry} />
-        <mesh material={materials['steklo.001']} geometry={nodes.Mesh127_2.geometry} />
-        <mesh material={materials['Material #1431659087.001']} geometry={nodes.Mesh127_3.geometry} />
-        <mesh material={materials['Material #1431659088.001']} geometry={nodes.Mesh127_4.geometry} />
+        <mesh castShadow receiveShadow material={materials['Material #1431659086.001']} geometry={nodes.Mesh127.geometry} />
+        <mesh castShadow receiveShadow material={materials['01 - Defaultsaed.001']} geometry={nodes.Mesh127_1.geometry} />
+        <mesh castShadow receiveShadow material={materials['steklo.001']} geometry={nodes.Mesh127_2.geometry} />
+        <mesh castShadow receiveShadow material={materials['Material #1431659087.001']} geometry={nodes.Mesh127_3.geometry} />
+        <mesh castShadow receiveShadow material={materials['Material #1431659088.001']} geometry={nodes.Mesh127_4.geometry} />
       </group>
       <mesh castShadow receiveShadow
         material={materials['Material #1431659630.001']}
@@ -167,8 +167,8 @@ export default function Pump(props) {
         scale={[0.01, 0.01, 0.01]}
       />
       <group position={[3.97, 0, 4.53]} scale={[0.01, 0.01, 0.01]}>
-        <mesh material={materials['Material #1431659630.001']} geometry={nodes.Mesh078.geometry} />
-        <mesh material={materials['Material #1431659226.001']} geometry={nodes.Mesh078_1.geometry} />
+        <mesh castShadow receiveShadow material={materials['Material #1431659630.001']} geometry={nodes.Mesh078.geometry} />
+        <mesh castShadow receiveShadow material={materials['Material #1431659226.001']} geometry={nodes.Mesh078_1.geometry} />
       </group>
       <mesh castShadow receiveShadow
         material={materials['Material #1431659630.001']}
@@ -185,12 +185,12 @@ export default function Pump(props) {
         scale={[0.01, 0.01, 0.01]}
       />
       <group position={[3.97, 0, -1]} scale={[0.01, 0.01, 0.01]}>
-        <mesh material={materials['Material #1431659630.001']} geometry={nodes.Mesh075.geometry} />
-        <mesh material={materials['Material #1431659226.001']} geometry={nodes.Mesh075_1.geometry} />
+        <mesh castShadow receiveShadow material={materials['Material #1431659630.001']} geometry={nodes.Mesh075.geometry} />
+        <mesh castShadow receiveShadow material={materials['Material #1431659226.001']} geometry={nodes.Mesh075_1.geometry} />
       </group>
       <group position={[-7.8, 3.45, 7.76]} rotation={[Math.PI / 2, 0, 0]} scale={[0.01, 0.01, 0.01]}>
-        <mesh material={materials['Material #1431659660.001']} geometry={nodes.Mesh073.geometry} />
-        <mesh material={materials['Material #1431659628.001']} geometry={nodes.Mesh073_1.geometry} />
+        <mesh castShadow receiveShadow material={materials['Material #1431659660.001']} geometry={nodes.Mesh073.geometry} />
+        <mesh castShadow receiveShadow material={materials['Material #1431659628.001']} geometry={nodes.Mesh073_1.geometry} />
       </group>
       <mesh  castShadow receiveShadow
         material={materials['plastic.001']}
@@ -204,8 +204,8 @@ export default function Pump(props) {
         position={[4.01, 1.79, 4.54]}
         scale={[0.38, 0.1, 0.14]}>
         <group position={[-0.05, 2.4, 1.29]} rotation={[0.14, 0, 0]} scale={[1.04, 2.21, 0.32]}>
-          <mesh material={materials['plastic.001']} geometry={nodes.Cube015.geometry} />
-          <mesh material={materials['Screen.001']} geometry={nodes.Cube015_1.geometry} />
+          <mesh castShadow receiveShadow material={materials['plastic.001']} geometry={nodes.Cube015.geometry} />
+          <mesh castShadow receiveShadow material={materials['Screen.001']} geometry={nodes.Cube015_1.geometry} />
         </group>
         <mesh  castShadow receiveShadow
           material={materials['default']}
