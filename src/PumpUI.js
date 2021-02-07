@@ -35,12 +35,12 @@ export default function Labelgroup(props){
     
     return(
     <group visible={props.seen} ref={group}>
-    
+    <Panels index={active}/>
         <Label index={0}  file={Sv} scale={[1.2,0.35,1]} position={[2,3,5.01]} />
         <Label index={1}  file={Ss} scale={[1.5,0.35,1]} position={[3.1,3,5]} />
-        <Label index={2}  file={Siw} scale={[2.3,0.35,1]} position={[5.9,3,5]} />
-        <Label index={3}  file={Sc} scale={[1.5,0.35,1]} position={[4.4,3,5.01]} />
- <Panels index={active}/>
+        <Label index={3}  file={Siw} scale={[2.3,0.35,1]} position={[5.9,3,5]} />
+        <Label index={2}  file={Sc} scale={[1.5,0.35,1]} position={[4.4,3,5.01]} />
+ 
     </group>
     )
 }
