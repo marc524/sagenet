@@ -13,6 +13,9 @@ export default function Store(props) {
   const { nodes, materials } = useGLTF(cstore)
 
   materials['Glass.004'].transparent = true;
+  materials['Glass.004'].opacity = 0.1;
+  materials['Glass.004'].roughness = 0.2;
+  materials['Glass.004'].metalness = 0.5;
   materials['signs.002'].transparent = true;
   materials['signs.002'].alphaMap = useTexture(icon);
 
@@ -297,7 +300,7 @@ export default function Store(props) {
         <mesh castShadow receiveShadow material={materials['plastic black.005']} geometry={nodes.Mesh405_1.geometry} />
       </group>
       <group position={[-0.39, 0.33, -13.19]} rotation={[Math.PI / 2, 0, -Math.PI]} scale={[0.01, 0.01, 0.01]}>
-        <mesh castShadow receiveShadow material={materials['Glass.005']} geometry={nodes.Mesh404.geometry} />
+        <mesh castShadow  material={materials['Glass.005']} geometry={nodes.Mesh404.geometry} />
         <mesh castShadow receiveShadow material={materials['Stainless_Steel.003']} geometry={nodes.Mesh404_1.geometry} />
       </group>
       <mesh castShadow receiveShadow
@@ -439,7 +442,7 @@ export default function Store(props) {
       <group position={[11.27, 2.91, -7.83]} rotation={[-Math.PI / 2, -Math.PI / 2, 0]} scale={[-0.01, -0.01, -0.01]}>
         <mesh castShadow receiveShadow material={materials['Material #2.002']} geometry={nodes.Mesh388.geometry} />
         <mesh castShadow receiveShadow material={materials['Material #3.002']} geometry={nodes.Mesh388_1.geometry} />
-        <mesh castShadow receiveShadow materialOpacity={0.5} material={materials['Glass.004']} geometry={nodes.Mesh388_2.geometry} />
+        <mesh castShadow  materialOpacity={0.5} material={materials['Glass.004']} geometry={nodes.Mesh388_2.geometry} />
         <mesh castShadow receiveShadow material={materials['Material #59 Slot #5.002']} geometry={nodes.Mesh388_3.geometry} />
       </group>
       <group position={[3.64, 0.8, -9.15]} rotation={[Math.PI / 2, 0, -Math.PI]} scale={[0.01, 0.01, 0.01]}>

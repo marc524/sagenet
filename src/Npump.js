@@ -16,6 +16,10 @@ export default function Pump(props) {
 
   materials['Material #1431659661.002'].alphaMap = useTexture(icon);
 
+
+  materials['Material #1431659628.001'].roughness = 0.4;
+  materials['Material #1431659628.001'].metalness = 0.3;
+
   const ntex = useTexture(ntiles);
   ntex.wrapS = 1;
   ntex.wrapT = 1;
@@ -224,7 +228,7 @@ export default function Pump(props) {
           <mesh castShadow receiveShadow material={materials['plastic.001']} geometry={nodes.Cube015.geometry} />
           <mesh castShadow receiveShadow material={materials['Screen.001']} geometry={nodes.Cube015_1.geometry} />
         </group>
-        <mesh  castShadow receiveShadow
+        <mesh visible={false}  castShadow receiveShadow
           material={materials['default']}
           geometry={nodes.Cube007.geometry}
           position={[-0.05, 2.4, -1.29]}
