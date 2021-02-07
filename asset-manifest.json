@@ -1,27 +1,33 @@
 {
   "files": {
     "main.css": "/sagenet/static/css/main.04c25c49.chunk.css",
-    "main.js": "/sagenet/static/js/main.3662e95c.chunk.js",
-    "main.js.map": "/sagenet/static/js/main.3662e95c.chunk.js.map",
+    "main.js": "/sagenet/static/js/main.d70e63ae.chunk.js",
+    "main.js.map": "/sagenet/static/js/main.d70e63ae.chunk.js.map",
     "runtime-main.js": "/sagenet/static/js/runtime-main.602b5895.js",
     "runtime-main.js.map": "/sagenet/static/js/runtime-main.602b5895.js.map",
-    "static/js/2.3d59db14.chunk.js": "/sagenet/static/js/2.3d59db14.chunk.js",
-    "static/js/2.3d59db14.chunk.js.map": "/sagenet/static/js/2.3d59db14.chunk.js.map",
+    "static/js/2.022e0578.chunk.js": "/sagenet/static/js/2.022e0578.chunk.js",
+    "static/js/2.022e0578.chunk.js.map": "/sagenet/static/js/2.022e0578.chunk.js.map",
     "index.html": "/sagenet/index.html",
     "static/css/main.04c25c49.chunk.css.map": "/sagenet/static/css/main.04c25c49.chunk.css.map",
-    "static/js/2.3d59db14.chunk.js.LICENSE.txt": "/sagenet/static/js/2.3d59db14.chunk.js.LICENSE.txt",
+    "static/js/2.022e0578.chunk.js.LICENSE.txt": "/sagenet/static/js/2.022e0578.chunk.js.LICENSE.txt",
+    "static/media/Futura-Condensed.376adcfe.otf": "/sagenet/static/media/Futura-Condensed.376adcfe.otf",
+    "static/media/Skimming_icon.d005ee5b.png": "/sagenet/static/media/Skimming_icon.d005ee5b.png",
     "static/media/asphalt_normal.4800dfa0.jpg": "/sagenet/static/media/asphalt_normal.4800dfa0.jpg",
     "static/media/floor.c759a5e7.glb": "/sagenet/static/media/floor.c759a5e7.glb",
     "static/media/icons.0e1ff2e3.png": "/sagenet/static/media/icons.0e1ff2e3.png",
     "static/media/ncstore2.d8ab5681.glb": "/sagenet/static/media/ncstore2.d8ab5681.glb",
     "static/media/npump.5abc8a13.glb": "/sagenet/static/media/npump.5abc8a13.glb",
+    "static/media/sc.32d8e342.jpg": "/sagenet/static/media/sc.32d8e342.jpg",
+    "static/media/siw.42e14c5f.jpg": "/sagenet/static/media/siw.42e14c5f.jpg",
+    "static/media/ss.a40b2c34.jpg": "/sagenet/static/media/ss.a40b2c34.jpg",
+    "static/media/sv.487bdf0c.jpg": "/sagenet/static/media/sv.487bdf0c.jpg",
     "static/media/tiles_normal.692f3d02.jpg": "/sagenet/static/media/tiles_normal.692f3d02.jpg",
     "static/media/wash.2722fb68.glb": "/sagenet/static/media/wash.2722fb68.glb"
   },
   "entrypoints": [
     "static/js/runtime-main.602b5895.js",
-    "static/js/2.3d59db14.chunk.js",
+    "static/js/2.022e0578.chunk.js",
     "static/css/main.04c25c49.chunk.css",
-    "static/js/main.3662e95c.chunk.js"
+    "static/js/main.d70e63ae.chunk.js"
   ]
 }
