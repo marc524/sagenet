@@ -10,7 +10,8 @@ import Store from './Ncstore2'
 import Base from './Floor'
 import './App.css'
 import * as THREE from 'three'
-import { softShadows, Sky, PerspectiveCamera } from '@react-three/drei'
+import { softShadows, Sky, PerspectiveCamera} from '@react-three/drei'
+import Labelgroup from './PumpUI'
 
 
 //softShadows();
@@ -55,8 +56,8 @@ function Dolly(props){
   // state.camera.position.z = 25 - (state.clock.getElapsedTime()*5) % 15;
   //  state.camera.lookAt(4,1,5)
 
-  state.camera.position.lerp(dummy.set(props.gate? 0:3, props.gate? 4:2, props.gate? 25:10), 0.1);
-  target.lerp(ldummy.set(props.gate? 0:4, props.gate? 4:2, props.gate? -25:5), 0.1);
+  state.camera.position.lerp(dummy.set(props.gate? 0:3, props.gate? 3:2, props.gate? 25:10), 0.1);
+  target.lerp(ldummy.set(props.gate? 0:4, props.gate? 3:2, props.gate? -25:5), 0.1);
   state.camera.lookAt(target);
   
   //console.log(start);
@@ -74,7 +75,7 @@ function App() {
       {/*<CameraControls />*/}
       {/*<PerspectiveCamera makeDefault fov={40} position={[0,3,25]}/>*/}
       <directionalLight castShadow shadowMap={true} shadowBias={-0.0001} shadow-mapSize-height={1024}
-        shadow-mapSize-width={1024} intensity={0.7} position={[0, 7, 20]} />
+        shadow-mapSize-width={1024} intensity={0.8} position={[0, 7, 20]} />
       <hemisphereLight color={"lightblue"} groundColor={"grey"} intensity={0.3} />
       <mesh castShadow receiveShadow visible={false} rotation={[-3.14 / 2, 0, 0]} position={[0, 0, 0]} scale={[100, 100, 1]} >
         <planeBufferGeometry />
@@ -89,7 +90,9 @@ function App() {
         <Pump />
         <Store />
         <Base />
+        <Labelgroup seen={!zoom}/>
       </Suspense>
+     
 
       <Sky
         sunPosition={[0, 1, 0]}
