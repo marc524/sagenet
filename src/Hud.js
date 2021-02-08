@@ -60,6 +60,7 @@ z-index:0;
 
 export default function Hud(){
     const [zoom, set] = useState(true);
+    const [cam, setCam] = useState(false);
 
     return(
         <>
@@ -74,6 +75,11 @@ export default function Hud(){
         <Bar/>
         <Item onClick={() => set(false)}>Forecourt</Item>
         <Bar/>
+        <Item style={!cam?{backgroundColor:"#ff9a00"}:{backgroundColor:"#133A5F"}} onClick={() => setCam(false)}>Dolly Camera</Item>
+        <Bar/>
+        <Bar/>
+        <Item style={cam?{backgroundColor:"#ff9a00"}:{backgroundColor:"#133A5F"}} onClick={() => setCam(true)}>Free Camera</Item>
+        <Bar/>
         </Flex>
         <Flexb>
            <Simg src={logo}/>
@@ -85,7 +91,7 @@ export default function Hud(){
         </Flexb>
        
         
-        <App zoom={zoom}/>
+        <App zoom={zoom} cam={cam}/>
        
         </>
     )

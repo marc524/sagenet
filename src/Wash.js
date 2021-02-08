@@ -15,6 +15,9 @@ export default function Model(props) {
   materials.signs.transparent = true;
   materials.signs.alphaMap = useTexture(icon);
   nodes.Cube009.material.metalness = 0.4;
+  materials['Material #1431659657'].color.set("#F73400");
+  materials['Material #1431659657'].metalness = 0.2;
+  materials['Material #1431659657'].roughness = 0.5;
  
   return (
     <group ref={group} {...props} dispose={null}>

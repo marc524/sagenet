@@ -8,9 +8,37 @@ import './App.css'
 import * as THREE from 'three'
 import { softShadows, Sky, PerspectiveCamera, Billboard } from '@react-three/drei'
 import Labelgroup from './PumpUI'
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
 
 
 //softShadows();
+
+extend({ OrbitControls });
+const CameraControls = (props) => {
+  // Get a reference to the Three.js Camera, and the canvas html element.
+  // We need these to setup the OrbitControls class.
+  // https://threejs.org/docs/#examples/en/controls/OrbitControls
+
+  const {
+    camera,
+    gl: { domElement },
+  } = useThree();
+
+  // Ref to the controls, so that we can update them on every frame with useFrame
+  const controls = useRef();
+  //controls.current.update();
+  
+  //useFrame(() => controls.current.update());
+  return ( 
+    <orbitControls
+      ref={controls}
+      args={[camera, domElement]}
+      //autoRotate={true}
+      enableZoom={true}
+    />
+  );
+};
+
 
 
 
@@ -34,7 +62,11 @@ function Dolly(props) {
 function App(props) {
   return (
     <Canvas gl={{ antialias: true }} shadowMap={true} camera={{ fov: 40, position: [0, 0, 0] }} className="canvas">
-      <fog attach="fog" args={["#c1d6e6", 0, 80]} />
+      <fog attach="fog" args={["#dde9f0", 0, 80]} />
+      {props.cam?
+      <CameraControls cam={props.cam} />:
+      <Dolly gate={props.zoom} />}
+     
       <directionalLight castShadow shadowMap={true} shadowBias={-0.00005} shadow-mapSize-height={1024}
         shadow-mapSize-width={1024} intensity={0.8} position={[0, 7, 20]} />
       <hemisphereLight color={"lightblue"} groundColor={"grey"} intensity={0.8} />
@@ -52,12 +84,11 @@ function App(props) {
       <Sky
         sunPosition={[0, 1, 0]}
         turbidity={2.1}
-        rayleigh={0.109}
+        rayleigh={0.209}
         mieCoefficient={0.006}
         mieDirectionalG={0.941}
         exposure={0.18}
       />
-      <Dolly gate={props.zoom} />
     </Canvas>
   );
 }
