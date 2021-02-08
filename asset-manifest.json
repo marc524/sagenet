@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/sagenet/static/css/main.04c25c49.chunk.css",
-    "main.js": "/sagenet/static/js/main.49a5cd76.chunk.js",
-    "main.js.map": "/sagenet/static/js/main.49a5cd76.chunk.js.map",
+    "main.js": "/sagenet/static/js/main.bfcfedc3.chunk.js",
+    "main.js.map": "/sagenet/static/js/main.bfcfedc3.chunk.js.map",
     "runtime-main.js": "/sagenet/static/js/runtime-main.602b5895.js",
     "runtime-main.js.map": "/sagenet/static/js/runtime-main.602b5895.js.map",
-    "static/js/2.09670e96.chunk.js": "/sagenet/static/js/2.09670e96.chunk.js",
-    "static/js/2.09670e96.chunk.js.map": "/sagenet/static/js/2.09670e96.chunk.js.map",
+    "static/js/2.fe660802.chunk.js": "/sagenet/static/js/2.fe660802.chunk.js",
+    "static/js/2.fe660802.chunk.js.map": "/sagenet/static/js/2.fe660802.chunk.js.map",
     "index.html": "/sagenet/index.html",
     "static/css/main.04c25c49.chunk.css.map": "/sagenet/static/css/main.04c25c49.chunk.css.map",
-    "static/js/2.09670e96.chunk.js.LICENSE.txt": "/sagenet/static/js/2.09670e96.chunk.js.LICENSE.txt",
+    "static/js/2.fe660802.chunk.js.LICENSE.txt": "/sagenet/static/js/2.fe660802.chunk.js.LICENSE.txt",
     "static/media/Futura-Condensed.376adcfe.otf": "/sagenet/static/media/Futura-Condensed.376adcfe.otf",
     "static/media/SageNetwhite.28ee478c.png": "/sagenet/static/media/SageNetwhite.28ee478c.png",
     "static/media/Skimming_icon.d005ee5b.png": "/sagenet/static/media/Skimming_icon.d005ee5b.png",
@@ -21,7 +21,7 @@
     "static/media/ncstore2.d8ab5681.glb": "/sagenet/static/media/ncstore2.d8ab5681.glb",
     "static/media/npump.5abc8a13.glb": "/sagenet/static/media/npump.5abc8a13.glb",
     "static/media/sc.32d8e342.jpg": "/sagenet/static/media/sc.32d8e342.jpg",
-    "static/media/siw.42e14c5f.jpg": "/sagenet/static/media/siw.42e14c5f.jpg",
+    "static/media/siw.ac6bc9fe.jpg": "/sagenet/static/media/siw.ac6bc9fe.jpg",
     "static/media/ss.a40b2c34.jpg": "/sagenet/static/media/ss.a40b2c34.jpg",
     "static/media/sv.487bdf0c.jpg": "/sagenet/static/media/sv.487bdf0c.jpg",
     "static/media/tiles_normal.692f3d02.jpg": "/sagenet/static/media/tiles_normal.692f3d02.jpg",
@@ -29,8 +29,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.602b5895.js",
-    "static/js/2.09670e96.chunk.js",
+    "static/js/2.fe660802.chunk.js",
     "static/css/main.04c25c49.chunk.css",
-    "static/js/main.49a5cd76.chunk.js"
+    "static/js/main.bfcfedc3.chunk.js"
   ]
 }
