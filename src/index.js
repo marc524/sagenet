@@ -1,11 +1,14 @@
 import ReactDOM from 'react-dom'
 import React from 'react'
 import './styles.css'
-import App from './App'
+import HUD from './Hud'
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+ 
+    <HUD/>
+    
   </React.StrictMode>,
   document.getElementById('root')
 );

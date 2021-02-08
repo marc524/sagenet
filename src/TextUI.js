@@ -1,7 +1,8 @@
-import { useTexture, Text } from '@react-three/drei'
+import { useTexture, Text, Plane} from '@react-three/drei'
 import React, { useRef, useState } from 'react'
 import fc from './sagelabel/Futura-Condensed.otf'
 import circ from './sagelabel/circle.png'
+import Overlay from './Overlay'
 
 
 
@@ -38,6 +39,8 @@ export default function Button(props) {
           </mesh>
         </group>
       </group>
+      
+     
     </>
   )
 }
