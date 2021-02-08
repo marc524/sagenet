@@ -26,7 +26,7 @@ export default function Store(props) {
   materials['default'].metalness = 0.5;
   materials['Material #1431659628.003'].metalness = 0.3;
   materials['Material #1431659628.003'].roughness = 0.4;
-  materials['Material #1431659657.003'].color.set("#F73400");
+  materials['Material #1431659657.003'].color.set("#f71d00");
   materials['Material #1431659657.003'].roughness =0.4;
   materials['Material #1431659657.003'].metalness = 0.2;
   
