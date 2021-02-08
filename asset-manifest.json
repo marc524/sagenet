@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/sagenet/static/css/main.04c25c49.chunk.css",
-    "main.js": "/sagenet/static/js/main.bfcfedc3.chunk.js",
-    "main.js.map": "/sagenet/static/js/main.bfcfedc3.chunk.js.map",
+    "main.js": "/sagenet/static/js/main.2b934e3e.chunk.js",
+    "main.js.map": "/sagenet/static/js/main.2b934e3e.chunk.js.map",
     "runtime-main.js": "/sagenet/static/js/runtime-main.602b5895.js",
     "runtime-main.js.map": "/sagenet/static/js/runtime-main.602b5895.js.map",
     "static/js/2.fe660802.chunk.js": "/sagenet/static/js/2.fe660802.chunk.js",
@@ -31,6 +31,6 @@
     "static/js/runtime-main.602b5895.js",
     "static/js/2.fe660802.chunk.js",
     "static/css/main.04c25c49.chunk.css",
-    "static/js/main.bfcfedc3.chunk.js"
+    "static/js/main.2b934e3e.chunk.js"
   ]
 }
