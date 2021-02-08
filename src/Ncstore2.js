@@ -6,6 +6,7 @@ import React, { useRef } from 'react'
 import { useGLTF, useTexture } from '@react-three/drei'
 import cstore from './ncstore2.glb'
 import icon from './icons.png'
+import fridge from './full cooler.jpg'
 
 
 export default function Store(props) {
@@ -18,6 +19,13 @@ export default function Store(props) {
   materials['Glass.004'].metalness = 0.5;
   materials['signs.002'].transparent = true;
   materials['signs.002'].alphaMap = useTexture(icon);
+  materials['fridge int.002'].map = useTexture(fridge);
+  materials['soda.003'].map = useTexture(fridge);
+  materials['soda.003'].map = useTexture(fridge);
+  materials['default'].roughness = 0.3;
+  materials['default'].metalness = 0.5;
+  materials['Material #1431659628.003'].metalness = 0.3;
+  materials['Material #1431659628.003'].roughness = 0.4;
 
 
   
@@ -75,12 +83,12 @@ export default function Store(props) {
         rotation={[Math.PI, 1.57, 0]}
         scale={[-0.01, -0.01, -0.01]}
       />
-      <group position={[-0.4, 0.08, -13.46]} scale={[0.01, 0.01, 0.01]}>
+      <group visible={true} position={[-0.4, 0.08, -13.46]} scale={[0.01, 0.01, 0.01]}>
         <mesh castShadow receiveShadow material={materials['soda.003']} geometry={nodes.Mesh428.geometry} />
         <mesh castShadow receiveShadow material={materials['fridge int.002']} geometry={nodes.Mesh428_1.geometry} />
         <mesh castShadow receiveShadow material={materials['Car_Paint_Metallic.003']} geometry={nodes.Mesh428_2.geometry} />
       </group>
-      <mesh castShadow receiveShadow
+      <mesh  castShadow receiveShadow
         material={materials['Light.002']}
         geometry={nodes.Box150.geometry}
         position={[4.02, 4.21, -12.68]}
@@ -164,7 +172,7 @@ export default function Store(props) {
         rotation={[0, -1.57, 0]}
         scale={[0.01, 0.01, 0.02]}
       />
-      <mesh castShadow receiveShadow
+      <mesh  castShadow receiveShadow
         material={materials['Stainless_Steel.003']}
         geometry={nodes.Box163.geometry}
         position={[-5.92, 1.34, -13.75]}
@@ -299,7 +307,7 @@ export default function Store(props) {
         <mesh castShadow receiveShadow material={materials['Chrome_Slightly_Worn.003']} geometry={nodes.Mesh405.geometry} />
         <mesh castShadow receiveShadow material={materials['plastic black.005']} geometry={nodes.Mesh405_1.geometry} />
       </group>
-      <group position={[-0.39, 0.33, -13.19]} rotation={[Math.PI / 2, 0, -Math.PI]} scale={[0.01, 0.01, 0.01]}>
+      <group visible={false}   position={[-0.39, 0.33, -13.19]} rotation={[Math.PI / 2, 0, -Math.PI]} scale={[0.01, 0.01, 0.01]}>
         <mesh castShadow  material={materials['Glass.005']} geometry={nodes.Mesh404.geometry} />
         <mesh castShadow receiveShadow material={materials['Stainless_Steel.003']} geometry={nodes.Mesh404_1.geometry} />
       </group>

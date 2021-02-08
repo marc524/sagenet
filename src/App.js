@@ -13,9 +13,7 @@ import Labelgroup from './PumpUI'
 //softShadows();
 
 
-const start = new THREE.Vector3(0, 4, 25);
-const end = new THREE.Vector3(3, 2, 10);
-const camvec = start;
+
 const dummy = new THREE.Vector3();
 const ldummy = new THREE.Vector3();
 const target = new THREE.Vector3(0, 0, 0);
@@ -34,13 +32,12 @@ function Dolly(props) {
 
 
 function App(props) {
-  const [zoom, set] = useState(true);
   return (
     <Canvas gl={{ antialias: true }} shadowMap={true} camera={{ fov: 40, position: [0, 0, 0] }} className="canvas">
       <fog attach="fog" args={["#c1d6e6", 0, 80]} />
-      <directionalLight castShadow shadowMap={true} shadowBias={-0.0001} shadow-mapSize-height={1024}
+      <directionalLight castShadow shadowMap={true} shadowBias={-0.00005} shadow-mapSize-height={1024}
         shadow-mapSize-width={1024} intensity={0.8} position={[0, 7, 20]} />
-      <hemisphereLight color={"lightblue"} groundColor={"grey"} intensity={0.3} />
+      <hemisphereLight color={"lightblue"} groundColor={"grey"} intensity={0.8} />
       <mesh castShadow receiveShadow visible={false} rotation={[-3.14 / 2, 0, 0]} position={[0, 0, 0]} scale={[100, 100, 1]} >
         <planeBufferGeometry />
         <meshStandardMaterial color="grey" />
@@ -52,8 +49,6 @@ function App(props) {
         <Base />
         <Labelgroup seen={!props.zoom} />
       </Suspense>
-
-
       <Sky
         sunPosition={[0, 1, 0]}
         turbidity={2.1}

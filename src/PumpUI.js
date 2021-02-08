@@ -7,16 +7,15 @@ import Sv from './sagelabel/sv.jpg'
 import Ss from './sagelabel/ss.jpg'
 import Sc from './sagelabel/sc.jpg'
 import Siw from './sagelabel/siw.jpg'
-
 import { Vector2 } from "three"
 import Panels from './PanelUI'
-
 
 
 
 export default function Labelgroup(props){
     const group = useRef()
     const [active, setActive] = useState(0);
+    
 
     function Label(props){
 
