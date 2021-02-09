@@ -55,6 +55,7 @@ function Sageview(props){
              text={"WATCH OUR VIDEO."}
              position={[4.7, 1.3, 5.01]}
              wx={1.4}
+             vidurl={"https://player.vimeo.com/video/288265859?autoplay=1&title=0&byline=0&portrait=0"}
              icon={video}
              icolor={"#8AD2D2"}
               />
@@ -99,6 +100,7 @@ function Sagesec(props){
              text={"PCI-COMPLIANCE."}
              position={[4.7, 1.3, 5.01]}
              wx={1.3}
+             vidurl={"https://player.vimeo.com/video/501964324?autoplay=1&title=0&byline=0&portrait=0"}
              icon={video}
              icolor={"#72337F"}
               />
@@ -126,6 +128,7 @@ function Sageconnect(props){
              text={"MULTI-SITE MANAGEMENT"}
              position={[6.2, 2.5, 5.01]}
              wx={1.7}
+             vidurl={"https://player.vimeo.com/video/501964524?autoplay=1&title=0&byline=0&portrait=0"}
              icon={video}
              icolor={"#76787B"}
               />
@@ -170,6 +173,7 @@ function Sageiw(props){
              text={"THE VALUE OF DATA @ YOUR LOCATIONS"}
              position={[5.7, 2.5, 5.01]}
              wx={2.5}
+             vidurl={"https://player.vimeo.com/video/501963728?autoplay=1&title=0&byline=0&portrait=0"}
              icon={video}
              icolor={"#E79F37"}
               />
@@ -178,6 +182,7 @@ function Sageiw(props){
              text={"THE 3 PILLARS OF IoT"}
              position={[4.8, 1.6, 5.01]}
              wx={1.3}
+             vidurl={"https://player.vimeo.com/video/501963975?autoplay=1&title=0&byline=0&portrait=0"}
              icon={video}
              icolor={"#E79F37"}
               />

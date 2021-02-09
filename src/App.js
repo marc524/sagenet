@@ -6,9 +6,10 @@ import Store from './Ncstore2'
 import Base from './Floor'
 import './App.css'
 import * as THREE from 'three'
-import { softShadows, Sky, PerspectiveCamera, Billboard } from '@react-three/drei'
+import {  Sky, Loader } from '@react-three/drei'
 import Labelgroup from './PumpUI'
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
+
 
 
 //softShadows();
@@ -60,9 +61,12 @@ function Dolly(props) {
 
 
 function App(props) {
+  //Scene();
   return (
+    <>
     <Canvas gl={{ antialias: true }} shadowMap={true} camera={{ fov: 40, position: [0, 0, 0] }} className="canvas">
       <fog attach="fog" args={["#dde9f0", 0, 80]} />
+     
       {props.cam?
       <CameraControls cam={props.cam} />:
       <Dolly gate={props.zoom} />}
@@ -90,6 +94,8 @@ function App(props) {
         exposure={0.18}
       />
     </Canvas>
+    <Loader containerStyles={{backgroundColor: "rgba(0,0,0,0)"}}/>
+    </>
   );
 }
 
