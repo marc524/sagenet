@@ -94,9 +94,9 @@ function App(props) {
         exposure={0.18}
       />
     </Canvas>
-    <Loader containerStyles={{backgroundColor: "rgba(0,0,0,0)"}}/>
+  
     </>
   );
 }
-
+//  <Loader containerStyles={{backgroundColor: "rgba(0,0,0,0)"}}/>
 export default App;

@@ -8,7 +8,31 @@ import npump from './npump.glb';
 import ntiles from './tiles_normal.jpg';
 import * as THREE from 'three';
 import icon from './icons.png';
-import url from "./soda.mp4";
+import soda from "./soda.mp4";
+import ipad from './ipad.mp4';
+
+function Screen(props){
+  
+  const [video] = useState(() => {
+    const vid = document.createElement("video");
+    vid.src = props.url;
+    vid.crossOrigin = "Anonymous";
+    vid.loop = true;
+    vid.muted = "muted";
+    vid.play();
+    return vid;
+  });
+
+  return(
+    <mesh  scale={props.scale} rotation={props.rotation} position={props.position}>
+      <planeBufferGeometry args={props.pbs} />
+      <meshBasicMaterial>
+      <videoTexture attach="map" args={[video]} />
+      </meshBasicMaterial>
+  </mesh>
+  );
+
+}
 
 export default function Pump(props) {
   const group = useRef()
@@ -40,15 +64,7 @@ export default function Pump(props) {
   materials['Material #1431659657.001'].roughness = 0.3;
   materials['Material #1431659657.001'].color.set("#f72900");
 
-  const [video] = useState(() => {
-    const vid = document.createElement("video");
-    vid.src = url;
-    vid.crossOrigin = "Anonymous";
-    vid.loop = true;
-    vid.muted = "muted";
-    vid.play();
-    return vid;
-  });
+ 
 
   return (
 
@@ -57,12 +73,8 @@ export default function Pump(props) {
     <group  ref={group} {...props} dispose={null}>
 
      
-     <mesh visible={true} scale={[0.38,0.38, 1]} rotation={[0.2,0,0]} position={[4,2.02,4.75]}>
-      <planeBufferGeometry args={[2, 1]} />
-      <meshBasicMaterial>
-      <videoTexture attach="map" args={[video]} />
-      </meshBasicMaterial>
-    </mesh>
+     <Screen url={soda} pbs={[2,1]} position={[4,2.02,4.75]} rotation={[0.2,0,0]} scale={[0.38,0.38, 1]} />
+     <Screen url={ipad} pbs={[1,2]} position={[2.95,0.98,4.9]} rotation={[-0.8,0,0]} scale={[0.2,0.2, 1]} />
       <group position={[-1.14, 0.02, 1.77]} scale={[0.01, 0.01, 0.01]}>
         <mesh  castShadow receiveShadow
           material={materials['Material #1431659626.001']}
