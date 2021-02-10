@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/sagenet/static/css/main.04c25c49.chunk.css",
-    "main.js": "/sagenet/static/js/main.6f968301.chunk.js",
-    "main.js.map": "/sagenet/static/js/main.6f968301.chunk.js.map",
+    "main.js": "/sagenet/static/js/main.146dc995.chunk.js",
+    "main.js.map": "/sagenet/static/js/main.146dc995.chunk.js.map",
     "runtime-main.js": "/sagenet/static/js/runtime-main.602b5895.js",
     "runtime-main.js.map": "/sagenet/static/js/runtime-main.602b5895.js.map",
     "static/js/2.8978aa7e.chunk.js": "/sagenet/static/js/2.8978aa7e.chunk.js",
@@ -18,6 +18,7 @@
     "static/media/floor.c759a5e7.glb": "/sagenet/static/media/floor.c759a5e7.glb",
     "static/media/full cooler.634e247d.jpg": "/sagenet/static/media/full cooler.634e247d.jpg",
     "static/media/icons.0e1ff2e3.png": "/sagenet/static/media/icons.0e1ff2e3.png",
+    "static/media/ipad.ae048032.mp4": "/sagenet/static/media/ipad.ae048032.mp4",
     "static/media/ncstore2.d8ab5681.glb": "/sagenet/static/media/ncstore2.d8ab5681.glb",
     "static/media/npump.5abc8a13.glb": "/sagenet/static/media/npump.5abc8a13.glb",
     "static/media/sc.32d8e342.jpg": "/sagenet/static/media/sc.32d8e342.jpg",
@@ -32,6 +33,6 @@
     "static/js/runtime-main.602b5895.js",
     "static/js/2.8978aa7e.chunk.js",
     "static/css/main.04c25c49.chunk.css",
-    "static/js/main.6f968301.chunk.js"
+    "static/js/main.146dc995.chunk.js"
   ]
 }
