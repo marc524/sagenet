@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/sagenet/static/css/main.04c25c49.chunk.css",
-    "main.js": "/sagenet/static/js/main.146dc995.chunk.js",
-    "main.js.map": "/sagenet/static/js/main.146dc995.chunk.js.map",
+    "main.js": "/sagenet/static/js/main.0adefeb1.chunk.js",
+    "main.js.map": "/sagenet/static/js/main.0adefeb1.chunk.js.map",
     "runtime-main.js": "/sagenet/static/js/runtime-main.602b5895.js",
     "runtime-main.js.map": "/sagenet/static/js/runtime-main.602b5895.js.map",
     "static/js/2.8978aa7e.chunk.js": "/sagenet/static/js/2.8978aa7e.chunk.js",
@@ -15,6 +15,7 @@
     "static/media/Skimming_icon.d005ee5b.png": "/sagenet/static/media/Skimming_icon.d005ee5b.png",
     "static/media/asphalt_normal.4800dfa0.jpg": "/sagenet/static/media/asphalt_normal.4800dfa0.jpg",
     "static/media/download_button.7545c513.png": "/sagenet/static/media/download_button.7545c513.png",
+    "static/media/download_emv.4724226f.png": "/sagenet/static/media/download_emv.4724226f.png",
     "static/media/floor.c759a5e7.glb": "/sagenet/static/media/floor.c759a5e7.glb",
     "static/media/full cooler.634e247d.jpg": "/sagenet/static/media/full cooler.634e247d.jpg",
     "static/media/icons.0e1ff2e3.png": "/sagenet/static/media/icons.0e1ff2e3.png",
@@ -33,6 +34,6 @@
     "static/js/runtime-main.602b5895.js",
     "static/js/2.8978aa7e.chunk.js",
     "static/css/main.04c25c49.chunk.css",
-    "static/js/main.146dc995.chunk.js"
+    "static/js/main.0adefeb1.chunk.js"
   ]
 }
