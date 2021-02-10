@@ -11,6 +11,8 @@ import network from './sagelabel/Network_icon.png'
 import screen from './sagelabel/Screen_icon.png'
 import hs from './sagelabel/download_button.png'
 import ha from './sagelabel/download_buttonA.png'
+import demv from './sagelabel/download_emv.png'
+import dlocation from './sagelabel/download_location.png'
 
 function Sageview(props){
 
@@ -41,7 +43,6 @@ function Sageview(props){
                 index={props.index}
                 linki={hs}
                 linka={ha}
-                link={true}
              text={"HEALTH & SAFETY."}
              url={"https://sagenetvirtual.com/SageNet_6Paradigms6Tools_WP_NEW101620%20(5).pdf"}
              para={health}
@@ -88,6 +89,8 @@ function Sagesec(props){
               />
                <TextUI
                 index={props.index}
+                linki={demv}
+                linka={ha}
              text={"OUTDOOR-EMV."}
              para={etext}
              position={[5.2, 2, 5.01]}
@@ -161,6 +164,8 @@ function Sageiw(props){
               />
               <TextUI
                index={props.index}
+               linki={dlocation}
+               linka={ha}
              text={"LOCATION ANALYTICS."}
              para={ltext}
              position={[2.4, 1.5, 5.01]}

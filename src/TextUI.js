@@ -106,8 +106,8 @@ export default function Button(props) {
           </mesh>
           </>}
             
-          {props.link &&
-            <mesh onClick={() => window.open(props.url)} visible={true} scale={[1.7, 0.35 * 0.6, 1]} rotation={[0, -0.2, 0]} position={[0, -0.4, 0]}>
+          {props.linki &&
+            <mesh onClick={() => window.open(props.url)} visible={true} scale={[1.7, 0.35 * 0.6, 1]} rotation={[0, -0.2, 0]} position={[0, -0.4, 0.1]}>
               <planeBufferGeometry />
               <meshBasicMaterial map={linkimg} transparent={true} alphaMap={linkimgA} attach="material" color="white" />
             </mesh>}
