@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import App from './App'
+import Overworld from './Overworld'
 import { useState } from 'react'
 import logo from './SageNetwhite.png'
 import icon3 from './hudicons/sset3.png'
@@ -90,9 +91,10 @@ export default function Hud(){
            </Br>
         </Flexb>
        
+        <Overworld zoom={zoom} cam={cam}/>
         
-        <App zoom={zoom} cam={cam}/>
        
         </>
     )
 }
+//<App zoom={zoom} cam={cam}/> <Overworld/>

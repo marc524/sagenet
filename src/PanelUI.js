@@ -91,6 +91,7 @@ function Sagesec(props){
                 index={props.index}
                 linki={demv}
                 linka={ha}
+                url={"https://sagenetvirtual.com/SageNet_EMV_WP_NEW110520.pdf"}
              text={"OUTDOOR-EMV."}
              para={etext}
              position={[5.2, 2, 5.01]}
@@ -166,6 +167,7 @@ function Sageiw(props){
                index={props.index}
                linki={dlocation}
                linka={ha}
+               url={"https://sagenetvirtual.com/SageNet_CaptivePortal_WP_NEW091919.pdf"}
              text={"LOCATION ANALYTICS."}
              para={ltext}
              position={[2.4, 1.5, 5.01]}
