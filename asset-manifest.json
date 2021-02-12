@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/sagenet/static/css/main.04c25c49.chunk.css",
-    "main.js": "/sagenet/static/js/main.e598fc2f.chunk.js",
-    "main.js.map": "/sagenet/static/js/main.e598fc2f.chunk.js.map",
+    "main.css": "/sagenet/static/css/main.48a1f97e.chunk.css",
+    "main.js": "/sagenet/static/js/main.5b15ba12.chunk.js",
+    "main.js.map": "/sagenet/static/js/main.5b15ba12.chunk.js.map",
     "runtime-main.js": "/sagenet/static/js/runtime-main.602b5895.js",
     "runtime-main.js.map": "/sagenet/static/js/runtime-main.602b5895.js.map",
-    "static/js/2.b5416f55.chunk.js": "/sagenet/static/js/2.b5416f55.chunk.js",
-    "static/js/2.b5416f55.chunk.js.map": "/sagenet/static/js/2.b5416f55.chunk.js.map",
+    "static/js/2.02a2ad7d.chunk.js": "/sagenet/static/js/2.02a2ad7d.chunk.js",
+    "static/js/2.02a2ad7d.chunk.js.map": "/sagenet/static/js/2.02a2ad7d.chunk.js.map",
     "index.html": "/sagenet/index.html",
-    "static/css/main.04c25c49.chunk.css.map": "/sagenet/static/css/main.04c25c49.chunk.css.map",
-    "static/js/2.b5416f55.chunk.js.LICENSE.txt": "/sagenet/static/js/2.b5416f55.chunk.js.LICENSE.txt",
+    "static/css/main.48a1f97e.chunk.css.map": "/sagenet/static/css/main.48a1f97e.chunk.css.map",
+    "static/js/2.02a2ad7d.chunk.js.LICENSE.txt": "/sagenet/static/js/2.02a2ad7d.chunk.js.LICENSE.txt",
     "static/media/Futura-Condensed.376adcfe.otf": "/sagenet/static/media/Futura-Condensed.376adcfe.otf",
+    "static/media/styles.css": "/sagenet/static/media/SageNetblue.38dc88cd.png",
     "static/media/SageNetwhite.28ee478c.png": "/sagenet/static/media/SageNetwhite.28ee478c.png",
     "static/media/Skimming_icon.d005ee5b.png": "/sagenet/static/media/Skimming_icon.d005ee5b.png",
     "static/media/asphalt_normal.4800dfa0.jpg": "/sagenet/static/media/asphalt_normal.4800dfa0.jpg",
-    "static/media/dnsc.e7f7486a.glb": "/sagenet/static/media/dnsc.e7f7486a.glb",
     "static/media/download_button.7545c513.png": "/sagenet/static/media/download_button.7545c513.png",
     "static/media/download_emv.4724226f.png": "/sagenet/static/media/download_emv.4724226f.png",
     "static/media/dscf.e07d94fe.glb": "/sagenet/static/media/dscf.e07d94fe.glb",
@@ -34,8 +34,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.602b5895.js",
-    "static/js/2.b5416f55.chunk.js",
-    "static/css/main.04c25c49.chunk.css",
-    "static/js/main.e598fc2f.chunk.js"
+    "static/js/2.02a2ad7d.chunk.js",
+    "static/css/main.48a1f97e.chunk.css",
+    "static/js/main.5b15ba12.chunk.js"
   ]
 }
