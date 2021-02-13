@@ -68,4 +68,4 @@ export default function Model(props) {
   )
 }
 
-useGLTF.preload('/wash.glb')
+useGLTF.preload(wash)

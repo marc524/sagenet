@@ -9,7 +9,7 @@ import * as THREE from 'three'
 import {  Sky, Loader } from '@react-three/drei'
 import Labelgroup from './PumpUI'
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
-import Test from './Dnsc'
+
 
 
 
@@ -89,9 +89,7 @@ function App(props) {
         <Store />
         <Base />
         <Labelgroup seen={!props.zoom} />
-        <Test />
-      </Suspense>
-      <Sky
+        <Sky
         sunPosition={[0, 1, 0]}
         turbidity={2.1}
         rayleigh={0.209}
@@ -99,6 +97,8 @@ function App(props) {
         mieDirectionalG={0.941}
         exposure={0.18}
       />
+      </Suspense>
+      
     </Canvas>
   
     </>

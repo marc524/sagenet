@@ -1,9 +1,5 @@
 import React, { useRef, Suspense, useState } from 'react'
 import { Canvas, extend, useThree, useFrame } from "react-three-fiber"
-import Model from './Wash'
-import Pump from './Npump'
-import Store from './Ncstore2'
-import Base from './Floor'
 import './App.css'
 import * as THREE from 'three'
 import {  Sky, Loader } from '@react-three/drei'
@@ -44,7 +40,8 @@ const CameraControls = (props) => {
       minPolarAngle={Math.PI*0.3}
       maxAzimuthAngle={Math.PI *0.1+x}
       minAzimuthAngle={-Math.PI *0.1+x}
-      maxDistance = {50}
+      maxDistance = {22}
+      minDistance = {15}
       enablePan = {false}
     />
   );
@@ -75,31 +72,40 @@ function Overworld(props) {
   return (
     <>
     <Canvas gl={{ antialias: true }} shadowMap={true} camera={{ fov: 40, position: [12.7,5.21,-12.3] }} className="canvas">
-      <fog attach="fog" args={["#dde9f0", 0, 80]} />
+      <fog attach="fog" args={["#dde9f0", 0, 35]} />
      
     
       <CameraControls cam={props.cam} />
      
       <directionalLight castShadow shadowMap={true} shadowBias={-0.00005} shadow-mapSize-height={1024}
         shadow-mapSize-width={1024} intensity={2} position={[2, 1, 10]} />
-      <hemisphereLight color={"white"} groundColor={"blue"} intensity={0.3} />
+      <hemisphereLight color={"white"} groundColor={"#008eff"} intensity={0.2} />
       <mesh castShadow receiveShadow visible={false} rotation={[-3.14 / 2, 0, 0]} position={[0, 0, 0]} scale={[100, 100, 1]} >
         <planeBufferGeometry />
         <meshStandardMaterial color="grey" />
       </mesh>
       <Suspense fallback={null}>
-        <Test />
-      </Suspense>
-      <Sky
+        <Test position={[0,0,0]} />
+        
+        <Test gas={false} rotation={[0,Math.PI*0.5,0]} position={[1.77,0,12]} />
+        <Test gas={false} church={false} church2={false} rotation={[0,Math.PI*0.5,0]} position={[-9,0,11]} />
+        <Test gas={false} church={false} rotation={[0,-Math.PI*0.5,0]}  position={[12,0,-1.5]}  />
+        <Test gas={false}   position={[11.5,0,10]}  />
+        <Test gas={false} rotation={[0,-Math.PI*0.5,0]}  position={[-10,0,-1.8]}  />
+        <Test gas={false} church={false} rotation={[0,Math.PI*0.5,0]}  position={[-2.6,0,-11]}  />
+        <Test gas={false} church={false} rotation={[0,-Math.PI*0.5,0]}  position={[-13.5,0,-13.3]}  />
+        <Test gas={false} church2={false} church={false} rotation={[0,Math.PI,0]}  position={[9.5,0,-12.5]}  />
+        <Sky
         sunPosition={[0, 1, 0]}
-        turbidity={2.1}
-        rayleigh={0.209}
+        turbidity={7.1}
+        rayleigh={0.15}
         mieCoefficient={0.006}
         mieDirectionalG={0.941}
         exposure={0.18}
       />
+      </Suspense>
+     
     </Canvas>
-  
     </>
   );
 }

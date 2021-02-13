@@ -62,15 +62,10 @@ z-index:0;
 export default function Hud(){
     const [zoom, set] = useState(true);
     const [cam, setCam] = useState(false);
+    const [scene, setScene] = useState(true);
 
     return(
         <>
-         <Flex>
-        <Item onClick={() => set(true)}>Cssdh</Item>
-        
-        <Item onClick={() => set(false)}>Forsdh</Item>
-        
-        </Flex>
         <Flex>
         <Item onClick={() => set(true)}>C-Store</Item>
         <Bar/>
@@ -81,6 +76,8 @@ export default function Hud(){
         <Bar/>
         <Item style={cam?{backgroundColor:"#ff9a00"}:{backgroundColor:"#133A5F"}} onClick={() => setCam(true)}>Free Camera</Item>
         <Bar/>
+        <Item onClick={() => setScene(!scene)}>Switch</Item>
+        <Bar/>
         </Flex>
         <Flexb>
            <Simg src={logo}/>
@@ -90,9 +87,10 @@ export default function Hud(){
            <Sicon src={icon3}/>
            </Br>
         </Flexb>
-       
-        <Overworld zoom={zoom} cam={cam}/>
-        
+       {scene?
+        <Overworld zoom={zoom} cam={cam}/>:
+        <App zoom={zoom} cam={cam}/> 
+       }
        
         </>
     )
