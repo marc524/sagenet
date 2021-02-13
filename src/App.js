@@ -38,9 +38,9 @@ const CameraControls = (props) => {
       args={[camera, domElement]}
       //autoRotate={true}
       enableZoom={true}
-     // maxPolarAngle={Math.PI*0.45}
-     // maxDistance = {50}
-     // screenSpacePanning={false}
+      maxPolarAngle={Math.PI*0.45}
+      maxDistance = {50}
+      screenSpacePanning={false}
     />
   );
 };
