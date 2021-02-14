@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/sagenet/static/css/main.48a1f97e.chunk.css",
-    "main.js": "/sagenet/static/js/main.e186005d.chunk.js",
-    "main.js.map": "/sagenet/static/js/main.e186005d.chunk.js.map",
+    "main.js": "/sagenet/static/js/main.551cb8d5.chunk.js",
+    "main.js.map": "/sagenet/static/js/main.551cb8d5.chunk.js.map",
     "runtime-main.js": "/sagenet/static/js/runtime-main.602b5895.js",
     "runtime-main.js.map": "/sagenet/static/js/runtime-main.602b5895.js.map",
-    "static/js/2.7766f904.chunk.js": "/sagenet/static/js/2.7766f904.chunk.js",
-    "static/js/2.7766f904.chunk.js.map": "/sagenet/static/js/2.7766f904.chunk.js.map",
+    "static/js/2.0e7bca15.chunk.js": "/sagenet/static/js/2.0e7bca15.chunk.js",
+    "static/js/2.0e7bca15.chunk.js.map": "/sagenet/static/js/2.0e7bca15.chunk.js.map",
     "index.html": "/sagenet/index.html",
     "static/css/main.48a1f97e.chunk.css.map": "/sagenet/static/css/main.48a1f97e.chunk.css.map",
-    "static/js/2.7766f904.chunk.js.LICENSE.txt": "/sagenet/static/js/2.7766f904.chunk.js.LICENSE.txt",
+    "static/js/2.0e7bca15.chunk.js.LICENSE.txt": "/sagenet/static/js/2.0e7bca15.chunk.js.LICENSE.txt",
     "static/media/Futura-Condensed.376adcfe.otf": "/sagenet/static/media/Futura-Condensed.376adcfe.otf",
     "static/media/styles.css": "/sagenet/static/media/SageNetblue.38dc88cd.png",
     "static/media/SageNetwhite.28ee478c.png": "/sagenet/static/media/SageNetwhite.28ee478c.png",
@@ -37,8 +37,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.602b5895.js",
-    "static/js/2.7766f904.chunk.js",
+    "static/js/2.0e7bca15.chunk.js",
     "static/css/main.48a1f97e.chunk.css",
-    "static/js/main.e186005d.chunk.js"
+    "static/js/main.551cb8d5.chunk.js"
   ]
 }
