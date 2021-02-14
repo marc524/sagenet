@@ -2,7 +2,7 @@ import React, { useRef, Suspense, useState } from 'react'
 import { Canvas, extend, useThree, useFrame } from "react-three-fiber"
 import './App.css'
 import * as THREE from 'three'
-import {  Sky, Loader } from '@react-three/drei'
+import {  Sky, Loader, Sphere } from '@react-three/drei'
 import Labelgroup from './PumpUI'
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
 import Test from './Dscf'
@@ -25,13 +25,13 @@ const CameraControls = (props) => {
   // Ref to the controls, so that we can update them on every frame with useFrame
   const controls = useRef();
   //controls.current.update();
-  console.log(camera);
+  //console.log(camera);
   
   useFrame(() => controls.current.update());
   var x = 2.3;
   return ( 
     <orbitControls
-
+ 
       ref={controls}
       args={[camera, domElement]}
       //autoRotate={true}
@@ -58,7 +58,7 @@ const target = new THREE.Vector3(0, 0, 0);
 function Dolly(props) {
 
   useFrame(state => {
-    state.camera.position.lerp(dummy.set(props.gate ? 0 : 3, props.gate ? 3 : 2, props.gate ? 25 : 10), 0.1);
+   // state.camera.position.lerp(dummy.set(props.gate ? 0 : 3, props.gate ? 3 : 2, props.gate ? 25 : 10), 0.1);
     target.lerp(ldummy.set(props.gate ? 0 : 4, props.gate ? 3 : 2, props.gate ? -25 : 5), 0.1);
     state.camera.lookAt(target);
     state.camera.updateProjectionMatrix()
@@ -77,6 +77,7 @@ function Overworld(props) {
     
       <CameraControls cam={props.cam} />
      
+     
       <directionalLight castShadow shadowMap={true} shadowBias={-0.00005} shadow-mapSize-height={1024}
         shadow-mapSize-width={1024} intensity={2} position={[2, 1, 10]} />
       <hemisphereLight color={"white"} groundColor={"#008eff"} intensity={0.2} />
@@ -84,7 +85,11 @@ function Overworld(props) {
         <planeBufferGeometry />
         <meshStandardMaterial color="grey" />
       </mesh>
+     
+     
       <Suspense fallback={null}>
+      
+      
         <Test position={[0,0,0]} />
         
         <Test gas={false} rotation={[0,Math.PI*0.5,0]} position={[1.77,0,12]} />
@@ -95,6 +100,7 @@ function Overworld(props) {
         <Test gas={false} church={false} rotation={[0,Math.PI*0.5,0]}  position={[-2.6,0,-11]}  />
         <Test gas={false} church={false} rotation={[0,-Math.PI*0.5,0]}  position={[-13.5,0,-13.3]}  />
         <Test gas={false} church2={false} church={false} rotation={[0,Math.PI,0]}  position={[9.5,0,-12.5]}  />
+ 
         <Sky
         sunPosition={[0, 1, 0]}
         turbidity={7.1}
@@ -103,6 +109,7 @@ function Overworld(props) {
         mieDirectionalG={0.941}
         exposure={0.18}
       />
+      {props.obj}
       </Suspense>
      
     </Canvas>

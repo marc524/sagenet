@@ -483,4 +483,4 @@ export default function Store(props) {
   )
 }
 
-useGLTF.preload('/ncstore2.glb')
+useGLTF.preload(cstore)

@@ -33,4 +33,4 @@ export default function Base(props) {
   )
 }
 
-useGLTF.preload('/floor.glb')
+useGLTF.preload(file)

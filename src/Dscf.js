@@ -20,7 +20,7 @@ export default function Model(props) {
   materials.Foliage.transparent = true;
   materials.Foliage.alphaMap = useTexture(folia);
   materials.Foliage.map = useTexture(folic);
-  console.log(materials);
+  //console.log(materials);
   return (
     <group position={props.position} rotation={props.rotation} ref={group} {...props} dispose={null}>
       <mesh material={materials['default']} geometry={nodes.Plane001.geometry} position={[4.0708, 0.1, 2.5311]}>
@@ -1192,4 +1192,4 @@ export default function Model(props) {
   )
 }
 
-useGLTF.preload('/dscf.glb')
+useGLTF.preload(dscf)

@@ -1,4 +1,4 @@
-import { useTexture, Text, Billboard, Plane, meshBounds, Html } from '@react-three/drei'
+import { useTexture, Text,  Plane, meshBounds, Html } from '@react-three/drei'
 import React, { useRef, useState } from 'react'
 import fc from './sagelabel/Futura-Condensed.otf'
 import circ from './sagelabel/circle.png'

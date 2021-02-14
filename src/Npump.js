@@ -286,4 +286,4 @@ export default function Pump(props) {
   )
 }
 
-useGLTF.preload('/npump.glb')
+useGLTF.preload(npump)

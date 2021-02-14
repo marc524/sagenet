@@ -69,7 +69,7 @@ function App(props) {
   //Scene();
   return (
     <>
-    <Canvas gl={{ antialias: true }} shadowMap={true} camera={{ fov: 40, position: [0, 0, 0] }} className="canvas">
+    <Canvas gl={{ antialias: true }} shadowMap={true} camera={{ fov: 40, position: [0, 3, 25] }} className="canvas">
       <fog attach="fog" args={["#dde9f0", 0, 80]} />
      
       {props.cam?
