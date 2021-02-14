@@ -17,26 +17,45 @@ width: 100%;
 background-color: #133A5F;
 display: flex;
 z-index: 1;
+padding-top: 1%;
+padding-bottom: 1%;
 `
 
 const Item = styled.div`
 font-family: "Arial";
-padding: 1.5%;
+padding-top: 0.5%;
+padding-bottom: 0.5%;
+padding-left: 1%;
+padding-right: 1%;
 font-size: 1.3rem;
 color: white;
+//background-color: red;
+margin-top: auto;
+margin-bottom: auto;
+//width: 50%;
+
 &:hover {
 background-color: #ff9a00;
 }
 `
-const Bar = styled.div`
-width: 0.1%;
+const Bar = styled.a`
+width: 0.2%;
+height: 2rem;
+margin-top: auto;
+margin-bottom: auto;
 background-color: white;
 `
+const Empty = styled.div`
+flex-grow: 1;
+background-color: "red";
 
+`
 const Flexb = styled.div`
 position: fixed;
+display: flex;
 bottom: 0;
 right:0;
+//align-items: center;
 //height:100%;
 width: 100%;
 background-color: #133A5F;
@@ -45,6 +64,7 @@ z-index: 1;
 
 const Simg = styled.img`
 margin-left: 2%;
+margin-right: 3%;
 height: 8rem;
 `
 const Sicon = styled.img`
@@ -57,9 +77,7 @@ position: fixed;
 right:0;
 bottom:0;
 z-index:0;
-
 `
-
 
 
 export default function Hud() {
@@ -74,11 +92,11 @@ export default function Hud() {
 
         const [active, setActive] = useState(false);
         let i = 0;
-        
+
         useFrame(({ clock }) => {
             if (active) {
                 i += clock.getDelta();
-                if (i > 0.003) {
+                if (i > 0.005) {
                     //setActive(false);
                     setScene(false);
                 }
@@ -92,11 +110,17 @@ export default function Hud() {
 
             useFrame(state => {
                 if (active) {
-                target.lerp(ldummy.set(props.gate ? props.position[0] : 0, props.gate ? props.position[1] - 2 : 0, props.gate ? props.position[2] : 0), 0.01);
-                
-                state.camera.lookAt(target);
-                state.camera.position.lerp(dummy.set(props.gate ? props.position[0]*1.5 : 12.7, props.gate ? (props.position[1] - 5)*1.5 : 5.21, props.gate ? props.position[2]*1.5 : -12.3), 0.005);
-                state.camera.updateProjectionMatrix()
+                    
+                    //state.camera.position.lerp(dummy.set(props.gate ?  props.position[0] : state.camera.position.x, props.gate ?  props.position[1]-1 : state.camera.position.y, props.gate ?  props.position[2] : state.camera.position.z), 0.003);
+                    target.lerp(ldummy.set(props.gate ? props.position[0] : 0, props.gate ? props.position[1] - 2 : 0, props.gate ? props.position[2] : 0), 0.01);
+
+                    state.camera.lookAt(target);
+                    state.camera.fov -= 0.2;
+                   
+                    state.camera.updateProjectionMatrix()
+                   // state.camera.position.lerp(dummy.set(props.position),0.001);
+                    state.camera.position.lerp(dummy.set(props.gate ? props.position[0]: 12.7, props.gate ?props.position[1] : 5.21, props.gate ? props.position[2] : -12.3), 0.001);
+                    console.log(state.camera.position);
                 }
             })
             return null;
@@ -125,16 +149,41 @@ export default function Hud() {
                 <Bar />
                 <Item onClick={() => set(false)}>Forecourt</Item>
                 <Bar />
-                <Item style={!cam ? { backgroundColor: "#ff9a00" } : { backgroundColor: "#133A5F" }} onClick={() => setCam(false)}>Dolly Camera</Item>
+                <Item >Food Service</Item>
                 <Bar />
+                <Item>POP</Item>
+                <Bar />
+                <Item>Drive Thru</Item>
+                <Bar />
+
+                {!scene &&
+                <>
+                <Item style={!cam ? { backgroundColor: "#ff9a00" } : { backgroundColor: "#133A5F" }} onClick={() => setCam(false)}>Fixed Camera</Item>
                 <Bar />
                 <Item style={cam ? { backgroundColor: "#ff9a00" } : { backgroundColor: "#133A5F" }} onClick={() => setCam(true)}>Free Camera</Item>
                 <Bar />
-                <Item onClick={() => setScene(true)}>Home</Item>
+                </>}
+
+                <Empty />
+                <Item onClick={() => setScene(false)}>C-Store</Item>
                 <Bar />
+                <Item>QSR</Item>
+                <Bar />
+                <Item>Financial</Item>
+                <Bar />
+                <Item>Retail</Item>
+
+
             </Flex>
             <Flexb>
                 <Simg src={logo} />
+
+
+                <Item onClick={() => setScene(true)}>Home</Item><Bar />
+                <Item>About Us</Item><Bar />
+                <Item>Our Solutions</Item><Bar />
+
+
                 <Br>
                     <Sicon src={icon1} />
                     <Sicon src={icon2} />
@@ -143,7 +192,12 @@ export default function Hud() {
             </Flexb>
 
             {scene ?
-                <Overworld obj={<Circ position={[0, 3.8, -5]} text={"C-STORE"} />} zoom={zoom} cam={cam} /> :
+                <Overworld obj={<group>
+                    <Circ position={[3, 4, 2]} text={"FINANCE"} />
+                    <Circ position={[0, 4, 2]} text={"RETAIL"} />
+                    <Circ position={[0, 4, -1.5]} text={"QSR"} />
+                    <Circ position={[0, 3.8, -5]} text={"C-STORE"} />
+                </group>} zoom={zoom} cam={cam} /> :
                 <App zoom={zoom} cam={cam} />
             }
 

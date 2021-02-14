@@ -109,6 +109,7 @@ function Overworld(props) {
         mieDirectionalG={0.941}
         exposure={0.18}
       />
+      
       {props.obj}
       </Suspense>
      
