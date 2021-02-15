@@ -39,7 +39,7 @@ background-color: #ff9a00;
 }
 `
 const Bar = styled.a`
-width: 0.2%;
+width: 0.1%;
 height: 2rem;
 margin-top: auto;
 margin-bottom: auto;
@@ -82,6 +82,7 @@ z-index:0;
 
 export default function Hud() {
     const [zoom, set] = useState(true);
+    const [index, setIndex] = useState(0);
     const [cam, setCam] = useState(false);
     const [scene, setScene] = useState(true);
     const mat = new THREE.MeshBasicMaterial({ color: "#f71d00", transparent: true, opacity: 0.8 });
@@ -110,17 +111,17 @@ export default function Hud() {
 
             useFrame(state => {
                 if (active) {
-                    
+
                     //state.camera.position.lerp(dummy.set(props.gate ?  props.position[0] : state.camera.position.x, props.gate ?  props.position[1]-1 : state.camera.position.y, props.gate ?  props.position[2] : state.camera.position.z), 0.003);
                     target.lerp(ldummy.set(props.gate ? props.position[0] : 0, props.gate ? props.position[1] - 2 : 0, props.gate ? props.position[2] : 0), 0.01);
 
                     state.camera.lookAt(target);
                     state.camera.fov -= 0.2;
-                   
+
                     state.camera.updateProjectionMatrix()
-                   // state.camera.position.lerp(dummy.set(props.position),0.001);
-                    state.camera.position.lerp(dummy.set(props.gate ? props.position[0]: 12.7, props.gate ?props.position[1] : 5.21, props.gate ? props.position[2] : -12.3), 0.001);
-                    console.log(state.camera.position);
+                    // state.camera.position.lerp(dummy.set(props.position),0.001);
+                    state.camera.position.lerp(dummy.set(props.gate ? props.position[0] : 12.7, props.gate ? props.position[1] : 5.21, props.gate ? props.position[2] : -12.3), 0.001);
+                    //console.log(state.camera.position);
                 }
             })
             return null;
@@ -145,24 +146,26 @@ export default function Hud() {
     return (
         <>
             <Flex>
-                <Item onClick={() => set(true)}>C-Store</Item>
+            {!scene &&
+                    <>
+                <Item onClick={() => setIndex(0)}>C-Store</Item>
                 <Bar />
-                <Item onClick={() => set(false)}>Forecourt</Item>
+                <Item onClick={() => setIndex(1)}>Forecourt</Item>
                 <Bar />
-                <Item >Food Service</Item>
+                <Item onClick={() => setIndex(2)}>Food Service</Item>
                 <Bar />
-                <Item>POP</Item>
+                <Item onClick={() => setIndex(3)}>POP</Item>
                 <Bar />
-                <Item>Drive Thru</Item>
-                <Bar />
+                <Item onClick={() => setIndex(4)}>Drive Thru</Item>
 
-                {!scene &&
-                <>
-                <Item style={!cam ? { backgroundColor: "#ff9a00" } : { backgroundColor: "#133A5F" }} onClick={() => setCam(false)}>Fixed Camera</Item>
-                <Bar />
-                <Item style={cam ? { backgroundColor: "#ff9a00" } : { backgroundColor: "#133A5F" }} onClick={() => setCam(true)}>Free Camera</Item>
-                <Bar />
-                </>}
+
+               
+                        <Bar />
+                        <Item style={!cam ? { backgroundColor: "#ff9a00" } : { backgroundColor: "#133A5F" }} onClick={() => setCam(false)}>Fixed Camera</Item>
+                        <Bar />
+                        <Item style={cam ? { backgroundColor: "#ff9a00" } : { backgroundColor: "#133A5F" }} onClick={() => setCam(true)}>Free Camera</Item>
+                        
+                    </>}
 
                 <Empty />
                 <Item onClick={() => setScene(false)}>C-Store</Item>
@@ -181,7 +184,7 @@ export default function Hud() {
 
                 <Item onClick={() => setScene(true)}>Home</Item><Bar />
                 <Item>About Us</Item><Bar />
-                <Item>Our Solutions</Item><Bar />
+                <Item>Our Solutions</Item>
 
 
                 <Br>
@@ -198,7 +201,7 @@ export default function Hud() {
                     <Circ position={[0, 4, -1.5]} text={"QSR"} />
                     <Circ position={[0, 3.8, -5]} text={"C-STORE"} />
                 </group>} zoom={zoom} cam={cam} /> :
-                <App zoom={zoom} cam={cam} />
+                <App index={index} zoom={zoom} cam={cam} />
             }
 
         </>

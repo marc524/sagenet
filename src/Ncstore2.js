@@ -398,16 +398,16 @@ export default function Store(props) {
           <mesh castShadow receiveShadow material={materials['plastic.005']} geometry={nodes.Cube062.geometry} />
           <mesh castShadow receiveShadow material={materials['Screen.012']} geometry={nodes.Cube062_1.geometry} />
         </group>
-        <mesh castShadow receiveShadow
+        <mesh visible={true} castShadow receiveShadow
           material={materials['plastic.007']}
           geometry={nodes.speaker_box.geometry}
-          position={[15.58, -0.34, 3.21]}
-          scale={[3.62, 9.38, 23.44]}>
+          position={[10, -0.34, -12]}
+          scale={[3.62, 9.38, 5.44]}>
           <mesh castShadow receiveShadow
             material={materials['Material.007']}
             geometry={nodes.Sphere.geometry}
-            position={[0.2, 0, -0.69]}
-            scale={[1.06, 0.86, 0.16]}
+            position={[0.2, 0, -0.2]}
+            scale={[1.06, 0.5, 0.5]}
           />
           <mesh castShadow receiveShadow
             material={materials['default']}
