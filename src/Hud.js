@@ -1,11 +1,12 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import App from './App'
 import Overworld from './Overworld'
-import { useRef, useState } from 'react'
+import { useRef, useState, Suspense } from 'react'
 import logo from './SageNetwhite.png'
 import icon3 from './hudicons/sset3.png'
 import icon1 from './hudicons/sset4.png'
 import icon2 from './hudicons/sset5.png'
+import arrow from './hudicons/arrow.png'
 import { Circle, Text } from '@react-three/drei'
 import * as THREE from 'three'
 import futura from './futura.ttc'
@@ -16,7 +17,7 @@ position: fixed;
 width: 100%;
 background-color: #133A5F;
 display: flex;
-z-index: 1;
+z-index: 3;
 padding-top: 1%;
 padding-bottom: 1%;
 `
@@ -59,7 +60,7 @@ right:0;
 //height:100%;
 width: 100%;
 background-color: #133A5F;
-z-index: 1;
+z-index: 3;
 `
 
 const Simg = styled.img`
@@ -78,6 +79,34 @@ right:0;
 bottom:0;
 z-index:0;
 `
+
+const Buttons = styled.div`
+z-index: 3;
+margin-top: auto;
+margin-bottom: auto;
+`
+const Bbar = styled.div`
+position: fixed;
+top:70%;
+width: 100%;
+z-index: 1;
+height: 20%;
+//background-color: red;
+display: flex;
+padding-left: 20%;
+padding-right: 20%;
+`
+
+const Bimg = styled.img`
+margin-top: auto;
+margin-bottom: auto;
+width: 5rem;
+${props => props.right && css`
+transform: rotate(45deg);
+`}
+
+`
+
 
 
 export default function Hud() {
@@ -201,7 +230,17 @@ export default function Hud() {
                     <Circ position={[0, 4, -1.5]} text={"QSR"} />
                     <Circ position={[0, 3.8, -5]} text={"C-STORE"} />
                 </group>} zoom={zoom} cam={cam} /> :
+                <>
+                
                 <App index={index} zoom={zoom} cam={cam} />
+                
+                <Bbar>
+                <Bimg src={arrow} onClick={() => setIndex((index-1 == -1? 4:index-1))}/>
+                <Empty/>
+                <Bimg right src={arrow} onClick={() => setIndex((index+1)%5)}/>
+                </Bbar>
+                
+                </>
             }
 
         </>

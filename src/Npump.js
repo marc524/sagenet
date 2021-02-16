@@ -8,8 +8,9 @@ import npump from './npump.glb';
 import ntiles from './tiles_normal.jpg';
 import * as THREE from 'three';
 import icon from './icons.png';
-import soda from "./soda.mp4";
-import ipad from './ipad.mp4';
+import soda from "./Videos/soda.mp4";
+import ipad from './Videos/ipad.mp4';
+import menu from './Videos/menu.mp4';
 
 function Screen(props){
   
@@ -74,7 +75,14 @@ export default function Pump(props) {
 
      
      <Screen url={soda} pbs={[2,1]} position={[4,2.02,4.75]} rotation={[0.2,0,0]} scale={[0.38,0.38, 1]} />
+     
      <Screen url={ipad} pbs={[1,2]} position={[2.95,0.98,4.9]} rotation={[-0.8,0,0]} scale={[0.2,0.2, 1]} />
+     <group  rotation={[0,Math.PI*0.5,0]} position={[-5.9,0.91,-10.73]}  >
+     <Screen url={ipad} pbs={[1,2]} position={[0,0,0]} rotation={[-0.55,0,0]} scale={[0.23,0.2, 1]} />
+     </group>
+     <Screen url={menu} pbs={[2,1]} position={[-7.2,2.4,-9.32]} rotation={[0,Math.PI*0.5,0]} scale={[0.61,0.69, 1]} />
+     <Screen url={menu} pbs={[2,1]} position={[-7.2,2.4,-10.57]} rotation={[0,Math.PI*0.5,0]} scale={[0.61,0.69, 1]} />
+     <Screen url={menu} pbs={[2,1]} position={[-7.2,2.4,-11.83]} rotation={[0,Math.PI*0.5,0]} scale={[0.61,0.69, 1]} />
       <group position={[-1.14, 0.02, 1.77]} scale={[0.01, 0.01, 0.01]}>
         <mesh  castShadow receiveShadow
           material={materials['Material #1431659626.001']}

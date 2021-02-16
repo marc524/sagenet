@@ -7,7 +7,17 @@ import { useGLTF, useTexture } from '@react-three/drei'
 import cstore from './ncstore2.glb'
 import icon from './icons.png'
 import fridge from './full cooler.jpg'
+import sub from './ImageAssets/italiansub.jpg'
+import covid1 from './ImageAssets/covid1.jpg'
+import covid2 from './ImageAssets/covid2.jpg'
+import * as THREE from 'three'
 
+function Flip(tex,material){
+  let t =  useTexture(tex);
+  t.wrapT = THREE.RepeatWrapping;
+  t.repeat.y = -1;
+  material.map = t;
+}
 
 export default function Store(props) {
   const group = useRef()
@@ -19,17 +29,28 @@ export default function Store(props) {
   materials['Glass.004'].metalness = 0.5;
   materials['signs.002'].transparent = true;
   materials['signs.002'].alphaMap = useTexture(icon);
-  materials['fridge int.002'].map = useTexture(fridge);
+  //materials['fridge int.002'].map = useTexture(fridge);
   materials['soda.003'].map = useTexture(fridge);
   materials['soda.003'].map = useTexture(fridge);
-  materials['default'].roughness = 0.3;
-  materials['default'].metalness = 0.5;
+  materials['default'].roughness = 0.7;
+  materials['default'].metalness = 0.1;
   materials['Material #1431659628.003'].metalness = 0.3;
   materials['Material #1431659628.003'].roughness = 0.4;
   materials['Material #1431659657.003'].color.set("#f71d00");
   materials['Material #1431659657.003'].roughness =0.4;
   materials['Material #1431659657.003'].metalness = 0.2;
+  materials['Chrome_Slightly_Worn.003'].roughness = 0.4;
+  materials['Chrome_Slightly_Worn.003'].metalness = 0.7;
+
+  let sandwich =  useTexture(sub);
+  sandwich.wrapT = THREE.RepeatWrapping;
+  sandwich.repeat.y = -1;
+  materials['Material #2121708538.002'].map = sandwich;
   
+
+  Flip(covid1,materials['Material #2121708537.002']); 
+  const _covid2 = new THREE.MeshBasicMaterial();
+  Flip(covid2,_covid2);
 
 
   
@@ -365,6 +386,13 @@ export default function Store(props) {
         position={[-3.05, 1.34, -13.75]}
         rotation={[0, -1.57, 0]}
         scale={[0.01, 0.01, 0.02]}
+      />
+       <mesh castShadow receiveShadow
+        material={_covid2}
+        geometry={nodes.Object057001.geometry}
+        position={[2.15, 1.65, -13.62]}
+        rotation={[0, -1.57, -0.09]}
+        scale={[0.01, 0.008, 0.022]}
       />
       <mesh castShadow receiveShadow
         material={materials['Material #2121708538.002']}
