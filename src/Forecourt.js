@@ -1,4 +1,4 @@
-import React, { useRef, Suspense, useState } from 'react'
+import React, { Suspense} from 'react'
 import TextUI from './TextUI'
 import graph from './sagelabel/Graph_icon.png'
 import location from './sagelabel/Location_icon.png'
@@ -25,7 +25,8 @@ function Sageview(props){
              index={props.index}
              text={"LOYALTY INTERGRATION/PROMOTION."}
              para={fuel}
-             position={[2, 2.1, 5.01]}
+             position={[0, 2.1, 0]}
+             skew={-0.2}
              wx={2.3}
              icon={graph}
              icolor={"#8AD2D2"}
@@ -34,7 +35,8 @@ function Sageview(props){
                index={props.index}
              text={"PUMP-SIDE ORDERING."}
              para={pump}
-             position={[2, 1.5, 5.01]}
+             position={[0, 1.5, 0]}
+             skew={-0.2}
              wx={1.5}
              icon={location}
              icolor={"#8AD2D2"}
@@ -46,7 +48,8 @@ function Sageview(props){
              text={"HEALTH & SAFETY."}
              url={"https://sagenetvirtual.com/SageNet_6Paradigms6Tools_WP_NEW101620%20(5).pdf"}
              para={health}
-             position={[5.2, 2, 5.01]}
+             position={[3.2, 2, 0]}
+             skew={-0.2}
              wx={1.5}
              icon={heart}
              icolor={"#8AD2D2"}
@@ -54,7 +57,8 @@ function Sageview(props){
                 <TextUI
                  index={props.index}
              text={"WATCH OUR VIDEO."}
-             position={[4.7, 1.3, 5.01]}
+             position={[2.7, 1.3, 0]}
+             skew={-0.2}
              wx={1.4}
              vidurl={"https://player.vimeo.com/video/288265859?autoplay=1&title=0&byline=0&portrait=0"}
              icon={video}
@@ -73,7 +77,8 @@ function Sagesec(props){
              index={props.index}
              text={"SECURE WI-FI."}
              para={wtext}
-             position={[2.5, 2.5, 5.01]}
+             position={[0.5, 2.5, 0]}
+             skew={-0.2}
              wx={1.3}
              icon={wifi}
              icolor={"#72337F"}
@@ -82,7 +87,8 @@ function Sagesec(props){
                index={props.index}
                para={stext}
              text={"SKIMMING."}
-             position={[2.8, 1.5, 5.01]}
+             position={[0.8, 1.5, 0]}
+             skew={-0.2}
              wx={1}
              icon={skim}
              icolor={"#72337F"}
@@ -94,7 +100,8 @@ function Sagesec(props){
                 url={"https://sagenetvirtual.com/SageNet_EMV_WP_NEW110520.pdf"}
              text={"OUTDOOR-EMV."}
              para={etext}
-             position={[5.2, 2, 5.01]}
+             position={[3.2, 2, 0]}
+             skew={-0.2}
              wx={1.2}
              icon={emv}
              icolor={"#72337F"}
@@ -102,7 +109,8 @@ function Sagesec(props){
                 <TextUI
                  index={props.index}
              text={"PCI-COMPLIANCE."}
-             position={[4.7, 1.3, 5.01]}
+             position={[2.7, 1.3, 0]}
+             skew={-0.2}
              wx={1.3}
              vidurl={"https://player.vimeo.com/video/501964324?autoplay=1&title=0&byline=0&portrait=0"}
              icon={video}
@@ -122,7 +130,8 @@ function Sageconnect(props){
               index={props.index}
              text={"EMV/MNSP."}
              para={etext}
-             position={[2.5, 1.5, 5.01]}
+             position={[0.5, 1.5, 0]}
+             skew={-0.2}
              wx={1}
              icon={emv}
              icolor={"#76787B"}
@@ -130,7 +139,8 @@ function Sageconnect(props){
                <TextUI
                 index={props.index}
              text={"MULTI-SITE MANAGEMENT"}
-             position={[6.2, 2.5, 5.01]}
+             position={[4.2, 2.5, 0]}
+             skew={-0.2}
              wx={1.7}
              vidurl={"https://player.vimeo.com/video/501964524?autoplay=1&title=0&byline=0&portrait=0"}
              icon={video}
@@ -140,7 +150,8 @@ function Sageconnect(props){
                  index={props.index}
              text={"CONNECTIVITY CERTAINTY."}
              para={ctext}
-             position={[5.5, 1.6, 5.01]}
+             position={[3.5, 1.6, 0]}
+             skew={-0.2}
              wx={1.7}
              icon={network}
              icolor={"#76787B"}
@@ -158,7 +169,8 @@ function Sageiw(props){
              index={props.index}
              text={"CAPTIVE PORTAL."}
              para={ctext}
-             position={[2.3, 2.4, 5.01]}
+             position={[0.3, 2.4, 0]}
+             skew={-0.2}
              wx={1.3}
              icon={screen}
              icolor={"#E79F37"}
@@ -170,7 +182,8 @@ function Sageiw(props){
                url={"https://sagenetvirtual.com/SageNet_CaptivePortal_WP_NEW091919.pdf"}
              text={"LOCATION ANALYTICS."}
              para={ltext}
-             position={[2.4, 1.5, 5.01]}
+             position={[0.4, 1.5, 0]}
+             skew={-0.2}
              wx={1.4}
              icon={location}
              icolor={"#E79F37"}
@@ -178,7 +191,8 @@ function Sageiw(props){
                <TextUI
                 index={props.index}
              text={"THE VALUE OF DATA @ YOUR LOCATIONS"}
-             position={[5.7, 2.5, 5.01]}
+             position={[3.7, 2.5, 0]}
+             skew={-0.2}
              wx={2.5}
              vidurl={"https://player.vimeo.com/video/501963728?autoplay=1&title=0&byline=0&portrait=0"}
              icon={video}
@@ -187,7 +201,8 @@ function Sageiw(props){
                 <TextUI
                  index={props.index}
              text={"THE 3 PILLARS OF IoT"}
-             position={[4.8, 1.6, 5.01]}
+             position={[2.8, 1.6, 0]}
+             skew={-0.2}
              wx={1.3}
              vidurl={"https://player.vimeo.com/video/501963975?autoplay=1&title=0&byline=0&portrait=0"}
              icon={video}
@@ -210,7 +225,7 @@ function GetComponent(props){
     }
   }
 
-export default function Panel(props){
+export default function Forecourt(props){
    
 
     return(

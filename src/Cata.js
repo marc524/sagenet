@@ -8,11 +8,12 @@ import Ss from './sagelabel/ss.jpg'
 import Sc from './sagelabel/sc.jpg'
 import Siw from './sagelabel/siw.jpg'
 import { Vector2 } from "three"
-import PanelUI from './PanelUI'
+import Forecourt from './Forecourt'
+import Foodservice from './Foodservice'
 
 
 
-export default function Labelgroup(props){
+export default function Cata(props){
     const group = useRef()
     const [active, setActive] = useState(0);
     
@@ -34,13 +35,16 @@ export default function Labelgroup(props){
     
     return(
     <group position={props.position} rotation={props.rotation} visible={props.seen} ref={group}>
-        <group position={[0,-1*props.position[1],0]}>
-    <PanelUI index={active}/>
+        <group position={[0,-3,0]}>
+        {props.index == 1 &&
+    <Forecourt index={active}/>}
+    {props.index == 2 &&
+    <Foodservice index={active}/>}
     </group>
-        <Label index={0}  file={Sv} scale={[1.2,0.35,1]} position={[2,0,5.01]} />
-        <Label index={1}  file={Ss} scale={[1.5,0.35,1]} position={[3.1,0,5]} />
-        <Label index={3}  file={Siw} scale={[2.3,0.35,1]} position={[5.9,0,5]} />
-        <Label index={2}  file={Sc} scale={[1.5,0.35,1]} position={[4.4,0,5.01]} />
+        <Label index={0}  file={Sv} scale={[1.2,0.35,1]} position={[0,0,0.01]} />
+        <Label index={1}  file={Ss} scale={[1.5,0.35,1]} position={[1.1,0,0]} />
+        <Label index={3}  file={Siw} scale={[2.3,0.35,1]} position={[3.9,0,0]} />
+        <Label index={2}  file={Sc} scale={[1.5,0.35,1]} position={[2.4,0,0.01]} />
  
     </group>
     )

@@ -87,7 +87,7 @@ margin-bottom: auto;
 `
 const Bbar = styled.div`
 position: fixed;
-top:70%;
+top:71%;
 width: 100%;
 z-index: 1;
 height: 20%;

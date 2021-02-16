@@ -6,12 +6,12 @@ import Store from './Ncstore2'
 import Base from './Floor'
 import './App.css'
 import * as THREE from 'three'
-import { Sky, Sphere } from '@react-three/drei'
-import PumpUI from './PumpUI'
+import { Sky } from '@react-three/drei'
+import Cata from './Cata'
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
 import styled, { css } from 'styled-components'
 import logo from './SageNetblue.png'
-import arrow from './hudicons/arrow.png'
+
 
 
 
@@ -71,8 +71,8 @@ function Dolly(props) {
         Look = [4, 2, 5];
         break;
       case 2:
-        Pos = [-1, 1, -11];
-        Look = [-10, 2, -11];
+        Pos = [-1, 1.5, -10.8];
+        Look = [-10, 2, -10.8];
         break;
       case 3:
         Pos = [-1, 1.5, -12];
@@ -199,8 +199,8 @@ function App(props) {
           <Pump />
           <Store />
           <Base />
-          <PumpUI position={[0,3,0]} rotation={[0,0,0]} seen={props.index == 1} />
-          <PumpUI position={[-11,3,-6.7]} rotation={[0,Math.PI*0.55,0]} seen={props.index == 2} />
+          <Cata index={props.index} position={[2,3,5]} rotation={[0,0,0]} seen={props.index == 1} />
+          <Cata index={props.index} position={[-6,2.7,-9]} rotation={[0,Math.PI*0.5,0]} seen={props.index == 2} />
           <Sky
             sunPosition={[0, 1, 0]}
             turbidity={2.1}
@@ -219,5 +219,5 @@ function App(props) {
     </>
   );
 }
-//  <Loader containerStyles={{backgroundColor: "rgba(0,0,0,0)"}}/>
+
 export default App;

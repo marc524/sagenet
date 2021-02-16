@@ -71,9 +71,9 @@ export default function Button(props) {
         </group>
       </group>
       {clicked &&
-        <group position={[3.8, 2.1, 6]}>
-          <Plane args={[3, 1.75]} position={[0, 0, -0.1]} rotation={[0, -0.2, 0]} />
-          <Plane raycast={meshBounds} onClick={() => setClick(false)} rotation={[0, -0.2, 0]} position={[0, 0, -0.01]} args={[50, 50]}>
+        <group position={[1.8, 2.1, 1]}>
+          <Plane args={[3, 1.75]} position={[0, 0, -0.1]} rotation={[0, props.skew, 0]} />
+          <Plane raycast={meshBounds} onClick={() => setClick(false)} rotation={[0, props.skew, 0]} position={[0, 0, -0.01]} args={[50, 50]}>
             <meshBasicMaterial transparent={true} opacity={0.5} attach="material" color="white" />
           </Plane>
         {!props.vidurl &&
@@ -94,20 +94,20 @@ export default function Button(props) {
          
           </group>
          
-          <Text position={[0, 0.6, 0.1]} rotation={[0, -0.2, 0]} font={fc} fontSize={0.17} color={"#05111C"} anchorX="center" anchorY="middle" >
+          <Text position={[0, 0.6, 0.1]} rotation={[0, props.skew, 0]} font={fc} fontSize={0.17} color={"#05111C"} anchorX="center" anchorY="middle" >
             {props.text}
           </Text>
-          <Text position={[0, 0.1, 0.1]} rotation={[0, -0.2, 0]} font={"Arial"} fontSize={0.07} textAlign={"center"} maxWidth={2} color={"#05111C"} anchorX="center" anchorY="middle" >
+          <Text position={[0, 0.1, 0.1]} rotation={[0, props.skew, 0]} font={"Arial"} fontSize={0.07} textAlign={"center"} maxWidth={2} color={"#05111C"} anchorX="center" anchorY="middle" >
             {props.para}
           </Text>
-          <mesh visible={true} scale={bannersize} rotation={[0, -0.2, 0]} position={[0, -0.7, 0]}>
+          <mesh visible={true} scale={bannersize} rotation={[0, props.skew, 0]} position={[0, -0.7, 0]}>
             <planeBufferGeometry />
             <meshBasicMaterial map={label} attach="material" color="white" />
           </mesh>
           </>}
             
           {props.linki &&
-            <mesh onClick={() => window.open(props.url)} visible={true} scale={[1.7, 0.35 * 0.6, 1]} rotation={[0, -0.2, 0]} position={[0, -0.4, 0.1]}>
+            <mesh onClick={() => window.open(props.url)} visible={true} scale={[1.7, 0.35 * 0.6, 1]} rotation={[0, props.skew, 0]} position={[0, -0.4, 0.1]}>
               <planeBufferGeometry />
               <meshBasicMaterial map={linkimg} transparent={true} alphaMap={linkimgA} attach="material" color="white" />
             </mesh>}

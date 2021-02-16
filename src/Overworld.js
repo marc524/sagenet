@@ -3,7 +3,6 @@ import { Canvas, extend, useThree, useFrame } from "react-three-fiber"
 import './App.css'
 import * as THREE from 'three'
 import {  Sky, Loader, Sphere } from '@react-three/drei'
-import Labelgroup from './PumpUI'
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
 import Test from './Dscf'
 
