@@ -10,10 +10,12 @@ import fridge from './full cooler.jpg'
 import sub from './ImageAssets/italiansub.jpg'
 import covid1 from './ImageAssets/covid1.jpg'
 import covid2 from './ImageAssets/covid2.jpg'
+import louis from './ImageAssets/louis.jpg'
+import client from './ImageAssets/newclient.jpg'
 import * as THREE from 'three'
 
-function Flip(tex,material){
-  let t =  useTexture(tex);
+function Flip(tex, material) {
+  let t = useTexture(tex);
   t.wrapT = THREE.RepeatWrapping;
   t.repeat.y = -1;
   material.map = t;
@@ -37,24 +39,34 @@ export default function Store(props) {
   materials['Material #1431659628.003'].metalness = 0.3;
   materials['Material #1431659628.003'].roughness = 0.4;
   materials['Material #1431659657.003'].color.set("#f71d00");
-  materials['Material #1431659657.003'].roughness =0.4;
+  materials['Material #1431659657.003'].roughness = 0.4;
   materials['Material #1431659657.003'].metalness = 0.2;
   materials['Chrome_Slightly_Worn.003'].roughness = 0.4;
   materials['Chrome_Slightly_Worn.003'].metalness = 0.7;
 
-  let sandwich =  useTexture(sub);
+  let sandwich = useTexture(sub);
   sandwich.wrapT = THREE.RepeatWrapping;
   sandwich.repeat.y = -1;
   materials['Material #2121708538.002'].map = sandwich;
-  
-
-  Flip(covid1,materials['Material #2121708537.002']); 
-  const _covid2 = new THREE.MeshBasicMaterial();
-  Flip(covid2,_covid2);
 
 
-  
- 
+  Flip(covid1, materials['Material #2121708537.002']);
+  materials['Material #2121708537.002'].metalness = 0.8;
+  materials['Material #2121708537.002'].roughness = 0.3;
+  const _covid2 = new THREE.MeshStandardMaterial();
+  _covid2.metalness = 0.7;
+  _covid2.roughness = 0.35;
+  Flip(covid2, _covid2);
+
+  const _louis = new THREE.MeshStandardMaterial();
+  _louis.metalness = 0.9;
+  _louis.roughness = 0.5;
+  Flip(louis,_louis);
+
+  const _client = new THREE.MeshBasicMaterial();
+  Flip(client,_client);
+
+
   return (
     <group ref={group} {...props} dispose={null}>
       <group position={[-1.6, 0.02, -10.4]} scale={[0.01, 0.01, 0.01]}>
@@ -113,7 +125,7 @@ export default function Store(props) {
         <mesh castShadow receiveShadow material={materials['fridge int.002']} geometry={nodes.Mesh428_1.geometry} />
         <mesh castShadow receiveShadow material={materials['Car_Paint_Metallic.003']} geometry={nodes.Mesh428_2.geometry} />
       </group>
-      <mesh  castShadow receiveShadow
+      <mesh castShadow receiveShadow
         material={materials['Light.002']}
         geometry={nodes.Box150.geometry}
         position={[4.02, 4.21, -12.68]}
@@ -197,7 +209,7 @@ export default function Store(props) {
         rotation={[0, -1.57, 0]}
         scale={[0.01, 0.01, 0.02]}
       />
-      <mesh  castShadow receiveShadow
+      <mesh castShadow receiveShadow
         material={materials['Stainless_Steel.003']}
         geometry={nodes.Box163.geometry}
         position={[-5.92, 1.34, -13.75]}
@@ -332,8 +344,8 @@ export default function Store(props) {
         <mesh castShadow receiveShadow material={materials['Chrome_Slightly_Worn.003']} geometry={nodes.Mesh405.geometry} />
         <mesh castShadow receiveShadow material={materials['plastic black.005']} geometry={nodes.Mesh405_1.geometry} />
       </group>
-      <group visible={false}   position={[-0.39, 0.33, -13.19]} rotation={[Math.PI / 2, 0, -Math.PI]} scale={[0.01, 0.01, 0.01]}>
-        <mesh castShadow  material={materials['Glass.005']} geometry={nodes.Mesh404.geometry} />
+      <group visible={false} position={[-0.39, 0.33, -13.19]} rotation={[Math.PI / 2, 0, -Math.PI]} scale={[0.01, 0.01, 0.01]}>
+        <mesh castShadow material={materials['Glass.005']} geometry={nodes.Mesh404.geometry} />
         <mesh castShadow receiveShadow material={materials['Stainless_Steel.003']} geometry={nodes.Mesh404_1.geometry} />
       </group>
       <mesh castShadow receiveShadow
@@ -387,12 +399,26 @@ export default function Store(props) {
         rotation={[0, -1.57, 0]}
         scale={[0.01, 0.01, 0.02]}
       />
-       <mesh castShadow receiveShadow
+      <mesh castShadow receiveShadow
         material={_covid2}
         geometry={nodes.Object057001.geometry}
         position={[2.15, 1.65, -13.62]}
         rotation={[0, -1.57, -0.09]}
         scale={[0.01, 0.008, 0.022]}
+      />
+      <mesh castShadow receiveShadow
+        material={_louis}
+        geometry={nodes.Object057001.geometry}
+        position={[4.99, 1.65, -10.3]}
+        rotation={[0, -2*Math.PI, 0]}
+        scale={[0.01, 0.008, 0.022]}
+      />
+      <mesh castShadow receiveShadow
+        material={_client}
+        geometry={nodes.Object057001.geometry}
+        position={[2.94, 1.13, -12.08]}
+        rotation={[0, -2*Math.PI, -0.55]}
+        scale={[0.01, 0.0023, 0.0019]}
       />
       <mesh castShadow receiveShadow
         material={materials['Material #2121708538.002']}
@@ -482,7 +508,7 @@ export default function Store(props) {
       <group position={[11.27, 2.91, -7.83]} rotation={[-Math.PI / 2, -Math.PI / 2, 0]} scale={[-0.01, -0.01, -0.01]}>
         <mesh castShadow receiveShadow material={materials['Material #2.002']} geometry={nodes.Mesh388.geometry} />
         <mesh castShadow receiveShadow material={materials['Material #3.002']} geometry={nodes.Mesh388_1.geometry} />
-        <mesh castShadow  materialOpacity={0.5} material={materials['Glass.004']} geometry={nodes.Mesh388_2.geometry} />
+        <mesh castShadow materialOpacity={0.5} material={materials['Glass.004']} geometry={nodes.Mesh388_2.geometry} />
         <mesh castShadow receiveShadow material={materials['Material #59 Slot #5.002']} geometry={nodes.Mesh388_3.geometry} />
       </group>
       <group position={[3.64, 0.8, -9.15]} rotation={[Math.PI / 2, 0, -Math.PI]} scale={[0.01, 0.01, 0.01]}>

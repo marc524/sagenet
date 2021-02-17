@@ -4,6 +4,7 @@ import Model from './Wash'
 import Pump from './Npump'
 import Store from './Ncstore2'
 import Base from './Floor'
+import Dcigs from './GasModels/Dcigs'
 import './App.css'
 import * as THREE from 'three'
 import { Sky } from '@react-three/drei'
@@ -199,6 +200,7 @@ function App(props) {
           <Pump />
           <Store />
           <Base />
+          <Dcigs/>
           <Cata index={props.index} position={[2,3,5]} rotation={[0,0,0]} seen={props.index == 1} />
           <Cata index={props.index} position={[-6,2.7,-9]} rotation={[0,Math.PI*0.5,0]} seen={props.index == 2} />
           <Sky
