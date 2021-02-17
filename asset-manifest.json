@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/sagenet/static/css/main.48a1f97e.chunk.css",
-    "main.js": "/sagenet/static/js/main.fd56db04.chunk.js",
-    "main.js.map": "/sagenet/static/js/main.fd56db04.chunk.js.map",
+    "main.js": "/sagenet/static/js/main.71a9b7a7.chunk.js",
+    "main.js.map": "/sagenet/static/js/main.71a9b7a7.chunk.js.map",
     "runtime-main.js": "/sagenet/static/js/runtime-main.602b5895.js",
     "runtime-main.js.map": "/sagenet/static/js/runtime-main.602b5895.js.map",
     "static/js/2.9e562437.chunk.js": "/sagenet/static/js/2.9e562437.chunk.js",
@@ -10,7 +10,9 @@
     "index.html": "/sagenet/index.html",
     "static/css/main.48a1f97e.chunk.css.map": "/sagenet/static/css/main.48a1f97e.chunk.css.map",
     "static/js/2.9e562437.chunk.js.LICENSE.txt": "/sagenet/static/js/2.9e562437.chunk.js.LICENSE.txt",
+    "static/media/6para_button.3d52e526.jpg": "/sagenet/static/media/6para_button.3d52e526.jpg",
     "static/media/Futura-Condensed.376adcfe.otf": "/sagenet/static/media/Futura-Condensed.376adcfe.otf",
+    "static/media/SAT_icon.ff1db72f.png": "/sagenet/static/media/SAT_icon.ff1db72f.png",
     "static/media/styles.css": "/sagenet/static/media/SageNetblue.38dc88cd.png",
     "static/media/SageNetwhite.28ee478c.png": "/sagenet/static/media/SageNetwhite.28ee478c.png",
     "static/media/Skimming_icon.d005ee5b.png": "/sagenet/static/media/Skimming_icon.d005ee5b.png",
@@ -31,6 +33,8 @@
     "static/media/menu.4f18f334.mp4": "/sagenet/static/media/menu.4f18f334.mp4",
     "static/media/ncstore2.d8ab5681.glb": "/sagenet/static/media/ncstore2.d8ab5681.glb",
     "static/media/npump.5abc8a13.glb": "/sagenet/static/media/npump.5abc8a13.glb",
+    "static/media/optimize_button.7b00c70f.jpg": "/sagenet/static/media/optimize_button.7b00c70f.jpg",
+    "static/media/pci_button.ec24c110.jpg": "/sagenet/static/media/pci_button.ec24c110.jpg",
     "static/media/sc.32d8e342.jpg": "/sagenet/static/media/sc.32d8e342.jpg",
     "static/media/signage.b7924610.jpg": "/sagenet/static/media/signage.b7924610.jpg",
     "static/media/siw.ac6bc9fe.jpg": "/sagenet/static/media/siw.ac6bc9fe.jpg",
@@ -44,6 +48,6 @@
     "static/js/runtime-main.602b5895.js",
     "static/js/2.9e562437.chunk.js",
     "static/css/main.48a1f97e.chunk.css",
-    "static/js/main.fd56db04.chunk.js"
+    "static/js/main.71a9b7a7.chunk.js"
   ]
 }
