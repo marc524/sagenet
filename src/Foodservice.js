@@ -1,19 +1,24 @@
 import React, { Suspense } from 'react'
 import TextUI from './TextUI'
-import graph from './sagelabel/Graph_icon.png'
+
 import location from './sagelabel/Location_icon.png'
-import heart from './sagelabel/heart.png'
 import video from './sagelabel/Video-icon.png'
 import wifi from './sagelabel/Secure Wi-Fi_Icon.png'
-import skim from './sagelabel/Skimming_icon.png'
-import emv from './sagelabel/EMV_icon.png'
-import network from './sagelabel/Network_icon.png'
+
 import screen from './sagelabel/Screen_icon.png'
-import hs from './sagelabel/download_button.png'
+
 import ha from './sagelabel/download_buttonA.png'
 import demv from './sagelabel/download_emv.png'
 import dlocation from './sagelabel/download_location.png'
 import signage from './sagelabel/signage.jpg'
+import pcib from './sagelabel/pci_button.jpg'
+import tech from './sagelabel/Tech_icon.png'
+import sat from './sagelabel/SAT_icon.png'
+import kiosk from './sagelabel/Kiosk_icon.png'
+import clock from './sagelabel/Clock_icon.png'
+import pc from './sagelabel/PCI_icon.png'
+import parabutton from './sagelabel/6para_button.jpg'
+import obutton from './sagelabel/optimize_button.jpg'
 
 function Sageview(props) {
 
@@ -32,30 +37,27 @@ function Sageview(props) {
         linka={ha}
         url={"https://sagenetvirtual.com/SageNet_DigitalSignage_Value_WP_101014FINAL-2%20(1).pdf"}
         wx={0.9}
-        icon={graph}
+        icon={clock}
         icolor={"#8AD2D2"}
       />
       <TextUI
         index={props.index}
         text={"KIOSKS."}
-        para={pump}
+        para={"With digital kiosks, you can give your customers a way to place their orders while serving up promotions, ultimately increasing basket sizes. With self-order kiosks, you minimize person-to-person contact, avoid long lines/wait times, and with over 65% of consumers saying they would visit more often if kiosks are offered, increase consumer satisfaction"}
         position={[0.8, 1.5, 0]}
         skew={0}
         wx={0.7}
-        icon={location}
+        icon={kiosk}
         icolor={"#8AD2D2"}
       />
       <TextUI
         index={props.index}
-        linki={hs}
-        linka={ha}
         text={"VIDEO."}
-        url={"https://sagenetvirtual.com/SageNet_6Paradigms6Tools_WP_NEW101620%20(5).pdf"}
-        para={health}
+        vidurl={"https://player.vimeo.com/video/501964130?autoplay=1&title=0&byline=0&portrait=0"}
         position={[3.2, 2.2, 0]}
         skew={0}
         wx={0.7}
-        icon={heart}
+        icon={video}
         icolor={"#8AD2D2"}
       />
       <TextUI
@@ -64,8 +66,8 @@ function Sageview(props) {
         position={[2.7, 1.3, 0]}
         skew={0}
         wx={1.4}
-        para={"Integrate promotions into menus with animations, graphics and video footage - help sell new menu items and specials that build loyalty."}
-        icon={video}
+        para={"TBD."}
+        icon={screen}
         icolor={"#8AD2D2"}
       />
     </>
@@ -81,7 +83,7 @@ function Sagesec(props) {
       <TextUI
         index={props.index}
         text={"CYBER SECURITY."}
-        para={"Your store’s profits rely on the ability to accept credit card payments. Mandated by card issuers, PCI DSS requires all merchants with internal systems that store, process or transmit cardholder data to comply with key data protection measures and submit to annual security audits. Stay secure so your consumers can be comfortable shopping with you."}
+        vidurl={"https://player.vimeo.com/video/501964365?autoplay=1&title=0&byline=0&portrait=0"}
         position={[-0.5, 2, 0]}
         skew={0}
         wx={1}
@@ -95,20 +97,20 @@ function Sagesec(props) {
         position={[1.3, 2, 0]}
         skew={0}
         wx={1}
-        icon={skim}
+        icon={wifi}
         icolor={"#72337F"}
       />
       <TextUI
         index={props.index}
-        linki={demv}
+        linki={pcib}
         linka={ha}
-        url={"https://sagenetvirtual.com/SageNet_EMV_WP_NEW110520.pdf"}
+        url={"https://sagenetvirtual.com/SageNet_PCI_DS_091418.pdf"}
         text={"PCI-COMPLIANCE."}
         para={pci}
         position={[3.2, 2, 0]}
         skew={0}
         wx={1.2}
-        icon={emv}
+        icon={pc}
         icolor={"#72337F"}
       />
       <TextUI
@@ -118,7 +120,7 @@ function Sagesec(props) {
         skew={0}
         para={"Any time a new device is connected to your network, you introduce new security risks. Make sure that your kiosks remain secure, that their screens only show the content you intend, and customers are protected from skimming or other methods of identity theft. Keep your customers’ info secure, and they’ll keep their brand loyalty."}
         wx={1.3}
-        icon={video}
+        icon={kiosk}
         icolor={"#72337F"}
       />
     </>
@@ -133,21 +135,24 @@ function Sageconnect(props) {
       <TextUI
         index={props.index}
         text={"EMPOWERING CONNECTIVITY."}
-        para={etext}
+        para={"The pandemic led to several paradigm shifts for C-stores: health concerns, financial uncertainty, the need for agility, and the use of tech to accelerate change. However, robust connectivity remained enabling force. From security to digital experience, frictionless checkout to analytics, the future of c-stores is built on the power of the network."}
         position={[-0.3, 2.2, 0]}
+        url={"https://sagenetvirtual.com/SageNet_6Paradigms6Tools_WP_NEW101620%20(5).pdf"}
+        linki={parabutton}
+        linka={ha}
         skew={0}
         wx={1.8}
-        icon={emv}
+        icon={location}
         icolor={"#76787B"}
       />
       <TextUI
         index={props.index}
         text={"V-SAT CONNECTIVITY."}
-        para={etext}
+        para={"When terrestrial connections are not an option for either primary or backup connectivity, SageSat can provide VSAT satellite technology to seamlessly connect any remote location with enterprise-grade broadband. Only SageNet has deep experience using terrestrial and non-terrestrial technologies to support all aspects  of c-store operations."}
         position={[0.5, 1.5, 0]}
         skew={0}
         wx={1.3}
-        icon={emv}
+        icon={sat}
         icolor={"#76787B"}
       />
       <TextUI
@@ -156,18 +161,18 @@ function Sageconnect(props) {
         position={[2.7, 2, 0]}
         skew={0}
         wx={1.5}
-        vidurl={"https://player.vimeo.com/video/501964524?autoplay=1&title=0&byline=0&portrait=0"}
-        icon={video}
+        para={"Today’s C-store is simply network dependent. Backup connectivity is essential. It is also a requirement for EMV, MNSP and lottery compliance. Even at 99% uptime, several hours of outages monthly are commonplace. Backup via an alternate technology (typically cellular or satellite) automatically kicks-in when your primary connection fails."}
+        icon={tech}
         icolor={"#76787B"}
       />
       <TextUI
         index={props.index}
         text={"V-SAT."}
-        para={ctext}
+        vidurl={"https://player.vimeo.com/video/501964480?autoplay=1&title=0&byline=0&portrait=0"}
         position={[2.5, 1.5, 0]}
         skew={0}
         wx={0.6}
-        icon={network}
+        icon={video}
         icolor={"#76787B"}
       />
     </>
@@ -182,24 +187,24 @@ function Sageiw(props) {
       <TextUI
         index={props.index}
         text={"CUSTOMER EXPERIENCE."}
-        para={ctext}
+        vidurl={"https://player.vimeo.com/video/501964005?autoplay=1&title=0&byline=0&portrait=0"}
         position={[-0.2, 2.1, 0]}
         skew={0}
         wx={1.3}
-        icon={screen}
+        icon={video}
         icolor={"#E79F37"}
       />
       <TextUI
         index={props.index}
-        linki={dlocation}
-        linka={ha}
-        url={"https://sagenetvirtual.com/SageNet_CaptivePortal_WP_NEW091919.pdf"}
         text={"TOUCHLESS KIOSK INTERACTION."}
-        para={ltext}
+        linka={ha}
+        linki={obutton}
+        para={"Increase safety for customers and employees by pairing wireless mobile technology with your kiosk menu. Allow customers to control kiosk boards and place orders without touch the screen. Orders are placed directly from their mobile device, or by in-person staff without a physical exchange. Reduce customer wait times. Make visits more smooth and safe."}
         position={[0.4, 1.6, 0]}
         skew={0}
+        url={"https://sagenetvirtual.com/SageNet_WiFi-WP_NEW092319.pdf"}
         wx={1.8}
-        icon={location}
+        icon={kiosk}
         icolor={"#E79F37"}
       />
       <TextUI
@@ -208,8 +213,8 @@ function Sageiw(props) {
         position={[2.7, 2, 0]}
         skew={0}
         wx={1}
-        vidurl={"https://player.vimeo.com/video/501963728?autoplay=1&title=0&byline=0&portrait=0"}
-        icon={video}
+        para={"Firewall policies must block access to internal network segments while guest access to the Internet. This prevents unauthorized users from accessing company data and helps prevent the spread of malware that may exist on visitor devices. Content filtering blocks access to inappropriate sites and materials that could damage the company’s brand or bring legal liability."}
+        icon={wifi}
         icolor={"#E79F37"}
       />
     </>
