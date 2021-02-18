@@ -8,8 +8,7 @@ import wifi from './sagelabel/Secure Wi-Fi_Icon.png'
 import screen from './sagelabel/Screen_icon.png'
 
 import ha from './sagelabel/download_buttonA.png'
-import demv from './sagelabel/download_emv.png'
-import dlocation from './sagelabel/download_location.png'
+
 import signage from './sagelabel/signage.jpg'
 import pcib from './sagelabel/pci_button.jpg'
 import tech from './sagelabel/Tech_icon.png'

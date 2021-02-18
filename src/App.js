@@ -76,8 +76,8 @@ function Dolly(props) {
         Look = [-10, 2, -10.8];
         break;
       case 3:
-        Pos = [-1, 1.5, -12];
-        Look = [10, 2, -12];
+        Pos = [-2.5, 1.8, -11.07];
+        Look = [10, 1.8, -11.07];
         break;
       case 4:
         Pos = [12, 1.5, -10];
@@ -203,6 +203,7 @@ function App(props) {
           <Dcigs/>
           <Cata index={props.index} position={[2,3,5]} rotation={[0,0,0]} seen={props.index == 1} />
           <Cata index={props.index} position={[-6,2.7,-9]} rotation={[0,Math.PI*0.5,0]} seen={props.index == 2} />
+          <Cata index={props.index} position={[2.4,2.8,-12.9]} rotation={[0,-Math.PI*0.5,0]} seen={props.index == 3} />
           <Sky
             sunPosition={[0, 1, 0]}
             turbidity={2.1}

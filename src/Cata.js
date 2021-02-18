@@ -10,7 +10,7 @@ import Siw from './sagelabel/siw.jpg'
 import { Vector2 } from "three"
 import Forecourt from './Forecourt'
 import Foodservice from './Foodservice'
-
+import POP from './POP'
 
 
 export default function Cata(props){
@@ -40,6 +40,8 @@ export default function Cata(props){
     <Forecourt index={active}/>}
     {props.index == 2 &&
     <Foodservice index={active}/>}
+    {props.index == 3 &&
+    <POP index={active}/>}
     </group>
         <Label index={0}  file={Sv} scale={[1.2,0.35,1]} position={[0,0,0.01]} />
         <Label index={1}  file={Ss} scale={[1.5,0.35,1]} position={[1.1,0,0]} />
