@@ -177,7 +177,7 @@ function Sageiw(props){
             <TextUI
              index={props.index}
              text={"ACCESS POINT MANAGEMENT."}
-             para={"Reliance on, and expectations for, Wi-Fi, whether for employees, in=store devices or guests, inside or out, is high. Access Point placement, quality and security will determine availability and reliability. Interference has many culprits. Refrigerators, security cameras, microwaves, TVs, walls, windows, even weather can impact wireless performance."}
+             para={"Reliance on, and expectations for, Wi-Fi, whether for employees, in-store devices or guests, inside or out, is high. Access Point placement, quality and security will determine availability and reliability. Interference has many culprits. Refrigerators, security cameras, microwaves, TVs, walls, windows, even weather can impact wireless performance."}
              position={[0.3, 2.4, 0]}
              skew={0}
              wx={1.6}

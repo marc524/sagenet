@@ -62,7 +62,7 @@ function Sageview(props) {
       <TextUI
         index={props.index}
         text={"HOW SIGNAGE WORKS."}
-        position={[2.7, 1.3, 0]}
+        position={[2.7, 1.4, 0]}
         skew={0}
         wx={1.4}
         para={"TBD."}
@@ -115,7 +115,7 @@ function Sagesec(props) {
       <TextUI
         index={props.index}
         text={"CYBER FOR KIOSKS."}
-        position={[2.7, 1.3, 0]}
+        position={[2.7, 1.4, 0]}
         skew={0}
         para={"Any time a new device is connected to your network, you introduce new security risks. Make sure that your kiosks remain secure, that their screens only show the content you intend, and customers are protected from skimming or other methods of identity theft. Keep your customers’ info secure, and they’ll keep their brand loyalty."}
         wx={1.3}
@@ -156,7 +156,7 @@ function Sageconnect(props) {
       />
       <TextUI
         index={props.index}
-        text={"BACK-UP CONNECTIVITY"}
+        text={"BACK-UP CONNECTIVITY."}
         position={[2.7, 2, 0]}
         skew={0}
         wx={1.5}
@@ -189,7 +189,7 @@ function Sageiw(props) {
         vidurl={"https://player.vimeo.com/video/501964005?autoplay=1&title=0&byline=0&portrait=0"}
         position={[-0.2, 2.1, 0]}
         skew={0}
-        wx={1.3}
+        wx={1.4}
         icon={video}
         icolor={"#E79F37"}
       />
