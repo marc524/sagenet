@@ -21,10 +21,6 @@ import seamb from './sagelabel/seam_button.jpg'
 import wifib from './sagelabel/wifi_button.jpg'
 
 function Sageview(props){
-
-  const fuel="Fuel consumers spend an average of 4 minutes and 26 seconds pumping gas. And 31% of them make the decision to enter the store during that time. With loyalty integrations, you can serve-up custom promotions. And with the right content, you can drastically increase fuel-customer conversion whether drawing customers inside or with pump-side ordering.";
-  const health="So much has changed and continues to shift by the week/day/hour and even minute. Your c-store needs to keep your employees and customers safe. With digital signage, you can send messages about what’s in stock, the need to wear a mask, reminders to frequently wash hands, and even notices to social distance. All with the click of a button.";  
-  const pump="At the pump digital signage can offer info on curbside ordering and delivery for high-margin purchases such as food and beverages. With pump-side ordering, you can increase convenience, minimize in-store queuing for increased safety, and ultimately increase basket sizes for shoppers who might not have otherwise gone inside. ";
   return(
         <>
             <TextUI
@@ -42,6 +38,7 @@ function Sageview(props){
              text={"LOYALTY."}
              linka = {ha}
              linki = {cstoreb}
+             url={"https://sagenetvirtual.com/SageNet_Wi-FiDS_090918-3.pdf"}
              para={"It’s about brand affinity. With so many options for purchasing gas & snacks, it’s critical to attract/retain the right customers. With digital signage, you can welcome customers to the store, showcase your brand voice, and highlight the deals and LTOs that keep them coming back. Loyal customers will drive & spend a bit more to buy from a brand they love."}
              position={[0, 1.7, 0]}
              skew={0}
@@ -75,9 +72,6 @@ function Sageview(props){
     )
 }
 function Sagesec(props){
-  const wtext= "SageSecure protects C-Store operators and its customers. Guest Wi-Fi at the forecourt empowers your loyalty customers to take advantage of pump-side ordering, special offers and more. It also opens you up to numerous risks. Without proper restrictions, guests could access inappropriate questionable sites. Malware could be accidentally or purposely installed on your network. SageSecure protects C-Store operators and its customers and your network.";
-  const stext = "Protect your guests and business from theft. Skimming occurs when fake card readers, cameras, or pin pads are used over your equipment, like an ATM or at the pump, and card numbers and pins are stolen for later, malicious use. Your customer loyalty is built on a positive relationship with your brand. Keep their money safe and your customer-base secure";
-  const etext = "The deadlines are quickly approaching to make your gas pumps EMV-compliant. With the new liability shift, starting April 17th, should fraudulent transactions take place at your pump, the financial burden becomes your own. These new mandates keep your customers’ data protected and you safe from extra charges. Sleep easier with a security plan in place.";
   return(
         <>
             <TextUI
@@ -85,6 +79,7 @@ function Sagesec(props){
              text={"PENETRATION TESTS."}
              linka = {ha}
              linki = {peneb}
+             url={"https://sagenetvirtual.com/SageNet_CyberPenTesting_2pgr_New070319.pdf"}
              para={"Cyber threats are ongoing, so your security practice should be too. Penetration tests mimic real-world attacks to better understand security vulnerabilities. With a thorough and systematic test against your environment, defenses can be hardened and made more secure. 84% of shoppers say they’ll change buying habits if their favorite store faces a breach – protect your customers."}
              position={[0, 2.5, 0]}
              skew={0}
@@ -127,8 +122,6 @@ function Sagesec(props){
 }
 
 function Sageconnect(props){
-  const etext = "April 17, 2021 is the deadline to deploy chip card readers at all automated fuel dispensers. After that, C-store operators may be liable for fraudulent transactions. The services of a certified-MNSP partner are key. For C-store operators using Verifone, Gilbarco, or NCR ’s Point-of-Sale (PoS) systems, the certifications ensure PCI-compliant remote zone access from the PoS providers as well as remote upgrades/patches. ";
-  const ctext = "Cash only makes up 15% of payments at the pump. So if you can’t process debit/credit cards, you may as well be out of gas. With the shift to digital signage and pump-side ordering, fast, reliable, secure connectivity is a c-store’s lifeline. High-speed broadband with automatic failover and 24/7 monitoring and field service ensures always-on connectivity. ";  
   return(
         <>
             <TextUI
@@ -146,6 +139,7 @@ function Sageconnect(props){
              text={"SEAMLESS EXPERIENCE."}
              linka = {ha}
              linki = {seamb}
+             url={"https://sagenetvirtual.com/SageNet_ManagedNetworkServices_WP_NEW041020.pdf"}
              para={"The best connections are the ones that customers and staff never notice. SageCONNECT ensures every transaction is flawless and frictionless, inventory and back office systems are up to date, your digital signage is up-to-date, and your guest Wi-Fi is fast and reliable. All this with the assurance that connections are secure, and costs are competitive."}
              position={[0, 1.7, 0]}
              skew={0}
@@ -166,7 +160,6 @@ function Sageconnect(props){
                 <TextUI
                  index={props.index}
              text={"MULTI-SITE CONNECTIONS."}
-             para={ctext}
              vidurl={"https://player.vimeo.com/video/501963890?autoplay=1&title=0&byline=0&portrait=0"}
              position={[2.5, 1.6, 0]}
              skew={0}
@@ -179,14 +172,12 @@ function Sageconnect(props){
 }
 
 function Sageiw(props){
-  const ctext = "Captive portals present Wi-Fi users with a web page that requires some action before network access is granted. At the pump, it’s a powerful marketing tool as well as a network access mechanism, presenting the user with messaging based on location, time of day, or loyalty info while capturing valuable data to help personalize the customer experience.";
-  const ltext = "The Wi-Fi location analytics market is growing 15% annually. Here’s why. Wi-Fi location analytics uses multiple wireless access points and advanced algorithms to provide insights into customer behavior based the user’s movement: From pump to store? Which aisle first? How many aisles, in what order? Time spent in location? In check-out?";
   return(
         <>
             <TextUI
              index={props.index}
              text={"ACCESS POINT MANAGEMENT."}
-             para={ctext}
+             para={"Reliance on, and expectations for, Wi-Fi, whether for employees, in=store devices or guests, inside or out, is high. Access Point placement, quality and security will determine availability and reliability. Interference has many culprits. Refrigerators, security cameras, microwaves, TVs, walls, windows, even weather can impact wireless performance."}
              position={[0.3, 2.4, 0]}
              skew={0}
              wx={1.6}
@@ -197,7 +188,7 @@ function Sageiw(props){
                index={props.index}
                linki={wifib}
                linka={ha}
-               url={"https://sagenetvirtual.com/SageNet_CaptivePortal_WP_NEW091919.pdf"}
+               url={"https://sagenetvirtual.com/SageNet_Wi-FiDS_071619.pdf"}
              text={"GUEST WI-FI."}
              para={"Guest Wi-Fi has moved from nice to have, to must have for C-stores. Loyalty apps offer coupons and personalize the guest experience and keep customers coming back for more. 40% of customers want to hear from “my C-store” monthly. Data collection through captive portals improves the customer experience and helps c-stores better improve operational efficiency."}
              position={[0, 1.5, 0]}
