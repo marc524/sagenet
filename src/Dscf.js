@@ -41,7 +41,7 @@ export default function Model(props) {
             rotation={[Math.PI / 2, 0, -Math.PI / 2]}
           />
         </group>
-        <group
+        <group 
           position={[-1.2658, 0.3195, -12.9022]}
           rotation={[-Math.PI, 0, -Math.PI]}
           scale={[0.0536, 0.0666, 0.0536]}>
@@ -51,6 +51,17 @@ export default function Model(props) {
           <mesh material={materials['Cypress plant']} geometry={nodes.ID4314_3.geometry} />
           <mesh material={materials.bark} geometry={nodes.ID4314_4.geometry} />
           <mesh material={materials['Cypress plant']} geometry={nodes.ID4314_5.geometry} />
+        </group>
+        <group visible={props.church3}
+          position={[0.5658, 0.3195, -17.9022]}
+          rotation={[Math.PI, 0, -Math.PI]}
+          scale={[0.0536, 0.0666, 0.0536]}>
+          <mesh material={materials.bark} geometry={nodes.ID4314.geometry} />
+          <mesh material={materials.Foliage} geometry={nodes.ID4314_1.geometry} />
+          <mesh material={materials.bark2} geometry={nodes.ID4314_2.geometry} />
+          {/*<mesh material={materials['Cypress plant']} geometry={nodes.ID4314_3.geometry} />
+          <mesh material={materials.bark} geometry={nodes.ID4314_4.geometry} />
+  <mesh material={materials['Cypress plant']} geometry={nodes.ID4314_5.geometry} />*/}
         </group>
         <group position={[0.6385, 0.3437, -2.6553]} rotation={[Math.PI, 1.5705, 0]} scale={[-0.0015, -0.0015, -0.0015]}>
           <mesh material={materials.lgrey} geometry={nodes.ID4305.geometry} />
@@ -421,7 +432,7 @@ export default function Model(props) {
           <mesh material={materials.llgrey} geometry={nodes.ID4260_7.geometry} />
           <mesh material={materials.dgrey} geometry={nodes.ID4260_8.geometry} />
         </group>
-        <group position={[4.3984, 0.4198, 8.5905]} scale={[0.0536, 0.0666, 0.0536]}>
+        <group  position={[4.3984, 0.4198, 8.5905]} scale={[0.0536, 0.0666, 0.0536]}>
           <mesh material={materials['bark 3']} geometry={nodes.ID4269.geometry} />
           <mesh material={materials.Foliage} geometry={nodes.ID4269_1.geometry} />
           <mesh material={materials.bark} geometry={nodes.ID4269_2.geometry} />
@@ -617,7 +628,7 @@ export default function Model(props) {
           <mesh material={materials.llgrey} geometry={nodes.ID4260_7.geometry} />
           <mesh material={materials.dgrey} geometry={nodes.ID4260_8.geometry} />
         </group>
-        <group position={[4.3984, 0.4198, 8.5905]} scale={[0.0536, 0.0666, 0.0536]}>
+        <group  visible={true}  position={[4.3984, 0.4198, 8.5905]} scale={[0.0536, 0.0666, 0.0536]}>
           <mesh material={materials['bark 3']} geometry={nodes.ID4269.geometry} />
           <mesh material={materials.Foliage} geometry={nodes.ID4269_1.geometry} />
           <mesh material={materials.bark} geometry={nodes.ID4269_2.geometry} />
