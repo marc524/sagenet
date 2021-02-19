@@ -8,7 +8,7 @@ import Dcigs from './GasModels/Dcigs'
 import Worker from './GasModels/Dworker'
 import './App.css'
 import * as THREE from 'three'
-import { Sky, Plane, Text, Html } from '@react-three/drei'
+import { Sky } from '@react-three/drei'
 import Cata from './Cata'
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
 import styled, { css } from 'styled-components'

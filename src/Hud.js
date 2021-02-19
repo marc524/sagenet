@@ -225,8 +225,8 @@ export default function Hud() {
 
             {scene ?
                 <Overworld obj={<group>
-                    <Circ position={[3, 4, 2]} text={"FINANCE"} />
-                    <Circ position={[0, 4, 2]} text={"RETAIL"} />
+                    <Circ position={[2.5, 4, 1.5]} text={"FINANCE"} />
+                    <Circ position={[0, 4, 1.5]} text={"RETAIL"} />
                     <Circ position={[0, 4, -1.5]} text={"QSR"} />
                     <Circ position={[0, 3.8, -5]} text={"C-STORE"} />
                 </group>} zoom={zoom} cam={cam} /> :

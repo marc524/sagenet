@@ -5,6 +5,9 @@ import * as THREE from 'three'
 import {  Sky  } from '@react-three/drei'
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
 import Test from './Dscf'
+import Bank from './OverworldModels/Dbank'
+import Chapel from './OverworldModels/Dchapel'
+import Kfc from './OverworldModels/Dkfc2'
 
 
 
@@ -99,7 +102,9 @@ function Overworld(props) {
         <Test gas={false} church3={false} church={false} rotation={[0,Math.PI*0.5,0]}  position={[-2.6,0,-11]}  />
         <Test gas={false} church3={false} church={false} rotation={[0,-Math.PI*0.5,0]}  position={[-13.5,0,-13.3]}  />
         <Test gas={false} church3={false} church2={false} church={false} rotation={[0,Math.PI,0]}  position={[9.5,0,-12.5]}  />
- 
+        <Bank scale={[0.06,0.06,0.06]} position={[3,0.5,1]} rotation={[0,Math.PI*0.5,0]}/>
+        <Chapel scale={[0.17,0.17,0.17]} position={[-2.9,0.5,-4.5]}/>
+        <Kfc scale={[0.011,0.011,0.011]} position={[-0.3,0.5,-1.5]}  />
         <Sky
         sunPosition={[0, 1, 0]}
         turbidity={7.1}
