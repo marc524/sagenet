@@ -1,19 +1,23 @@
 {
   "files": {
     "main.css": "/sagenet/static/css/main.48a1f97e.chunk.css",
-    "main.js": "/sagenet/static/js/main.bd575e4c.chunk.js",
-    "main.js.map": "/sagenet/static/js/main.bd575e4c.chunk.js.map",
+    "main.js": "/sagenet/static/js/main.44a570f5.chunk.js",
+    "main.js.map": "/sagenet/static/js/main.44a570f5.chunk.js.map",
     "runtime-main.js": "/sagenet/static/js/runtime-main.602b5895.js",
     "runtime-main.js.map": "/sagenet/static/js/runtime-main.602b5895.js.map",
-    "static/js/2.95e8a815.chunk.js": "/sagenet/static/js/2.95e8a815.chunk.js",
-    "static/js/2.95e8a815.chunk.js.map": "/sagenet/static/js/2.95e8a815.chunk.js.map",
+    "static/js/2.9efd7c11.chunk.js": "/sagenet/static/js/2.9efd7c11.chunk.js",
+    "static/js/2.9efd7c11.chunk.js.map": "/sagenet/static/js/2.9efd7c11.chunk.js.map",
     "index.html": "/sagenet/index.html",
     "static/css/main.48a1f97e.chunk.css.map": "/sagenet/static/css/main.48a1f97e.chunk.css.map",
-    "static/js/2.95e8a815.chunk.js.LICENSE.txt": "/sagenet/static/js/2.95e8a815.chunk.js.LICENSE.txt",
+    "static/js/2.9efd7c11.chunk.js.LICENSE.txt": "/sagenet/static/js/2.9efd7c11.chunk.js.LICENSE.txt",
     "static/media/6para_button.3d52e526.jpg": "/sagenet/static/media/6para_button.3d52e526.jpg",
     "static/media/Connectivity_icon.99dd5e9a.png": "/sagenet/static/media/Connectivity_icon.99dd5e9a.png",
+    "static/media/David.7f603b75.jpg": "/sagenet/static/media/David.7f603b75.jpg",
     "static/media/Futura-Condensed.376adcfe.otf": "/sagenet/static/media/Futura-Condensed.376adcfe.otf",
+    "static/media/IV.4c16a68d.jpg": "/sagenet/static/media/IV.4c16a68d.jpg",
     "static/media/Monitoring_icon.2549b4c2.png": "/sagenet/static/media/Monitoring_icon.2549b4c2.png",
+    "static/media/Paul.aae22770.jpg": "/sagenet/static/media/Paul.aae22770.jpg",
+    "static/media/Raj.123c1252.jpg": "/sagenet/static/media/Raj.123c1252.jpg",
     "static/media/SAT_icon.ff1db72f.png": "/sagenet/static/media/SAT_icon.ff1db72f.png",
     "static/media/styles.css": "/sagenet/static/media/SageNetblue.38dc88cd.png",
     "static/media/SageNetwhite.28ee478c.png": "/sagenet/static/media/SageNetwhite.28ee478c.png",
@@ -23,7 +27,10 @@
     "static/media/covid1.9192740a.jpg": "/sagenet/static/media/covid1.9192740a.jpg",
     "static/media/covid2.bb20cc20.jpg": "/sagenet/static/media/covid2.bb20cc20.jpg",
     "static/media/cstore_button.f4527abd.jpg": "/sagenet/static/media/cstore_button.f4527abd.jpg",
+    "static/media/dbank.6bce55ab.glb": "/sagenet/static/media/dbank.6bce55ab.glb",
+    "static/media/dchapel.1443deb1.glb": "/sagenet/static/media/dchapel.1443deb1.glb",
     "static/media/dcigs.8c85f2c8.glb": "/sagenet/static/media/dcigs.8c85f2c8.glb",
+    "static/media/dkfc2.6226eaad.glb": "/sagenet/static/media/dkfc2.6226eaad.glb",
     "static/media/download_button.7545c513.png": "/sagenet/static/media/download_button.7545c513.png",
     "static/media/download_emv.4724226f.png": "/sagenet/static/media/download_emv.4724226f.png",
     "static/media/drivethru.4a9f1c34.mp4": "/sagenet/static/media/drivethru.4a9f1c34.mp4",
@@ -61,8 +68,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.602b5895.js",
-    "static/js/2.95e8a815.chunk.js",
+    "static/js/2.9efd7c11.chunk.js",
     "static/css/main.48a1f97e.chunk.css",
-    "static/js/main.bd575e4c.chunk.js"
+    "static/js/main.44a570f5.chunk.js"
   ]
 }
