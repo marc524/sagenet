@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/sagenet/static/css/main.48a1f97e.chunk.css",
-    "main.js": "/sagenet/static/js/main.57275d78.chunk.js",
-    "main.js.map": "/sagenet/static/js/main.57275d78.chunk.js.map",
+    "main.js": "/sagenet/static/js/main.bd575e4c.chunk.js",
+    "main.js.map": "/sagenet/static/js/main.bd575e4c.chunk.js.map",
     "runtime-main.js": "/sagenet/static/js/runtime-main.602b5895.js",
     "runtime-main.js.map": "/sagenet/static/js/runtime-main.602b5895.js.map",
     "static/js/2.95e8a815.chunk.js": "/sagenet/static/js/2.95e8a815.chunk.js",
@@ -26,6 +26,7 @@
     "static/media/dcigs.8c85f2c8.glb": "/sagenet/static/media/dcigs.8c85f2c8.glb",
     "static/media/download_button.7545c513.png": "/sagenet/static/media/download_button.7545c513.png",
     "static/media/download_emv.4724226f.png": "/sagenet/static/media/download_emv.4724226f.png",
+    "static/media/drivethru.4a9f1c34.mp4": "/sagenet/static/media/drivethru.4a9f1c34.mp4",
     "static/media/dscf.e07d94fe.glb": "/sagenet/static/media/dscf.e07d94fe.glb",
     "static/media/dworker.3041a1a9.glb": "/sagenet/static/media/dworker.3041a1a9.glb",
     "static/media/economics_button.288db5e5.jpg": "/sagenet/static/media/economics_button.288db5e5.jpg",
@@ -62,6 +63,6 @@
     "static/js/runtime-main.602b5895.js",
     "static/js/2.95e8a815.chunk.js",
     "static/css/main.48a1f97e.chunk.css",
-    "static/js/main.57275d78.chunk.js"
+    "static/js/main.bd575e4c.chunk.js"
   ]
 }
