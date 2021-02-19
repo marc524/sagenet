@@ -11,7 +11,7 @@ import folic from './folic.png'
 export default function Model(props) {
   const group = useRef()
   const { nodes, materials } = useGLTF(dscf)
- 
+
   for (const property in materials) {
     materials[property].metalness = 0.1;
     materials[property].roughness = 0.5;
@@ -24,7 +24,7 @@ export default function Model(props) {
   return (
     <group position={props.position} rotation={props.rotation} ref={group} {...props} dispose={null}>
       <mesh material={materials['default']} geometry={nodes.Plane001.geometry} position={[4.0708, 0.1, 2.5311]}>
-        <group position={[-0.9901, 0.5276, -1.557]} rotation={[-Math.PI, 0, -Math.PI]} scale={[0.0014, 0.0014, 0.0014]}>
+        <group visible={false} position={[-0.9901, 0.5276, -1.557]} rotation={[-Math.PI, 0, -Math.PI]} scale={[0.0014, 0.0014, 0.0014]}>
           <mesh material={materials.lgrey} geometry={nodes.ID4323.geometry} />
           <mesh material={materials.black} geometry={nodes.ID4323_1.geometry} />
           <mesh material={materials.black} geometry={nodes.ID4323_2.geometry} />
@@ -101,13 +101,14 @@ export default function Model(props) {
           <mesh material={materials['_15_-_Default.033']} geometry={nodes.ID4296_38.geometry} />
           <mesh material={materials['_13_-_Default.034']} geometry={nodes.ID4296_39.geometry} />
         </group>
-        <mesh
+        {/*
+        <mesh visible={false}
           material={materials.Mat}
           geometry={nodes.Glass2KC9BG19.geometry}
           position={[-1.2258, 0.4376, 1.1666]}
           rotation={[Math.PI / 2, 0, Math.PI / 2]}
           scale={[0.0015, 0.0015, 0.0015]}
-        />
+        />*/}
         <mesh
           material={materials.Material__21124}
           geometry={nodes.GlassKC3BG13.geometry}
@@ -136,13 +137,14 @@ export default function Model(props) {
           rotation={[Math.PI / 2, 0, -Math.PI / 2]}
           scale={[0.0015, 0.0017, 0.0015]}
         />
-        <mesh
+        {/*}
+        <mesh visible={false}
           material={materials.Glass80eflection}
           geometry={nodes.GlassKC9BG19.geometry}
           position={[-0.7074, 3.9487, 1.0911]}
           rotation={[-Math.PI / 2, 0, -Math.PI / 2]}
           scale={[-0.0013, -0.0015, -0.0014]}
-        />
+  />*/}
         <group position={[0.6449, 0.8179, 1.2363]} rotation={[Math.PI, 1.5705, 0]} scale={[-0.0015, -0.0015, -0.0015]}>
           <mesh material={materials.brick} geometry={nodes.ID4359.geometry} />
           <mesh material={materials.dgrey} geometry={nodes.ID4359_1.geometry} />
@@ -150,7 +152,7 @@ export default function Model(props) {
           <mesh material={materials.dgrey} geometry={nodes.ID4359_3.geometry} />
           <mesh material={materials.lgrey} geometry={nodes.ID4359_4.geometry} />
         </group>
-        <group position={[1.1923, 1.4819, 1.4708]} scale={[0.0012, 0.0014, 0.0013]}>
+        <group  position={[1.1923, 1.4819, 1.4708]} scale={[0.0012, 0.0014, 0.0013]}>
           <mesh material={materials.brick} geometry={nodes.ID3693.geometry} />
           <mesh material={materials.dgrey} geometry={nodes.ID3693_1.geometry} />
           <mesh material={materials.llgrey} geometry={nodes.ID3693_2.geometry} />
@@ -169,7 +171,8 @@ export default function Model(props) {
           <mesh material={materials.brick} geometry={nodes.ID4386_2.geometry} />
           <mesh material={materials.black} geometry={nodes.ID4386_3.geometry} />
         </group>
-        <group position={[-1.0338, 1.2742, 0.7945]} rotation={[0, -1.5705, 0]} scale={[0.0013, 0.0014, 0.0015]}>
+        {/*
+        <group visible={false} position={[-1.0338, 1.2742, 0.7945]} rotation={[0, -1.5705, 0]} scale={[0.0013, 0.0014, 0.0015]}>
           <mesh material={materials.brick} geometry={nodes.ID4431.geometry} />
           <mesh material={materials.brick} geometry={nodes.ID4431_1.geometry} />
           <mesh material={materials.black} geometry={nodes.ID4431_2.geometry} />
@@ -178,22 +181,22 @@ export default function Model(props) {
           <mesh material={materials.white} geometry={nodes.ID4431_5.geometry} />
           <mesh material={materials.llgrey} geometry={nodes.ID4431_6.geometry} />
         </group>
-        <mesh
+        <mesh visible={false}
           material={materials['_20_-_Default.009']}
           geometry={nodes.KC9BG19Blinds.geometry}
           position={[-0.7115, 0.9238, 0.935]}
           rotation={[-Math.PI / 2, 0, Math.PI / 2]}
           scale={[-0.0013, -0.0015, -0.0014]}
         />
-        <group position={[-1.0338, 1.2742, 0.7953]} rotation={[0, -1.5705, 0]} scale={[0.0014, 0.0014, 0.0014]}>
+        <group visible={false} position={[-1.0338, 1.2742, 0.7953]} rotation={[0, -1.5705, 0]} scale={[0.0014, 0.0014, 0.0014]}>
           <mesh material={materials.lgrey} geometry={nodes.ID4467.geometry} />
           <mesh material={materials.red} geometry={nodes.ID4467_1.geometry} />
           <mesh material={materials.dgrey} geometry={nodes.ID4467_2.geometry} />
           <mesh material={materials.llgrey} geometry={nodes.ID4467_3.geometry} />
-        </group>
+        </group>*/}
       </mesh>
       <mesh material={materials['default']} geometry={nodes.Plane002.geometry} position={[-1.7, 0.1, -3.24]}>
-        <group position={[-0.9901, 0.5276, -1.557]} rotation={[-Math.PI, 0, -Math.PI]} scale={[0.0014, 0.0014, 0.0014]}>
+        {/*<group visible={false} position={[-0.9901, 0.5276, -1.557]} rotation={[-Math.PI, 0, -Math.PI]} scale={[0.0014, 0.0014, 0.0014]}>
           <mesh material={materials.lgrey} geometry={nodes.ID4323.geometry} />
           <mesh material={materials.black} geometry={nodes.ID4323_1.geometry} />
           <mesh material={materials.black} geometry={nodes.ID4323_2.geometry} />
@@ -205,7 +208,7 @@ export default function Model(props) {
             position={[224.8507, 62.3783, 250.9597]}
             rotation={[Math.PI / 2, 0, -Math.PI / 2]}
           />
-        </group>
+      </group>*/}
         <group
           position={[-1.2658, 0.3195, -12.5622]}
           rotation={[-Math.PI, 0, -Math.PI]}
@@ -277,20 +280,21 @@ export default function Model(props) {
           rotation={[Math.PI / 2, 0, Math.PI / 2]}
           scale={[0.0015, 0.0015, 0.0015]}
         />
-        <mesh
+        {/*}
+        <mesh visible={false}
           material={materials.Material__21124}
           geometry={nodes.GlassKC3BG13001.geometry}
           position={[1.5239, 0.7964, 0.5079]}
           rotation={[Math.PI / 2, 0, 0]}
           scale={[0.0015, 0.0015, 0.0015]}
         />
-        <mesh
+        <mesh visible={true}
           material={materials.Glass18reflection}
           geometry={nodes.GlassKC4BG06001.geometry}
           position={[1.1963, 1.0946, 1.8857]}
           rotation={[1.5708, 0, 0]}
           scale={[0.0012, 0.0013, 0.0014]}
-        />
+        />*/}
         <mesh
           material={materials.Material__21124}
           geometry={nodes.GlassKC7BG10001.geometry}
@@ -305,20 +309,21 @@ export default function Model(props) {
           rotation={[-Math.PI / 2, 0, -Math.PI / 2]}
           scale={[-0.0013, -0.0015, -0.0014]}
         />
-        <group position={[0.6449, 0.8179, 1.2363]} rotation={[Math.PI, 1.5705, 0]} scale={[-0.0015, -0.0015, -0.0015]}>
+        {/*
+        <group visible={false} position={[0.6449, 0.8179, 1.2363]} rotation={[Math.PI, 1.5705, 0]} scale={[-0.0015, -0.0015, -0.0015]}>
           <mesh material={materials.brick} geometry={nodes.ID4359.geometry} />
           <mesh material={materials.dgrey} geometry={nodes.ID4359_1.geometry} />
           <mesh material={materials.lgrey} geometry={nodes.ID4359_2.geometry} />
           <mesh material={materials.dgrey} geometry={nodes.ID4359_3.geometry} />
           <mesh material={materials.lgrey} geometry={nodes.ID4359_4.geometry} />
         </group>
-        <group position={[1.1923, 1.4819, 1.4708]} scale={[0.0012, 0.0014, 0.0013]}>
+        <group visible={false} position={[1.1923, 1.4819, 1.4708]} scale={[0.0012, 0.0014, 0.0013]}>
           <mesh material={materials.brick} geometry={nodes.ID3693.geometry} />
           <mesh material={materials.dgrey} geometry={nodes.ID3693_1.geometry} />
           <mesh material={materials.llgrey} geometry={nodes.ID3693_2.geometry} />
           <mesh material={materials.white} geometry={nodes.ID3693_3.geometry} />
           <mesh material={materials.dgrey} geometry={nodes.ID3693_4.geometry} />
-        </group>
+        </group>*/}
         <group position={[0.7101, 0.35, 0.5259]} rotation={[0, 1.5705, 0]} scale={[0.0015, 0.0015, 0.0017]}>
           <mesh material={materials.lgrey} geometry={nodes.ID4386.geometry} />
           <mesh material={materials.ggrey} geometry={nodes.ID4386_1.geometry} />
@@ -432,7 +437,7 @@ export default function Model(props) {
           rotation={[Math.PI / 2, 0, -Math.PI / 2]}
           scale={[0.0016, 0.0016, 0.0015]}
         />
-        <mesh
+        <mesh 
           material={materials.Material__21124}
           geometry={nodes.GlassKC5BG21.geometry}
           position={[-2.1214, 2.4863, -1.8518]}
@@ -598,6 +603,16 @@ export default function Model(props) {
           <mesh material={materials.llgrey} geometry={nodes.ID4260_7.geometry} />
           <mesh material={materials.dgrey} geometry={nodes.ID4260_8.geometry} />
         </group>
+      
+        <group visible={props.church3} position={[3.2, 0.4437, -2.7]} rotation={[-Math.PI, 0, 0]} scale={[-0.0015, -0.0015, -0.0015]}>
+         
+          <mesh material={materials.lgrey} geometry={nodes.ID4260_3.geometry} />
+          <mesh material={materials.beige} geometry={nodes.ID4260_4.geometry} />
+          <mesh material={materials.orange} geometry={nodes.ID4260_5.geometry} />
+          <mesh material={materials.lgrey} geometry={nodes.ID4260_6.geometry} />
+          <mesh material={materials.llgrey} geometry={nodes.ID4260_7.geometry} />
+          <mesh material={materials.dgrey} geometry={nodes.ID4260_8.geometry} />
+        </group>
         <group position={[4.3984, 0.4198, 8.5905]} scale={[0.0536, 0.0666, 0.0536]}>
           <mesh material={materials['bark 3']} geometry={nodes.ID4269.geometry} />
           <mesh material={materials.Foliage} geometry={nodes.ID4269_1.geometry} />
@@ -618,13 +633,14 @@ export default function Model(props) {
           rotation={[Math.PI / 2, 0, -Math.PI / 2]}
           scale={[0.0016, 0.0016, 0.0015]}
         />
-        <mesh
+        {/*
+        <mesh visible={false}
           material={materials.Material__21124}
           geometry={nodes.GlassKC5BG21001.geometry}
           position={[-2.1214, 2.4863, -1.8518]}
           rotation={[Math.PI / 2, 0, Math.PI / 2]}
           scale={[0.0023, 0.0017, 0.0016]}
-        />
+        />*/}
         <mesh
           material={materials.Glass35reflection} visible={false}
           geometry={nodes.GlassKC7BG17001.geometry}
@@ -669,13 +685,14 @@ export default function Model(props) {
           <mesh material={materials.brick} geometry={nodes.ID4215_2.geometry} />
           <mesh material={materials.white} geometry={nodes.ID4215_3.geometry} />
         </group>
-        <group position={[-1.9046, 0.6581, -2.2849]} scale={[0.0017, 0.0016, 0.0017]}>
+        {/*}
+        <group visible={false} position={[-1.9046, 0.6581, -2.2849]} scale={[0.0017, 0.0016, 0.0017]}>
           <mesh material={materials['_02_-_Default.097']} geometry={nodes.ID4278.geometry} />
           <mesh material={materials['_02_-_Default.096']} geometry={nodes.ID4278_1.geometry} />
           <mesh material={materials['_08_-_Default.056']} geometry={nodes.ID4278_2.geometry} />
           <mesh material={materials['_15_-_Default.031']} geometry={nodes.ID4278_3.geometry} />
           <mesh material={materials['_19_-_Default.016']} geometry={nodes.ID4278_4.geometry} />
-        </group>
+      </group>*/}
         <group position={[1.4961, 0.6236, 1.6351]} rotation={[0, -1.5705, 0]} scale={[0.0015, 0.0015, 0.0015]}>
           <mesh material={materials.dgrey} geometry={nodes.ID4161.geometry} />
           <mesh material={materials.white} geometry={nodes.ID4161_1.geometry} />

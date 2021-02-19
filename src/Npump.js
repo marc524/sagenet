@@ -11,6 +11,7 @@ import icon from './icons.png';
 import soda from "./Videos/soda.mp4";
 import ipad from './Videos/ipad.mp4';
 import menu from './Videos/menu.mp4';
+import drive from './Videos/drivethru.mp4';
 
 function Screen(props){
   
@@ -27,9 +28,9 @@ function Screen(props){
   return(
     <mesh  scale={props.scale} rotation={props.rotation} position={props.position}>
       <planeBufferGeometry args={props.pbs} />
-      <meshBasicMaterial>
+      <meshStandardMaterial>
       <videoTexture attach="map" args={[video]} />
-      </meshBasicMaterial>
+      </meshStandardMaterial>
   </mesh>
   );
 
@@ -83,6 +84,7 @@ export default function Pump(props) {
      <Screen url={menu} pbs={[2,1]} position={[-7.2,2.4,-9.32]} rotation={[0,Math.PI*0.5,0]} scale={[0.61,0.69, 1]} />
      <Screen url={menu} pbs={[2,1]} position={[-7.2,2.4,-10.57]} rotation={[0,Math.PI*0.5,0]} scale={[0.61,0.69, 1]} />
      <Screen url={menu} pbs={[2,1]} position={[-7.2,2.4,-11.83]} rotation={[0,Math.PI*0.5,0]} scale={[0.61,0.69, 1]} />
+     <Screen url={drive} pbs={[1.7,1]} position={[6.09,1.65,-13.52]} rotation={[0,Math.PI*0.385,0]} scale={[1.4,1.4, 1]} />
       <group position={[-1.14, 0.02, 1.77]} scale={[0.01, 0.01, 0.01]}>
         <mesh  castShadow receiveShadow
           material={materials['Material #1431659626.001']}

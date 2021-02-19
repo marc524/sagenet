@@ -21,7 +21,7 @@ function Sageview(props){
             <TextUI
              index={props.index}
              text={"PROMOTIONS."}
-             para={"TBD."}
+             vidurl={"https://player.vimeo.com/video/508894833?autoplay=1&title=0&byline=0&portrait=0"}
              position={[0, 2.3, 0]}
              skew={0}
              wx={0.9}

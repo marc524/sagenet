@@ -2,7 +2,7 @@ import React, { useRef, Suspense, useState } from 'react'
 import { Canvas, extend, useThree, useFrame } from "react-three-fiber"
 import './App.css'
 import * as THREE from 'three'
-import {  Sky, Loader, Sphere } from '@react-three/drei'
+import {  Sky  } from '@react-three/drei'
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
 import Test from './Dscf'
 
@@ -71,7 +71,7 @@ function Overworld(props) {
   return (
     <>
     <Canvas gl={{ antialias: true }} shadowMap={true} camera={{ fov: 40, position: [12.7,5.21,-12.3] }} className="canvas">
-      <fog attach="fog" args={["#dde9f0", 0, 35]} />
+      <fog attach="fog" args={["#dde9f0", 0, 40]} />
      
     
       <CameraControls cam={props.cam} />
@@ -89,16 +89,16 @@ function Overworld(props) {
       <Suspense fallback={null}>
       
       
-        <Test position={[0,0,0]} />
+        <Test church2={false} church3={true}  position={[0,0,0]} />
         
-        <Test gas={false} rotation={[0,Math.PI*0.5,0]} position={[1.77,0,12]} />
-        <Test gas={false} church={false} church2={false} rotation={[0,Math.PI*0.5,0]} position={[-9,0,11]} />
-        <Test gas={false} church={false} rotation={[0,-Math.PI*0.5,0]}  position={[12,0,-1.5]}  />
-        <Test gas={false}   position={[11.5,0,10]}  />
-        <Test gas={false} rotation={[0,-Math.PI*0.5,0]}  position={[-10,0,-1.8]}  />
-        <Test gas={false} church={false} rotation={[0,Math.PI*0.5,0]}  position={[-2.6,0,-11]}  />
-        <Test gas={false} church={false} rotation={[0,-Math.PI*0.5,0]}  position={[-13.5,0,-13.3]}  />
-        <Test gas={false} church2={false} church={false} rotation={[0,Math.PI,0]}  position={[9.5,0,-12.5]}  />
+        <Test gas={false} church3={false} rotation={[0,Math.PI*0.5,0]} position={[1.77,0,12]} />
+        <Test gas={false} church3={false} church={false} church2={false} rotation={[0,Math.PI*0.5,0]} position={[-9,0,11]} />
+        <Test gas={false} church3={false} church={false} rotation={[0,-Math.PI*0.5,0]}  position={[12,0,-1.5]}  />
+        <Test gas={false} church3={false}   position={[11.5,0,10]}  />
+        <Test gas={false} church3={false} rotation={[0,-Math.PI*0.5,0]}  position={[-10,0,-1.8]}  />
+        <Test gas={false} church3={false} church={false} rotation={[0,Math.PI*0.5,0]}  position={[-2.6,0,-11]}  />
+        <Test gas={false} church3={false} church={false} rotation={[0,-Math.PI*0.5,0]}  position={[-13.5,0,-13.3]}  />
+        <Test gas={false} church3={false} church2={false} church={false} rotation={[0,Math.PI,0]}  position={[9.5,0,-12.5]}  />
  
         <Sky
         sunPosition={[0, 1, 0]}
