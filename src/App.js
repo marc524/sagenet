@@ -6,14 +6,14 @@ import Store from './Ncstore2'
 import Base from './Floor'
 import Dcigs from './GasModels/Dcigs'
 import Worker from './GasModels/Dworker'
-
 import './App.css'
 import * as THREE from 'three'
-import { Sky } from '@react-three/drei'
+import { Sky, Plane, Text, Html } from '@react-three/drei'
 import Cata from './Cata'
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
 import styled, { css } from 'styled-components'
 import logo from './SageNetblue.png'
+import Welcome from './Welcome'
 
 
 
@@ -142,48 +142,24 @@ background-color: "red";
 `
 
 
+
+
 function App(props) {
   //Scene();
   const [cam, setCam] = useState(false);
   const [visible, setVisible] = useState(true);
-  const [index, setIndex] = useState(props.index);
-  let i = 1;
-  /*
-  switch (props.index) {
-    case 1:
-      setIndex(1);
-     
-      break;
-    default:
-      i = 4;
-      //setIndex(0);
-      break;
-  }*/
-  //console.log("App: " + props.index);
+
 
   setTimeout(() => { setVisible(false) }, 1000);
-  function Changer(props){
-    setIndex(props.index);
-    return(
-      null
-    )
-  }
-  //useEffect(()=>{console.log("poop")},[])
+
 
   return (
     <>
       {visible &&
         <Screen />}
-        
-      {/*<Bbar>
-        <Bimg src={arrow} onClick={() => setIndex((index - 1 == -1 ? 4 : index - 1))} />
-        <Empty />
-        <Bimg right src={arrow} onClick={() => setIndex((index + 1) % 5)} />
-      </Bbar>
-      */}
-      
+
       <Canvas colorManagement={true} gl={{ antialias: true }} shadowMap={true} camera={{ fov: 40, position: [0, 3, 25] }} className="canvas">
-      <fog attach="fog" args={["#dde9f0", 0, 80]} />
+        <fog attach="fog" args={["#dde9f0", 0, 80]} />
 
         {props.cam ?
           <CameraControls cam={props.cam} /> :
@@ -192,7 +168,7 @@ function App(props) {
         <directionalLight castShadow shadowMap={true} shadowBias={-0.00005} shadow-mapSize-height={1024}
           shadow-mapSize-width={1024} intensity={0.8} position={[0, 7, 20]} />
         <hemisphereLight color={"lightblue"} groundColor={"grey"} intensity={0.8} />
-        <pointLight position={[0,3.5,-10]} intensity={1} distance={17} decay={2}/>
+        <pointLight position={[0, 3.5, -10]} intensity={1} distance={17} decay={2} />
         <mesh castShadow receiveShadow visible={false} rotation={[-3.14 / 2, 0, 0]} position={[0, 0, 0]} scale={[100, 100, 1]} >
           <planeBufferGeometry />
           <meshStandardMaterial color="grey" />
@@ -202,13 +178,13 @@ function App(props) {
           <Pump />
           <Store />
           <Base />
-          <Dcigs/>
-          <Worker rotation={[0,Math.PI*0.5,0]} position={[-7,0.1,-10.5]} scale={[1.2,1.2,1.2]}/>
-          <Worker rotation={[0,-Math.PI*0.5,0]} position={[3.8,0.1,-11.8]} scale={[1.2,1.2,1.2]}/>
-          <Cata index={props.index} position={[2,3,5]} rotation={[0,0,0]} seen={props.index == 1} />
-          <Cata index={props.index} position={[-6,2.7,-9]} rotation={[0,Math.PI*0.5,0]} seen={props.index == 2} />
-          <Cata index={props.index} position={[2.4,2.8,-12.9]} rotation={[0,-Math.PI*0.5,0]} seen={props.index == 3} />
-          <Cata index={props.index} position={[6.6,2.5,-9.8]} rotation={[0,Math.PI*0.4,0]} seen={props.index == 4} />
+          <Dcigs />
+          <Worker rotation={[0, Math.PI * 0.5, 0]} position={[-7, 0.1, -10.5]} scale={[1.2, 1.2, 1.2]} />
+          <Worker rotation={[0, -Math.PI * 0.5, 0]} position={[3.8, 0.1, -11.8]} scale={[1.2, 1.2, 1.2]} />
+          <Cata index={props.index} position={[2, 3, 5]} rotation={[0, 0, 0]} seen={props.index == 1} />
+          <Cata index={props.index} position={[-6, 2.7, -9]} rotation={[0, Math.PI * 0.5, 0]} seen={props.index == 2} />
+          <Cata index={props.index} position={[2.4, 2.8, -12.9]} rotation={[0, -Math.PI * 0.5, 0]} seen={props.index == 3} />
+          <Cata index={props.index} position={[6.6, 2.5, -9.8]} rotation={[0, Math.PI * 0.4, 0]} seen={props.index == 4} />
           <Sky
             sunPosition={[0, 1, 0]}
             turbidity={2.1}
@@ -219,8 +195,11 @@ function App(props) {
           />
 
         </Suspense>
-
-
+        {props.index == 0 &&
+         <Suspense fallback={null}>
+          <Welcome index={props.index} />
+          </Suspense>
+        }
       </Canvas>
 
 
