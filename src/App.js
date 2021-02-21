@@ -83,8 +83,8 @@ function Dolly(props) {
         Look = [10, 1.8, -11.07];
         break;
       case 4:
-        Pos = [12, 1.5, -10];
-        Look = [-10, 1.5, -17];
+        Pos = [12, 1.5, -11.3];
+        Look = [-10, 1.5, -19.5];
         break;
       default:
         Pos = [0, 3, 25];
@@ -185,7 +185,7 @@ function App(props) {
           <Cata index={props.index} position={[2.2, 3, 4.8]} rotation={[0, Math.PI * 1.935, 0]} seen={props.index == 1} />
           <Cata index={props.index} position={[-6, 2.7, -9]} rotation={[0, Math.PI * 0.5, 0]} seen={props.index == 2} />
           <Cata index={props.index} position={[2.4, 2.8, -12.9]} rotation={[0, -Math.PI * 0.5, 0]} seen={props.index == 3} />
-          <Cata index={props.index} position={[6.6, 2.5, -9.8]} rotation={[0, Math.PI * 0.4, 0]} seen={props.index == 4} />
+          <Cata index={props.index} position={[6.6, 2.5, -11.4]} rotation={[0, Math.PI * 0.389, 0]} seen={props.index == 4} />
           <Sky
             sunPosition={[0, 1, 0]}
             turbidity={2.1}

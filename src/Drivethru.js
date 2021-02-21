@@ -20,7 +20,7 @@ function Sageview(props){
         <>
             <TextUI
              index={props.index}
-             text={"PROMOTIONS."}
+             text={"Promotions."}
              vidurl={"https://player.vimeo.com/video/508894833?autoplay=1&title=0&byline=0&portrait=0"}
              position={[0, 2.3, 0]}
              skew={0}
@@ -30,10 +30,10 @@ function Sageview(props){
               />
               <TextUI
                index={props.index}
-             text={"LOYALTY."}
+             text={"Loyalty."}
 
              para={"Using loyalty-integration, captive-portals, and even license plate recognition, menu offerings can include recommendations based on customer profiles and order history. Has your customer been in the drive-thru and ordered the same chicken nugget meal their past 5 visits? Your signage can remind them that nothing goes better with nuggets than some fries."}
-             position={[0.7, 1.5, 0]}
+             position={[-0.3, 1.5, 0]}
              skew={0}
              wx={0.9}
              icon={loyal}
@@ -42,13 +42,13 @@ function Sageview(props){
                <TextUI
                 index={props.index}
              
-             text={"ECONOMICS."}
+             text={"Economics."}
              linka = {ha}
              linki = {ecob}
              url={"https://sagenetvirtual.com/SageNet_Drive-thruTechnology_WP_NEW022019.pdf"}
            
              para={"Drive-thru sales count for as much as 70% of a QSR’s revenue. With a number that high, you want to make sure you’re tapped in. The use of digital signage can upsell high margin items like beverages. On average, 20% of drive thru customers buy a drink with their food. With signage, that can increase to 40%, causing an overall increase in sales up to 7%."}
-             position={[4, 2.3, 0]}
+             position={[3.4, 2.3, 0]}
              skew={0}
              wx={1}
              icon={graph}
@@ -56,8 +56,8 @@ function Sageview(props){
               />
                 <TextUI
                  index={props.index}
-             text={"WATCH OUR VIDEO."}
-             position={[3.4, 1.2, 0]}
+             text={"Watch Our Video."}
+             position={[3.4, 1.5, 0]}
              skew={0}
              wx={1.3}
              vidurl={"https://player.vimeo.com/video/501964130?autoplay=1&title=0&byline=0&portrait=0"}
@@ -72,10 +72,10 @@ function Sagesec(props){
         <>
             <TextUI
              index={props.index}
-             text={"CYBER FOR SIGNAGE."}
+             text={"Cyber For Signage."}
             
              para={"Any time you connect a device to your network, you’re introducing new security risks. Make sure your signage remains secure, and your screens only show the content you intended by securing the network and its connected devices. The only thing worse than no content, is a hacker highlighting the great deals at your competitor’s locations."}
-             position={[0.5, 2.3, 0]}
+             position={[-0.3, 2.3, 0]}
              skew={0}
              wx={1.3}
              icon={screen}
@@ -84,8 +84,8 @@ function Sagesec(props){
               <TextUI
                index={props.index}
                vidurl={"https://player.vimeo.com/video/501963814?autoplay=1&title=0&byline=0&portrait=0"}
-             text={"SECURITY AND CUSTOMER LOYALTY."}
-             position={[1, 1.4, 0]}
+             text={"Security And Customer Loyalty."}
+             position={[-0.6, 1.4, 0]}
              skew={0}
              wx={2}
              icon={video}
@@ -93,9 +93,9 @@ function Sagesec(props){
               />
                <TextUI
                 index={props.index}
-             text={"SECURITY OPERATIONS CENTER."}
+             text={"Security Operations Center."}
              para={"TBD"}
-             position={[3.8, 2.4, 0]}
+             position={[3.5, 2.4, 0]}
              skew={0}
              wx={1.7}
              icon={sec}
@@ -103,7 +103,7 @@ function Sagesec(props){
               />
                 <TextUI
                  index={props.index}
-             text={"VULN SCANNING."}
+             text={"VULN Scanning."}
              position={[3.5, 1.5, 0]}
              skew={0}
              wx={1.1}
@@ -123,9 +123,9 @@ function Sageconnect(props){
         <>
             <TextUI
               index={props.index}
-             text={"THE RIGHT BROADBAND."}
+             text={"The Right Broadband."}
              vidurl={"https://player.vimeo.com/video/501963949?autoplay=1&title=0&byline=0&portrait=0"}
-             position={[0.5, 2.3, 0]}
+             position={[-0.8, 2.3, 0]}
              skew={0}
              wx={1.5}
              icon={video}
@@ -133,10 +133,10 @@ function Sageconnect(props){
               />
               <TextUI
               index={props.index}
-             text={"NETWORK OPERATIONS CENTER."}
+             text={"Network Operations Center."}
           
              para={"Someone to watch over me. Whether in the store, at the pump or drive-thru, for PoS, digital signage or guest Wi-Fi, the network is the backbone of your business. The support of a 24/7 NOC is more than a luxury, it’s necessity. Our engineers utilize advanced tools and systems to analyze, troubleshoot, remediate and optimize network performance."}
-             position={[0, 1.5, 0]}
+             position={[-0.5, 1.5, 0]}
              skew={0}
              wx={1.8}
              icon={network}
@@ -145,7 +145,7 @@ function Sageconnect(props){
             
                 <TextUI
                  index={props.index}
-             text={"CONNECTIVITY SANITY."}
+             text={"Connectivity Sanity."}
              para={"With multiple carriers, vendors and compliance demands, managing a multi-site network can be a challenge. An MNSP provides a single point of contact for circuit provisioning, consolidated billing, help desk support, routine maintenance and emergency services. Advanced services include 24/7 network monitoring, PCI-compliance and SIEM and SOC services."}
              linka={ha}
              linki={serviceb}
@@ -165,9 +165,9 @@ function Sageiw(props){
         <>
             <TextUI
              index={props.index}
-             text={"HOW LOCATION ANALYTICS WORK."}
+             text={"How Location Analytics Work."}
              para={"TBD"}
-             position={[0.3, 2.2, 0]}
+             position={[-0.5, 2.2, 0]}
              skew={0}
              wx={2}
              icon={tech}
@@ -177,9 +177,9 @@ function Sageiw(props){
                index={props.index}
               
               
-             text={"TAKE IT OUTSIDE."}
+             text={"Take It Outside."}
              para={"The pandemic transformed C-store food service. To-go, curbside and drive-thru means untethering workers and customers with robust, secure Wi-Fi. Empower employees with wireless headsets, tablets, and printers. Outdoor access points allow customers to place orders from the drive-thru, parking lot or the pump. In-car convenience increases basket-size as well."}
-             position={[1, 1.4, 0]}
+             position={[0, 1.4, 0]}
              skew={0}
              wx={1.1}
              icon={location}
@@ -187,8 +187,8 @@ function Sageiw(props){
               />
                 <TextUI
                  index={props.index}
-             text={"WPA ENCRYPTION."}
-             position={[3.8, 1.8, 0]}
+             text={"WPA Encryption."}
+             position={[3, 1.8, 0]}
              skew={0}
              wx={1.1}
              vidurl={"https://player.vimeo.com/video/501963786?autoplay=1&title=0&byline=0&portrait=0"}

@@ -61,6 +61,7 @@ export default function Welcome(props) {
           <Thumbnail img={Paul}  position={[0.5,-0.49,0.1]} vidurl={"https://player.vimeo.com/video/501964243?autoplay=1&title=0&byline=0&portrait=0"}/>
           
           <Plane args={[3, 1.78]}  >
+          
              
             
             {/*open && 
