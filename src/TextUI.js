@@ -1,4 +1,4 @@
-import { useTexture, Text,  Plane, meshBounds, Html } from '@react-three/drei'
+import { useTexture, Text,  Plane, meshBounds, Html  } from '@react-three/drei'
 import React, { useRef, useState } from 'react'
 import fc from './sagelabel/Futura-Condensed.otf'
 import circ from './sagelabel/circle.png'
@@ -54,7 +54,8 @@ export default function Button(props) {
   return (
     <>
       <group ref={group} position={props.position}>
-        <Text font={fc} color={"#05111C"} fontSize={0.15}> {props.text} </Text>
+        <Text font={fc} color={"#05111C"} fontSize={0.15}> {props.text.toUpperCase()} </Text>
+        
         <mesh onClick={() => setClick(true)} onPointerOver={() => setActive(true)} onPointerOut={() => setActive(false)} visible={true} position={[0, 0, -0.001]} scale={[props.wx, 0.3, 1]}>
           <planeBufferGeometry />
           <meshBasicMaterial transparent={true} opacity={0.9} attach="material" color={active ? "orange" : "white"} />
@@ -95,8 +96,13 @@ export default function Button(props) {
           </group>
          
           <Text position={[0, 0.6, 0.1]} rotation={[0, props.skew, 0]} font={fc} fontSize={0.17} color={"#05111C"} anchorX="center" anchorY="middle" >
-            {props.text}
+            {props.text.substring(0,props.text.length-1)}
+            <Text anchorX="left" position={[-1.4,0.05,0.01]} font={fc} color={"#f72900"} fontSize={0.20}> {". . . . . . . . . . . . ".substring(0,36-(props.text.length>22?props.text.length-4:props.text.length))} </Text>
+            <Text position={[props.text.length*0.032,0.02,0.01]} font={fc} color={"#f72900"} fontSize={0.2}> {"."} </Text>
           </Text>
+          
+
+          
           <Text position={[0, 0.1, 0.1]} rotation={[0, props.skew, 0]} font={"Arial"} fontSize={0.07} textAlign={"center"} maxWidth={2} color={"#05111C"} anchorX="center" anchorY="middle" >
             {props.para}
           </Text>

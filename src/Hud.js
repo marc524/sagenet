@@ -12,6 +12,7 @@ import * as THREE from 'three'
 import futura from './futura.ttc'
 import { useFrame, useThree } from "react-three-fiber"
 
+
 const Flex = styled.div`
 position: fixed;
 width: 100%;
@@ -80,11 +81,6 @@ bottom:0;
 z-index:0;
 `
 
-const Buttons = styled.div`
-z-index: 3;
-margin-top: auto;
-margin-bottom: auto;
-`
 const Bbar = styled.div`
 position: fixed;
 top:71%;
@@ -102,10 +98,12 @@ margin-top: auto;
 margin-bottom: auto;
 width: 5rem;
 ${props => props.right && css`
-transform: rotate(45deg);
+transform: translateY(-8px) rotate(290deg) ;
+
 `}
 
 `
+
 
 
 
@@ -128,6 +126,7 @@ export default function Hud() {
                 i += clock.getDelta();
                 if (i > 0.005) {
                     //setActive(false);
+                    setIndex(0);
                     setScene(false);
                 }
             }
@@ -142,7 +141,7 @@ export default function Hud() {
                 if (active) {
 
                     //state.camera.position.lerp(dummy.set(props.gate ?  props.position[0] : state.camera.position.x, props.gate ?  props.position[1]-1 : state.camera.position.y, props.gate ?  props.position[2] : state.camera.position.z), 0.003);
-                    target.lerp(ldummy.set(props.gate ? props.position[0] : 0, props.gate ? props.position[1] - 2 : 0, props.gate ? props.position[2] : 0), 0.01);
+                    target.lerp(ldummy.set(props.gate ? props.position[0] : 0, props.gate ? props.position[1] - 3 : 0, props.gate ? props.position[2] : 0), 0.05);
 
                     state.camera.lookAt(target);
                     state.camera.fov -= 0.2;
@@ -174,6 +173,7 @@ export default function Hud() {
 
     return (
         <>
+            
             <Flex>
             {!scene &&
                     <>
@@ -189,15 +189,12 @@ export default function Hud() {
 
 
                
-                        <Bar />
-                        <Item style={!cam ? { backgroundColor: "#ff9a00" } : { backgroundColor: "#133A5F" }} onClick={() => setCam(false)}>Fixed Camera</Item>
-                        <Bar />
-                        <Item style={cam ? { backgroundColor: "#ff9a00" } : { backgroundColor: "#133A5F" }} onClick={() => setCam(true)}>Free Camera</Item>
+                        
                         
                     </>}
 
                 <Empty />
-                <Item onClick={() => setScene(false)}>C-Store</Item>
+                <Item onClick={() => {setScene(false); setIndex(0);}}>C-Store</Item>
                 <Bar />
                 <Item>QSR</Item>
                 <Bar />
@@ -224,18 +221,20 @@ export default function Hud() {
             </Flexb>
 
             {scene ?
-                <Overworld obj={<group>
+                <Suspense fallback={null}><Overworld obj={<group>
                     <Circ position={[2.5, 4, 1.5]} text={"FINANCE"} />
                     <Circ position={[0, 4, 1.5]} text={"RETAIL"} />
                     <Circ position={[0, 4, -1.5]} text={"QSR"} />
                     <Circ position={[0, 3.8, -5]} text={"C-STORE"} />
-                </group>} zoom={zoom} cam={cam} /> :
+                </group>} zoom={zoom} cam={cam} /></Suspense> :
                 <>
                 
                 <App index={index} zoom={zoom} cam={cam} />
                 
                 <Bbar>
                 <Bimg src={arrow} onClick={() => setIndex((index-1 == -1? 4:index-1))}/>
+                <Empty/>
+                <Item style={cam ? { backgroundColor: "#ff9a00" } : { backgroundColor: "#133A5F" }} onClick={() => setCam(!cam)}>360° Navigation</Item>
                 <Empty/>
                 <Bimg right src={arrow} onClick={() => setIndex((index+1)%5)}/>
                 </Bbar>

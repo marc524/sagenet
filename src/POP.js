@@ -4,10 +4,7 @@ import graph from './sagelabel/Graph_icon.png'
 import heart from './sagelabel/heart.png'
 import video from './sagelabel/Video-icon.png'
 import wifi from './sagelabel/Secure Wi-Fi_Icon.png'
-import hs from './sagelabel/download_button.png'
 import ha from './sagelabel/download_buttonA.png'
-import demv from './sagelabel/download_emv.png'
-import dlocation from './sagelabel/download_location.png'
 import tech from './sagelabel/Tech_icon.png'
 import firewall from './sagelabel/Firewall_icon.png'
 import seamless from './sagelabel/Seamless_icon.png'
@@ -25,7 +22,7 @@ function Sageview(props){
         <>
             <TextUI
              index={props.index}
-             text={"PROMOTIONS."}
+             text={"Promotions."}
              para={"Stock will be flying off the shelves quicker than it can be replenished. (At least that’s the hope.) With digital signage, make updates to promotions with just a click. Interested in an LTO on coffee from 6-8 am? Schedule your BOGO bagels at the same time! Quickly switch between promotional offers on any goods at any time."}
              position={[0.5, 2.5, 0]}
              skew={0}
@@ -35,7 +32,7 @@ function Sageview(props){
               />
               <TextUI
                index={props.index}
-             text={"LOYALTY."}
+             text={"Loyalty."}
              linka = {ha}
              linki = {cstoreb}
              url={"https://sagenetvirtual.com/SageNet_Wi-FiDS_090918-3.pdf"}
@@ -49,7 +46,7 @@ function Sageview(props){
                <TextUI
                 index={props.index}
              
-             text={"HEALTH & SAFETY."}
+             text={"Health & Safety."}
            
              para={"Your c-store is only as strong as your people - keep them safe. With digital signage, you can send messages to staff. Send reminders to wash hands, do temp checks, wear a mask, and maintain social distancing. If your state of business changes the mandates, so can you."}
              position={[3.2, 1.5, 0]}
@@ -60,7 +57,7 @@ function Sageview(props){
               />
                 <TextUI
                  index={props.index}
-             text={"VIDEO."}
+             text={"Video."}
              position={[2.7, 2.4, 0]}
              skew={0}
              wx={0.7}
@@ -76,7 +73,7 @@ function Sagesec(props){
         <>
             <TextUI
              index={props.index}
-             text={"PENETRATION TESTS."}
+             text={"Penetration Tests."}
              linka = {ha}
              linki = {peneb}
              url={"https://sagenetvirtual.com/SageNet_CyberPenTesting_2pgr_New070319.pdf"}
@@ -90,7 +87,7 @@ function Sagesec(props){
               <TextUI
                index={props.index}
                para={"TBD"}
-             text={"MANAGED FIREWALL."}
+             text={"Managed Firewall."}
              position={[0, 1.7, 0]}
              skew={0}
              wx={1.3}
@@ -99,7 +96,7 @@ function Sagesec(props){
               />
                <TextUI
                 index={props.index}
-             text={"SECURE WI-FI."}
+             text={"Secure Wi-Fi."}
              para={"Guest wi-fi provides another avenue for promotions and building customer satisfaction. It also opens you up to numerous risks. Without proper restrictions, guests can access questionable sites, accidentally or purposely inject malware into your network, or even access proprietary info on your corporate network. Build trust with your customers by keeping their data safe."}
              position={[2, 2.4, 0]}
              skew={0}
@@ -109,7 +106,7 @@ function Sagesec(props){
               />
                 <TextUI
                  index={props.index}
-             text={"THREAT DETECTION."}
+             text={"Threat Detection."}
              position={[2.7, 1.6, 0]}
              skew={0}
              wx={1.2}
@@ -136,7 +133,7 @@ function Sageconnect(props){
               />
               <TextUI
               index={props.index}
-             text={"SEAMLESS EXPERIENCE."}
+             text={"Seamless Experience."}
              linka = {ha}
              linki = {seamb}
              url={"https://sagenetvirtual.com/SageNet_ManagedNetworkServices_WP_NEW041020.pdf"}
@@ -149,7 +146,7 @@ function Sageconnect(props){
               />
                <TextUI
                 index={props.index}
-             text={"LAN DIAGRAM."}
+             text={"LAN Diagram."}
              position={[3, 2.4, 0]}
              skew={0}
              wx={1}
@@ -159,7 +156,7 @@ function Sageconnect(props){
               />
                 <TextUI
                  index={props.index}
-             text={"MULTI-SITE CONNECTIONS."}
+             text={"Multi-Site Connections."}
              vidurl={"https://player.vimeo.com/video/501963890?autoplay=1&title=0&byline=0&portrait=0"}
              position={[2.5, 1.6, 0]}
              skew={0}
@@ -176,7 +173,7 @@ function Sageiw(props){
         <>
             <TextUI
              index={props.index}
-             text={"ACCESS POINT MANAGEMENT."}
+             text={"Access Point Management."}
              para={"Reliance on, and expectations for, Wi-Fi, whether for employees, in-store devices or guests, inside or out, is high. Access Point placement, quality and security will determine availability and reliability. Interference has many culprits. Refrigerators, security cameras, microwaves, TVs, walls, windows, even weather can impact wireless performance."}
              position={[0.3, 2.4, 0]}
              skew={0}
@@ -189,7 +186,7 @@ function Sageiw(props){
                linki={wifib}
                linka={ha}
                url={"https://sagenetvirtual.com/SageNet_Wi-FiDS_071619.pdf"}
-             text={"GUEST WI-FI."}
+             text={"Guest Wi-Fi."}
              para={"Guest Wi-Fi has moved from nice to have, to must have for C-stores. Loyalty apps offer coupons and personalize the guest experience and keep customers coming back for more. 40% of customers want to hear from “my C-store” monthly. Data collection through captive portals improves the customer experience and helps c-stores better improve operational efficiency."}
              position={[0, 1.5, 0]}
              skew={0}
@@ -199,7 +196,7 @@ function Sageiw(props){
               />
                 <TextUI
                  index={props.index}
-             text={"WI-FI DEPLOYMENT."}
+             text={"Wi-Fi Deployment."}
              position={[2.8, 1.6, 0]}
              skew={0}
              wx={1.3}

@@ -35,6 +35,7 @@ const CameraControls = (props) => {
 
   // Ref to the controls, so that we can update them on every frame with useFrame
   const controls = useRef();
+  //camera.lookAt([0,0,0])
   //controls.current.update();
 
   //useFrame(() => console.log(controls.current));
@@ -70,7 +71,7 @@ function Dolly(props) {
   useFrame(state => {
     switch (props.index) {
       case 1:
-        Pos = [3, 2, 10];
+        Pos = [3, 2, 10.3];
         Look = [4, 2, 5];
         break;
       case 2:
@@ -181,7 +182,7 @@ function App(props) {
           <Dcigs />
           <Worker rotation={[0, Math.PI * 0.5, 0]} position={[-7, 0.1, -10.5]} scale={[1.2, 1.2, 1.2]} />
           <Worker rotation={[0, -Math.PI * 0.5, 0]} position={[3.8, 0.1, -11.8]} scale={[1.2, 1.2, 1.2]} />
-          <Cata index={props.index} position={[2, 3, 5]} rotation={[0, 0, 0]} seen={props.index == 1} />
+          <Cata index={props.index} position={[2.2, 3, 4.8]} rotation={[0, Math.PI * 1.935, 0]} seen={props.index == 1} />
           <Cata index={props.index} position={[-6, 2.7, -9]} rotation={[0, Math.PI * 0.5, 0]} seen={props.index == 2} />
           <Cata index={props.index} position={[2.4, 2.8, -12.9]} rotation={[0, -Math.PI * 0.5, 0]} seen={props.index == 3} />
           <Cata index={props.index} position={[6.6, 2.5, -9.8]} rotation={[0, Math.PI * 0.4, 0]} seen={props.index == 4} />
@@ -193,13 +194,14 @@ function App(props) {
             mieDirectionalG={0.941}
             exposure={0.18}
           />
+          {props.index == 0 &&
+         
+          <Welcome index={props.index} />
+         
+        }
 
         </Suspense>
-        {props.index == 0 &&
-         <Suspense fallback={null}>
-          <Welcome index={props.index} />
-          </Suspense>
-        }
+        
       </Canvas>
 
 
