@@ -18,6 +18,8 @@ import clock from './sagelabel/Clock_icon.png'
 import pc from './sagelabel/PCI_icon.png'
 import parabutton from './sagelabel/6para_button.jpg'
 import obutton from './sagelabel/optimize_button.jpg'
+import sixtyfive from './ImageAssets/65%.png'
+import { useTexture } from '@react-three/drei'
 
 function Sageview(props) {
 
@@ -48,6 +50,7 @@ function Sageview(props) {
         wx={0.7}
         icon={kiosk}
         icolor={"#8AD2D2"}
+        image={useTexture(sixtyfive)}
       />
       <TextUI
         index={props.index}

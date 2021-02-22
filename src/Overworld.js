@@ -8,6 +8,7 @@ import Test from './Dscf'
 import Bank from './OverworldModels/Dbank'
 import Chapel from './OverworldModels/Dchapel'
 import Kfc from './OverworldModels/Dkfc2'
+import Qbuilding from './OverworldModels/Dqsr'
 import ocean from './ImageAssets/ocean.jpg'
 
 
@@ -92,6 +93,7 @@ function Overworld(props) {
         <Bank scale={[0.06,0.06,0.06]} position={[3,0.5,1]} rotation={[0,Math.PI*0.5,0]}/>
         <Chapel scale={[0.17,0.17,0.17]} position={[-2.9,0.5,-4.5]}/>
         <Kfc scale={[0.011,0.011,0.011]} position={[-0.3,0.5,-1.5]}  />
+        <Qbuilding position={[0,0.5,2.1]} rotation={[0,Math.PI*0.5,0]}  scale={[0.05,0.05,0.05]} />
         {/*<Sky
         sunPosition={[0, 1, 0]}
         turbidity={7.1}

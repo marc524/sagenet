@@ -14,6 +14,8 @@ import ha from './sagelabel/download_buttonA.png'
 import demv from './sagelabel/download_emv.png'
 import dlocation from './sagelabel/download_location.png'
 import countdown from './ImageAssets/Count_down.png'
+import portal from './ImageAssets/Captive Portal.png'
+import _skimming from './sagelabel/skimming_button.jpg'
 import { useTexture } from '@react-three/drei'
 
 function Sageview(props){
@@ -95,6 +97,9 @@ function Sagesec(props){
              wx={1}
              icon={skim}
              icolor={"#72337F"}
+             linki={_skimming}
+             linka={ha}
+             url={"https://vimeo.com/502220475/71170cd0e3"}
               />
                <TextUI
                 index={props.index}
@@ -177,6 +182,7 @@ function Sageiw(props){
              wx={1.3}
              icon={screen}
              icolor={"#E79F37"}
+             image={useTexture(portal)}
               />
               <TextUI
                index={props.index}

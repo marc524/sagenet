@@ -122,12 +122,14 @@ export default function Button(props) {
               <planeBufferGeometry />
               <meshBasicMaterial map={linkimg} transparent={true} alphaMap={linkimgA} attach="material" color="white" />
             </mesh>}
+           
                     {props.vidurl && 
           <Html center scaleFactor={2.5}>
           <div class="content">
           <iframe src={props.vidurl} width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
           </div>
           </Html>}
+         
           
          
         </group>

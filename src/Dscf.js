@@ -487,7 +487,7 @@ export default function Model(props) {
           rotation={[0, -Math.PI / 2, 0]}
           scale={[0.0015, 0.0015, 0.0015]}
         />
-        <mesh 
+        <mesh visible={false}
           material={materials.Material__21124}
           geometry={nodes.GlassKC9BG21.geometry}
           position={[1.8681, 1.0407, -1.436]}
@@ -543,7 +543,7 @@ export default function Model(props) {
           <mesh material={materials.brick} geometry={nodes.ID4179_2.geometry} />
           <mesh material={materials.dgrey} geometry={nodes.ID4179_3.geometry} />
         </group>
-        <group position={[1.7484, 0.6121, -1.0867]} rotation={[0, 0, -Math.PI]} scale={[-0.0015, -0.0014, -0.0015]}>
+        <group visible={false} position={[1.7484, 0.6121, -1.0867]} rotation={[0, 0, -Math.PI]} scale={[-0.0015, -0.0014, -0.0015]}>
           <mesh material={materials.beige} geometry={nodes.ID4242.geometry} />
           <mesh material={materials.black} geometry={nodes.ID4242_1.geometry} />
           <mesh material={materials.lgrey} geometry={nodes.ID4242_2.geometry} />
