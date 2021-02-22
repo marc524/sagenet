@@ -22,6 +22,7 @@ function Sageview(props){
         <>
             <TextUI
              index={props.index}
+             offs={-0.05}
              text={"Promotions."}
              para={"Stock will be flying off the shelves quicker than it can be replenished. (At least that’s the hope.) With digital signage, make updates to promotions with just a click. Interested in an LTO on coffee from 6-8 am? Schedule your BOGO bagels at the same time! Quickly switch between promotional offers on any goods at any time."}
              position={[0.5, 2.5, 0]}
@@ -32,6 +33,7 @@ function Sageview(props){
               />
               <TextUI
                index={props.index}
+               offs={-0.04}
              text={"Loyalty."}
              linka = {ha}
              linki = {cstoreb}
@@ -52,6 +54,7 @@ function Sageview(props){
              position={[3.2, 1.5, 0]}
              skew={0}
              wx={1.5}
+             offs={-0.04}
              icon={heart}
              icolor={"#8AD2D2"}
               />
@@ -135,6 +138,7 @@ function Sageconnect(props){
               index={props.index}
              text={"Seamless Experience."}
              linka = {ha}
+             offs={-0.04}
              linki = {seamb}
              url={"https://sagenetvirtual.com/SageNet_ManagedNetworkServices_WP_NEW041020.pdf"}
              para={"The best connections are the ones that customers and staff never notice. SageCONNECT ensures every transaction is flawless and frictionless, inventory and back office systems are up to date, your digital signage is up-to-date, and your guest Wi-Fi is fast and reliable. All this with the assurance that connections are secure, and costs are competitive."}
@@ -173,6 +177,7 @@ function Sageiw(props){
         <>
             <TextUI
              index={props.index}
+             offs={-0.04}
              text={"Access Point Management."}
              para={"Reliance on, and expectations for, Wi-Fi, whether for employees, in-store devices or guests, inside or out, is high. Access Point placement, quality and security will determine availability and reliability. Interference has many culprits. Refrigerators, security cameras, microwaves, TVs, walls, windows, even weather can impact wireless performance."}
              position={[0.3, 2.4, 0]}
@@ -182,6 +187,7 @@ function Sageiw(props){
              icolor={"#E79F37"}
               />
               <TextUI
+               offs={-0.04}
                index={props.index}
                linki={wifib}
                linka={ha}

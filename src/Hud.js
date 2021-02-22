@@ -85,10 +85,10 @@ z-index:0;
 
 const Bbar = styled.div`
 position: fixed;
-top:71%;
+bottom:6rem;
 width: 100%;
 z-index: 1;
-height: 20%;
+height: 9rem;
 //background-color: red;
 display: flex;
 padding-left: 20%;
@@ -102,6 +102,9 @@ width: 5rem;
 ${props => props.right && css`
 transform: translateY(-8px) rotate(290deg) ;
 
+`}
+${props => props.drop && css`
+filter: drop-shadow(3px 3px 5px black);
 `}
 
 `
@@ -168,6 +171,7 @@ export default function Hud() {
                     <Circle material={mat} position={[0, -1.1, 0]} args={[0.15, 20]} />
                     <Circle material={mat} position={[0, -1.6, 0]} args={[0.15, 20]} />
                     <Circle material={mat} position={[0, -2.1, 0]} args={[0.15, 20]} />
+                    <Circle material={mat} position={[0, -2.6, 0]} args={[0.15, 20]} />
                 </group>
             </>
         )
@@ -237,7 +241,7 @@ export default function Hud() {
                 <Bbar>
                 <Bimg src={arrow} onClick={() => {setIndex((index-1 == -1? 4:index-1)); setCam(false)}}/>
                 <Empty/>
-                <Bimg src={cam? toggle:threesixty} onClick={() => setCam(!cam)}/>
+                <Bimg drop src={cam? toggle:threesixty} onClick={() => setCam(!cam)}/>
                 <Empty/>
                 <Bimg right src={arrow} onClick={() => {setIndex((index+1)%5); setCam(false)}}/>
                 </Bbar>

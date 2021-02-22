@@ -32,6 +32,7 @@ function Sageview(props) {
         index={props.index}
         text={"Day-Parting."}
         para={daypart}
+        offs={-0.03}
         position={[0, 2.1, 0]}
         skew={0}
         linki={signage}
@@ -44,6 +45,7 @@ function Sageview(props) {
       <TextUI
         index={props.index}
         text={"Kiosks."}
+        offs={-0.03}
         para={"With digital kiosks, you can give your customers a way to place their orders while serving up promotions, ultimately increasing basket sizes. With self-order kiosks, you minimize person-to-person contact, avoid long lines/wait times, and with over 65% of consumers saying they would visit more often if kiosks are offered, increase consumer satisfaction"}
         position={[0.5, 1.5, 0]}
         skew={0}
@@ -105,6 +107,7 @@ function Sagesec(props) {
       <TextUI
         index={props.index}
         linki={pcib}
+        offs={-0.02}
         linka={ha}
         url={"https://sagenetvirtual.com/SageNet_PCI_DS_091418.pdf"}
         text={"PCI-Compliance."}
@@ -118,6 +121,7 @@ function Sagesec(props) {
       <TextUI
         index={props.index}
         text={"Cyber For Kiosks."}
+        offs={-0.07}
         position={[2.7, 1.4, 0]}
         skew={0}
         para={"Any time a new device is connected to your network, you introduce new security risks. Make sure that your kiosks remain secure, that their screens only show the content you intend, and customers are protected from skimming or other methods of identity theft. Keep your customers’ info secure, and they’ll keep their brand loyalty."}
@@ -136,6 +140,7 @@ function Sageconnect(props) {
     <>
       <TextUI
         index={props.index}
+        offs={-0.07}
         text={"Empowering Connectivity."}
         para={"The pandemic led to several paradigm shifts for C-stores: health concerns, financial uncertainty, the need for agility, and the use of tech to accelerate change. However, robust connectivity remained enabling force. From security to digital experience, frictionless checkout to analytics, the future of c-stores is built on the power of the network."}
         position={[-0.3, 2.2, 0]}
@@ -150,6 +155,7 @@ function Sageconnect(props) {
       <TextUI
         index={props.index}
         text={"V-SAT Connectivity."}
+        offs={-0.1}
         para={"When terrestrial connections are not an option for either primary or backup connectivity, SageSat can provide VSAT satellite technology to seamlessly connect any remote location with enterprise-grade broadband. Only SageNet has deep experience using terrestrial and non-terrestrial technologies to support all aspects  of c-store operations."}
         position={[0.1, 1.5, 0]}
         skew={0}
@@ -160,6 +166,7 @@ function Sageconnect(props) {
       <TextUI
         index={props.index}
         text={"Back-Up Connectivity."}
+        offs={-0.08}
         position={[2.7, 2, 0]}
         skew={0}
         wx={1.5}
@@ -199,6 +206,7 @@ function Sageiw(props) {
       <TextUI
         index={props.index}
         text={"Touchless Kiosk Interaction."}
+        offs={-0.13}
         linka={ha}
         linki={obutton}
         para={"Increase safety for customers and employees by pairing wireless mobile technology with your kiosk menu. Allow customers to control kiosk boards and place orders without touch the screen. Orders are placed directly from their mobile device, or by in-person staff without a physical exchange. Reduce customer wait times. Make visits more smooth and safe."}
@@ -212,6 +220,7 @@ function Sageiw(props) {
       <TextUI
         index={props.index}
         text={"Wi-Fi Security."}
+        offs={-0.08}
         position={[2.7, 2, 0]}
         skew={0}
         wx={1}

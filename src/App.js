@@ -26,26 +26,60 @@ const CameraControls = (props) => {
   // Get a reference to the Three.js Camera, and the canvas html element.
   // We need these to setup the OrbitControls class.
   // https://threejs.org/docs/#examples/en/controls/OrbitControls
+  let Pos = [0, 3, 25];
+  let Look = [0, 3, -25];
+  let targ = new THREE.Vector3();
+
+  //console.log("Dolly: " + props.index)
+
+
+    switch (props.index) {
+      case 1:
+       
+        Look = [4, 2, 5];
+        
+        break;
+      case 2:
+     
+        Look = [-10, 2, -10.8];
+        break;
+      case 3:
+      
+        Look = [10, 1.8, -11.07];
+        break;
+      case 4:
+      
+        Look = [-10, 1.5, -19.5];
+        break;
+      default:
+      
+        Look = [0, 3, -25];
+
+        break;
+    }
+  
+    targ.set(Look[0],Look[1],Look[2]);
 
   const {
     camera,
     gl: { domElement },
   } = useThree();
-
+ // const targ = new THREE.Vector3(Look[0], Look[1], Look[2]);
   // Ref to the controls, so that we can update them on every frame with useFrame
   const controls = useRef();
   //camera.lookAt([0,0,0])
   //controls.current.update();
 
-  //useFrame(() => console.log(controls.current));
+  useFrame(() => controls.current?controls.current.update():null);
+  console.log(targ);
   return (
     <orbitControls
-
+      target={targ}
       ref={controls}
       args={[camera, domElement]}
       //autoRotate={true}
       enableZoom={true}
-      maxPolarAngle={Math.PI * 0.45}
+      maxPolarAngle={Math.PI * 0.5}
       maxDistance={50}
       screenSpacePanning={false}
     />
@@ -162,7 +196,7 @@ function App(props) {
         <fog attach="fog" args={["#ffffff", 0, 75]} />
 
         {props.cam ?
-          <CameraControls cam={props.cam} /> :
+          <CameraControls index={props.index} cam={props.cam} /> :
           <Dolly index={props.index} gate={cam} />}
 
         <directionalLight castShadow shadowMap={true} shadowBias={-0.00005} shadow-mapSize-height={1024}

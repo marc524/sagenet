@@ -27,6 +27,7 @@ export default function Button(props) {
   const group = useRef()
   const [active, setActive] = useState(false)
   const [clicked, setClick] = useState(false)
+  const [skim,setSkim] = useState(false);
   const circtex = useTexture(circ);
   const icon = useTexture(props.icon);
   const label = useTexture(select(props.index));
@@ -76,10 +77,19 @@ export default function Button(props) {
           <Plane args={[3, 1.75]} position={[0, 0, -0.1]} rotation={[0, props.skew, 0]} >
             <meshBasicMaterial color={"white"}/>
             </Plane>
-          <Plane raycast={meshBounds} onClick={() => setClick(false)} rotation={[0, props.skew, 0]} position={[0, 0, -0.01]} args={[50, 50]}>
+          <Plane  onClick={() => {setSkim(false);setClick(false)}} rotation={[0, props.skew, 0]} position={[0, 1, -0.01]} args={[10, 0.5]}>
             <meshBasicMaterial transparent={true} opacity={0.5} attach="material" color="white" />
           </Plane>
-        {!props.vidurl &&
+          <Plane  onClick={() => {setSkim(false);setClick(false)}} rotation={[0, props.skew, 0]} position={[0, -1, -0.01]} args={[10, 0.5]}>
+            <meshBasicMaterial transparent={true} opacity={0.5} attach="material" color="white" />
+          </Plane>
+          <Plane  onClick={() => {setSkim(false);setClick(false)}} rotation={[0, props.skew, 0]} position={[2.9, 0, -0.01]} args={[3, 1.5]}>
+            <meshBasicMaterial transparent={true} opacity={0.5} attach="material" color="white" />
+          </Plane>
+          <Plane  onClick={() => {setSkim(false);setClick(false)}} rotation={[0, props.skew, 0]} position={[-2.9, 0, -0.01]} args={[3, 1.5]}>
+            <meshBasicMaterial transparent={true} opacity={0.5} attach="material" color="white" />
+          </Plane>
+        
           <>
           <group scale={[0.5, 0.5, 0.5]} rotation={[0, -0.1, 0]} position={[1.5, 0.7, 0.4]} >
             
@@ -100,7 +110,7 @@ export default function Button(props) {
           <Text position={[0, 0.6, 0.1]} rotation={[0, props.skew, 0]} font={fc} fontSize={0.17} color={"#003C64"} anchorX="center" anchorY="middle" >
             {props.text.substring(0,props.text.length-1)}
             <Text anchorX="left" position={[-1.4,0.05,0.01]} font={fc} color={"#f0861d"} fontSize={0.20}> {". . . . . . . . . . . . ".substring(0,36-(props.text.length>22?props.text.length-4:props.text.length))} </Text>
-            <Text position={[(props.text.length>11?props.text.length*0.95:props.text.length)*0.032+(props.offs?props.offs:0),0.02,0.01]} font={fc} color={"#f0861d"} fontSize={0.2}> {"."} </Text>
+            <Text position={[props.text.length*0.032,0.02,0.01]} font={fc} color={"#f0861d"} fontSize={0.2}> {"."} </Text>
           </Text>
           
 
@@ -115,15 +125,15 @@ export default function Button(props) {
             <planeBufferGeometry />
             <meshBasicMaterial map={label} attach="material" color="white" />
           </mesh>
-          </>}
+          </>
             
           {props.linki &&
-            <mesh onClick={() => window.open(props.url)} visible={true} scale={[1.7, 0.35 * 0.6, 1]} rotation={[0, props.skew, 0]} position={[0, -0.4, 0.1]}>
+            <mesh onClick={() => setSkim(true)} visible={true} scale={[1.7, 0.35 * 0.6, 1]} rotation={[0, props.skew, 0]} position={[0, -0.4, 0.1]}>
               <planeBufferGeometry />
               <meshBasicMaterial map={linkimg} transparent={true} alphaMap={linkimgA} attach="material" color="white" />
             </mesh>}
            
-                    {props.vidurl && 
+                    {skim && 
           <Html center scaleFactor={2.5}>
           <div class="content">
           <iframe src={props.vidurl} width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>

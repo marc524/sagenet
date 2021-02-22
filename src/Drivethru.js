@@ -31,7 +31,7 @@ function Sageview(props){
               <TextUI
                index={props.index}
              text={"Loyalty."}
-
+             offs={-0.04}
              para={"Using loyalty-integration, captive-portals, and even license plate recognition, menu offerings can include recommendations based on customer profiles and order history. Has your customer been in the drive-thru and ordered the same chicken nugget meal their past 5 visits? Your signage can remind them that nothing goes better with nuggets than some fries."}
              position={[-0.3, 1.5, 0]}
              skew={0}
@@ -43,6 +43,7 @@ function Sageview(props){
                 index={props.index}
              
              text={"Economics."}
+             offs={-0.03}
              linka = {ha}
              linki = {ecob}
              url={"https://sagenetvirtual.com/SageNet_Drive-thruTechnology_WP_NEW022019.pdf"}
@@ -73,7 +74,7 @@ function Sagesec(props){
             <TextUI
              index={props.index}
              text={"Cyber For Signage."}
-            
+             offs={-0.04}
              para={"Any time you connect a device to your network, you’re introducing new security risks. Make sure your signage remains secure, and your screens only show the content you intended by securing the network and its connected devices. The only thing worse than no content, is a hacker highlighting the great deals at your competitor’s locations."}
              position={[-0.3, 2.3, 0]}
              skew={0}
@@ -93,6 +94,7 @@ function Sagesec(props){
               />
                <TextUI
                 index={props.index}
+                offs={-0.1}
              text={"Security Operations Center."}
              para={"TBD"}
              position={[3.5, 2.4, 0]}
@@ -134,7 +136,7 @@ function Sageconnect(props){
               <TextUI
               index={props.index}
              text={"Network Operations Center."}
-          
+             offs={-0.07}
              para={"Someone to watch over me. Whether in the store, at the pump or drive-thru, for PoS, digital signage or guest Wi-Fi, the network is the backbone of your business. The support of a 24/7 NOC is more than a luxury, it’s necessity. Our engineers utilize advanced tools and systems to analyze, troubleshoot, remediate and optimize network performance."}
              position={[-0.5, 1.5, 0]}
              skew={0}
@@ -146,6 +148,7 @@ function Sageconnect(props){
                 <TextUI
                  index={props.index}
              text={"Connectivity Sanity."}
+             offs={-0.09}
              para={"With multiple carriers, vendors and compliance demands, managing a multi-site network can be a challenge. An MNSP provides a single point of contact for circuit provisioning, consolidated billing, help desk support, routine maintenance and emergency services. Advanced services include 24/7 network monitoring, PCI-compliance and SIEM and SOC services."}
              linka={ha}
              linki={serviceb}
@@ -165,6 +168,7 @@ function Sageiw(props){
         <>
             <TextUI
              index={props.index}
+             offs={-0.09}
              text={"How Location Analytics Work."}
              para={"TBD"}
              position={[-0.5, 2.2, 0]}
@@ -176,7 +180,7 @@ function Sageiw(props){
               <TextUI
                index={props.index}
               
-              
+               offs={-0.08}
              text={"Take It Outside."}
              para={"The pandemic transformed C-store food service. To-go, curbside and drive-thru means untethering workers and customers with robust, secure Wi-Fi. Empower employees with wireless headsets, tablets, and printers. Outdoor access points allow customers to place orders from the drive-thru, parking lot or the pump. In-car convenience increases basket-size as well."}
              position={[0, 1.4, 0]}

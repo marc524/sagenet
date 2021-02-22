@@ -1,5 +1,6 @@
 import React, { Suspense} from 'react'
 import TextUI from './TextUI'
+import SkimUI from './SkimUI'
 import graph from './sagelabel/Graph_icon.png'
 import location from './sagelabel/Location_icon.png'
 import heart from './sagelabel/heart.png'
@@ -27,6 +28,7 @@ function Sageview(props){
         <>
             <TextUI
              index={props.index}
+             offs={-0.1}
              text={"Loyalty Intergration/Promotion."}
              para={fuel}
              position={[-0.7, 2.3, 0]}
@@ -39,6 +41,7 @@ function Sageview(props){
               <TextUI
                index={props.index}
              text={"Pump-Side Ordering."}
+             offs={-0.03}
              para={pump}
              position={[0, 1.5, 0]}
              skew={0}
@@ -51,6 +54,7 @@ function Sageview(props){
                 linki={hs}
                 linka={ha}
              text={"Health & Safety."}
+             offs={-0.05}
              url={"https://sagenetvirtual.com/SageNet_6Paradigms6Tools_WP_NEW101620%20(5).pdf"}
              para={health}
              position={[3.2, 2, 0]}
@@ -81,6 +85,7 @@ function Sagesec(props){
             <TextUI
              index={props.index}
              text={"Secure Wi-Fi."}
+             offs={-0.05}
              para={wtext}
              position={[0, 2.5, 0]}
              skew={0}
@@ -88,7 +93,7 @@ function Sagesec(props){
              icon={wifi}
              icolor={"#72337F"}
               />
-              <TextUI
+              <SkimUI
                index={props.index}
                para={stext}
              text={"Skimming."}
@@ -99,7 +104,7 @@ function Sagesec(props){
              icolor={"#72337F"}
              linki={_skimming}
              linka={ha}
-             url={"https://vimeo.com/502220475/71170cd0e3"}
+             vidurl={"https://player.vimeo.com/video/502220475?autoplay=1&title=0&byline=0&portrait=0"}
               />
                <TextUI
                 index={props.index}
@@ -156,6 +161,7 @@ function Sageconnect(props){
               />
                 <TextUI
                  index={props.index}
+                 offs={-0.1}
              text={"Connectivity Certainty."}
              para={ctext}
              position={[3.5, 1.6, 0]}
@@ -176,6 +182,7 @@ function Sageiw(props){
             <TextUI
              index={props.index}
              text={"Captive Portal."}
+             offs={-0.05}
              para={ctext}
              position={[0.3, 2.4, 0]}
              skew={0}
@@ -187,6 +194,7 @@ function Sageiw(props){
               <TextUI
                index={props.index}
                linki={dlocation}
+               offs={-0.1}
                linka={ha}
                url={"https://sagenetvirtual.com/SageNet_CaptivePortal_WP_NEW091919.pdf"}
              text={"Location Analytics."}
