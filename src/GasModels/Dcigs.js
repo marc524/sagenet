@@ -11,8 +11,8 @@ export default function Model(props) {
   const group = useRef()
   const { nodes, materials } = useGLTF(dcigs)
   for (const property in materials) {
-    materials[property].metalness = 0.2;
-    materials[property].roughness = 0.5;
+    materials[property].metalness = 0.45;
+    materials[property].roughness = 0.9;
     //console.log(materials[property].metalness);
   }
 

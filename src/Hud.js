@@ -11,6 +11,8 @@ import { Circle, Text } from '@react-three/drei'
 import * as THREE from 'three'
 import futura from './futura.ttc'
 import { useFrame, useThree } from "react-three-fiber"
+import toggle from './hudicons/toggle.jpg'
+import threesixty from './hudicons/360.jpg'
 
 
 const Flex = styled.div`
@@ -127,6 +129,7 @@ export default function Hud() {
                 if (i > 0.005) {
                     //setActive(false);
                     setIndex(0);
+                    setCam(false);
                     setScene(false);
                 }
             }
@@ -177,15 +180,15 @@ export default function Hud() {
             <Flex>
             {!scene &&
                     <>
-                <Item onClick={() => setIndex(0)}>C-Store</Item>
+                <Item onClick={() => {setIndex(0); setCam(false)}}>C-Store</Item>
                 <Bar />
-                <Item onClick={() => setIndex(1)}>Forecourt</Item>
+                <Item onClick={() => {setIndex(1); setCam(false)}}>Forecourt</Item>
                 <Bar />
-                <Item onClick={() => setIndex(2)}>Food Service</Item>
+                <Item onClick={() => {setIndex(2); setCam(false)}}>Food Service</Item>
                 <Bar />
-                <Item onClick={() => setIndex(3)}>POP</Item>
+                <Item onClick={() => {setIndex(3); setCam(false)}}>POP</Item>
                 <Bar />
-                <Item onClick={() => setIndex(4)}>Drive Thru</Item>
+                <Item onClick={() => {setIndex(4); setCam(false)}}>Drive Thru</Item>
 
 
                
@@ -194,7 +197,7 @@ export default function Hud() {
                     </>}
 
                 <Empty />
-                <Item onClick={() => {setScene(false); setIndex(0);}}>C-Store</Item>
+                <Item onClick={() => {setScene(false); setIndex(0);  setCam(false);}}>C-Store</Item>
                 <Bar />
                 <Item>QSR</Item>
                 <Bar />
@@ -232,11 +235,11 @@ export default function Hud() {
                 <App index={index} zoom={zoom} cam={cam} />
                 
                 <Bbar>
-                <Bimg src={arrow} onClick={() => setIndex((index-1 == -1? 4:index-1))}/>
+                <Bimg src={arrow} onClick={() => {setIndex((index-1 == -1? 4:index-1)); setCam(false)}}/>
                 <Empty/>
-                <Item style={cam ? { backgroundColor: "#ff9a00" } : { backgroundColor: "#133A5F" }} onClick={() => setCam(!cam)}>360° Navigation</Item>
+                <Bimg src={cam? toggle:threesixty} onClick={() => setCam(!cam)}/>
                 <Empty/>
-                <Bimg right src={arrow} onClick={() => setIndex((index+1)%5)}/>
+                <Bimg right src={arrow} onClick={() => {setIndex((index+1)%5); setCam(false)}}/>
                 </Bbar>
                 
                 </>

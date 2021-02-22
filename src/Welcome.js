@@ -40,10 +40,10 @@ export default function Welcome(props) {
          
           
           <group position={[0, 3.1, 20.7]}>
-          <Text anchorX="left" position={[-1.45,0.72,0.01]} font={fc} color={"#f72900"} fontSize={0.20}> {". . . . . . . . ."} </Text>
-          <Text position={[0, 0.66, 0.1]} rotation={[0, 0, 0]} font={fc} fontSize={0.17} color={"#05111C"} anchorX="center" anchorY="middle" >
+          <Text anchorX="left" position={[-1.45,0.72,0.01]} font={fc} color={"#f0861d"} fontSize={0.20}> {". . . . . . . . ."} </Text>
+          <Text position={[0, 0.66, 0.1]} rotation={[0, 0, 0]} font={fc} fontSize={0.17} color={"#003C64"} anchorX="center" anchorY="middle" >
             Hear From Our Experts
-            <Text position={[0.61,0.02,0.01]} font={fc} color={"#f72900"} fontSize={0.20}> {"."} </Text>
+            <Text position={[0.61,0.02,0.01]} font={fc} color={"#f0861d"} fontSize={0.20}> {"."} </Text>
           </Text>
           <Plane onClick={() => setOpen(!open)} args={[0.4, 0.4]} position={[2, 0.9, 0]} >
               <meshBasicMaterial transparent={true} alphaMap={_close} map={_close}/>

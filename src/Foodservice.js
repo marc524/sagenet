@@ -43,7 +43,7 @@ function Sageview(props) {
         index={props.index}
         text={"Kiosks."}
         para={"With digital kiosks, you can give your customers a way to place their orders while serving up promotions, ultimately increasing basket sizes. With self-order kiosks, you minimize person-to-person contact, avoid long lines/wait times, and with over 65% of consumers saying they would visit more often if kiosks are offered, increase consumer satisfaction"}
-        position={[0.8, 1.5, 0]}
+        position={[0.5, 1.5, 0]}
         skew={0}
         wx={0.7}
         icon={kiosk}
@@ -148,7 +148,7 @@ function Sageconnect(props) {
         index={props.index}
         text={"V-SAT Connectivity."}
         para={"When terrestrial connections are not an option for either primary or backup connectivity, SageSat can provide VSAT satellite technology to seamlessly connect any remote location with enterprise-grade broadband. Only SageNet has deep experience using terrestrial and non-terrestrial technologies to support all aspects  of c-store operations."}
-        position={[0.5, 1.5, 0]}
+        position={[0.1, 1.5, 0]}
         skew={0}
         wx={1.3}
         icon={sat}
@@ -199,7 +199,7 @@ function Sageiw(props) {
         linka={ha}
         linki={obutton}
         para={"Increase safety for customers and employees by pairing wireless mobile technology with your kiosk menu. Allow customers to control kiosk boards and place orders without touch the screen. Orders are placed directly from their mobile device, or by in-person staff without a physical exchange. Reduce customer wait times. Make visits more smooth and safe."}
-        position={[0.4, 1.6, 0]}
+        position={[0, 1.6, 0]}
         skew={0}
         url={"https://sagenetvirtual.com/SageNet_WiFi-WP_NEW092319.pdf"}
         wx={1.8}

@@ -62,7 +62,7 @@ function Overworld(props) {
   _ocean.repeat.y = -1;
   return (
     <>
-    <Canvas gl={{ antialias: true }} shadowMap={true} camera={{ fov: 40, position: [12.7,5.21,-12.3] }} className="canvas">
+    <Canvas gl={{ antialias: true }} shadowMap={true} camera={{ fov: 40, position: [12.7,7.21,-12.3]}} className="canvas">
       <fog attach="fog" args={["#dde9f0", 0, 190]} />
       <CameraControls cam={props.cam} />
       <directionalLight castShadow shadowMap={true} shadowBias={-0.00005} shadow-mapSize-height={1024}

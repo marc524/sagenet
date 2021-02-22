@@ -54,11 +54,11 @@ export default function Button(props) {
   return (
     <>
       <group ref={group} position={props.position}>
-        <Text font={fc} color={"#05111C"} fontSize={0.15}> {props.text.toUpperCase()} </Text>
+        <Text font={fc} color={"#1D3A5C"} fontSize={0.15}> {props.text.toUpperCase()} </Text>
         
         <mesh onClick={() => setClick(true)} onPointerOver={() => setActive(true)} onPointerOut={() => setActive(false)} visible={true} position={[0, 0, -0.001]} scale={[props.wx, 0.3, 1]}>
           <planeBufferGeometry />
-          <meshBasicMaterial transparent={true} opacity={0.9} attach="material" color={active ? "orange" : "white"} />
+          <meshBasicMaterial transparent={true} opacity={0.8} attach="material" color={active ? "orange" : "white"} />
         </mesh>
         <group scale={[0.5, 0.5, 0.5]} position={[props.wx * 0.5 + 0.15, 0, 0.01]} >
           <mesh>
@@ -73,7 +73,9 @@ export default function Button(props) {
       </group>
       {clicked &&
         <group position={[1.8, 2.1, 1]}>
-          <Plane args={[3, 1.75]} position={[0, 0, -0.1]} rotation={[0, props.skew, 0]} />
+          <Plane args={[3, 1.75]} position={[0, 0, -0.1]} rotation={[0, props.skew, 0]} >
+            <meshBasicMaterial color={"white"}/>
+            </Plane>
           <Plane raycast={meshBounds} onClick={() => setClick(false)} rotation={[0, props.skew, 0]} position={[0, 0, -0.01]} args={[50, 50]}>
             <meshBasicMaterial transparent={true} opacity={0.5} attach="material" color="white" />
           </Plane>
@@ -95,17 +97,20 @@ export default function Button(props) {
          
           </group>
          
-          <Text position={[0, 0.6, 0.1]} rotation={[0, props.skew, 0]} font={fc} fontSize={0.17} color={"#05111C"} anchorX="center" anchorY="middle" >
+          <Text position={[0, 0.6, 0.1]} rotation={[0, props.skew, 0]} font={fc} fontSize={0.17} color={"#003C64"} anchorX="center" anchorY="middle" >
             {props.text.substring(0,props.text.length-1)}
-            <Text anchorX="left" position={[-1.4,0.05,0.01]} font={fc} color={"#f72900"} fontSize={0.20}> {". . . . . . . . . . . . ".substring(0,36-(props.text.length>22?props.text.length-4:props.text.length))} </Text>
-            <Text position={[props.text.length*0.032,0.02,0.01]} font={fc} color={"#f72900"} fontSize={0.2}> {"."} </Text>
+            <Text anchorX="left" position={[-1.4,0.05,0.01]} font={fc} color={"#f0861d"} fontSize={0.20}> {". . . . . . . . . . . . ".substring(0,36-(props.text.length>22?props.text.length-4:props.text.length))} </Text>
+            <Text position={[props.text.length*0.032,0.02,0.01]} font={fc} color={"#f0861d"} fontSize={0.2}> {"."} </Text>
           </Text>
           
 
           
-          <Text position={[0, 0.1, 0.1]} rotation={[0, props.skew, 0]} font={"Arial"} fontSize={0.07} textAlign={"center"} maxWidth={2} color={"#05111C"} anchorX="center" anchorY="middle" >
+          <Text position={[props.image? -0.4:0, props.image? 0:0.1, 0.1]} rotation={[0, props.skew, 0]} font={"Arial"} fontSize={0.07} textAlign={"center"} maxWidth={props.image? 1.6:2} color={"#003C64"} anchorX="center" anchorY="middle" >
             {props.para}
           </Text>
+          <Plane position={[0.9,0,0]} args={[0.8,0.8]} >
+            <meshBasicMaterial map={props.image} />
+          </Plane>
           <mesh visible={true} scale={bannersize} rotation={[0, props.skew, 0]} position={[0, -0.7, 0]}>
             <planeBufferGeometry />
             <meshBasicMaterial map={label} attach="material" color="white" />

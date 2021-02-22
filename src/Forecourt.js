@@ -13,6 +13,8 @@ import hs from './sagelabel/download_button.png'
 import ha from './sagelabel/download_buttonA.png'
 import demv from './sagelabel/download_emv.png'
 import dlocation from './sagelabel/download_location.png'
+import countdown from './ImageAssets/Count_down.png'
+import { useTexture } from '@react-three/drei'
 
 function Sageview(props){
 
@@ -30,6 +32,7 @@ function Sageview(props){
              wx={2.3}
              icon={graph}
              icolor={"#8AD2D2"}
+             image={useTexture(countdown)}
               />
               <TextUI
                index={props.index}

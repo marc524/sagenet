@@ -28,9 +28,9 @@ function Screen(props){
   return(
     <mesh  scale={props.scale} rotation={props.rotation} position={props.position}>
       <planeBufferGeometry args={props.pbs} />
-      <meshStandardMaterial>
+      <meshBasicMaterial>
       <videoTexture attach="map" args={[video]} />
-      </meshStandardMaterial>
+      </meshBasicMaterial>
   </mesh>
   );
 
@@ -55,16 +55,16 @@ export default function Pump(props) {
   materials['Material #1431659626.001'].roughness = 0.3;
   materials['Material #1431659626.001'].normalScale = new THREE.Vector2(4,4);
   
-  materials['Material #1431659644.001'].roughness = 0.2;
+  materials['Material #1431659644.001'].roughness = 0.1;
   materials['Material #1431659644.001'].metalness = 0.3;
 
-  materials['Gas Pumps.001'].roughness = 0.4;
-  materials['Gas Pumps.001'].metalness = 0.3;
+  materials['Gas Pumps.001'].roughness = 0.6;
+  materials['Gas Pumps.001'].metalness = 0.1;
   materials['Material #1431659645.001'].metalness = 0.6;
   materials['Material #1431659645.001'].roughness = 0.4;
   materials['Material #1431659657.001'].metalness = 0.5;
   materials['Material #1431659657.001'].roughness = 0.3;
-  materials['Material #1431659657.001'].color.set("#f72900");
+  materials['Material #1431659657.001'].color.set("#f0541d");
 
  
 
